@@ -1,5 +1,0 @@
-<?php
-
-echo defined('TRANSFERT_SECRET_SEED')
-     ? "CONST OK<br>Date key: " . getDailyKey()
-     : "CONST ABSENTE";
