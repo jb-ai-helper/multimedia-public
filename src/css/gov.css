@@ -1,0 +1,18 @@
+/* CSS Document */
+@import "/src/css/fonts.css";
+
+	/*GOV Variables*/
+
+/*Portrait & Smaller*/
+@media (orientation: portrait) and (max-aspect-ratio: 9/16) { :root { --gov-unit: calc(100vw / 20); } }
+
+/*Portrait & Bigger*/
+@media (orientation: portrait) and (min-aspect-ratio: 9/16) { :root { --gov-unit: calc((100vh * 9 / 16) / 20); } }
+
+/*Landscape & Smaller*/
+@media (orientation: landscape) and (max-aspect-ratio: 16/9) { :root { --gov-unit: calc((100vw * 9 / 16) / 20); } }
+
+/*Landscape & Bigger*/
+@media (orientation: landscape) and (min-aspect-ratio: 16/9) { :root { --gov-unit: calc(100vh / 20); } }
+
+* { font-family: Marianne; }

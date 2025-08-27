@@ -1,0 +1,109 @@
+/* AH-PJM */
+* {
+    font-family: Verdana;
+}
+
+#ENPJJ, #Marianne{ display: none; }
+
+#Partenaire {
+    background-image: url("img/logo-ah-pjm.png");
+    aspect-ratio: 145/126;
+    height: calc( 1.5 * var(--gov-unit));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    bottom: var(--gov-unit);
+    right: calc(1.5 * var(--gov-unit));
+}
+
+#Introduction{
+    width: unset;
+    height: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(15px);
+    padding: calc(1* var(--gov-unit));
+    border-radius: var(--gov-unit);
+    box-shadow: 0 calc(0.1* var(--gov-unit)) calc(0.5* var(--gov-unit)) rgba(0, 0, 0, 0.1);
+    border: calc(0.05* var(--gov-unit)) solid rgba(255, 255, 255, 0.3);
+}
+
+#Title_Introduction{
+    position: unset;
+    width: max-content;
+    transform: unset;
+    color: black;
+    text-align: center;
+    line-height: calc(1.5 * var(--gov-unit));
+    text-shadow: unset;
+    font-size: calc(1 * var(--gov-unit));
+    }
+
+#SubTitle_Introduction{
+    position: unset;
+    color: white;
+    width: 100%;
+    font-weight: normal;
+    transform: unset;
+    text-align: center;
+    line-height: calc(1.5 * var(--gov-unit));
+    text-shadow: unset;
+    font-size: calc(0.75 * var(--gov-unit));
+    text-transform: none;
+}
+
+#Date{
+    position: unset;
+    color: black;
+    transform: unset;
+    width: 100%;
+}
+
+#Title_Copyright{
+    background: #35A936;
+    border-radius: 0 calc(0.5* var(--gov-unit)) calc(0.5* var(--gov-unit)) 0;
+    padding: 0 calc(1* var(--gov-unit)) 0 calc(1.5* var(--gov-unit));
+}
+
+#Title_Chapter{
+    color: black;
+    width: max-content;
+    backdrop-filter: blur(15px);
+    padding: calc(1* var(--gov-unit));
+    border-radius: var(--gov-unit);
+    box-shadow: 0 calc(0.1* var(--gov-unit)) calc(0.5* var(--gov-unit)) rgba(0, 0, 0, 0.1);
+    border: calc(0.05* var(--gov-unit)) solid rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+}
+
+h1, h2, h3 {
+    color: white;
+    text-transform: none;
+    font-weight: normal;
+}
+
+#Messages{
+    bottom: calc(2* var(--gov-unit));
+}
+
+.Right{
+	background-color: #FFFFFF;
+    color: #000000;
+}
+
+.Left{
+	background-color: #35A936;
+}
+
+#Name {
+    background: #35A936;
+    padding: 0 calc(0.5* var(--gov-unit));
+}
+
+#Function, #Translation {
+    padding: calc(0.25* var(--gov-unit)) calc(0.5* var(--gov-unit));
+    background: white;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 1);
+}

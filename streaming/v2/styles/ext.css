@@ -1,0 +1,64 @@
+/* Neutre */
+
+#ENPJJ{ display: none; }
+
+#Marianne{ display: none; }
+
+#Background{
+    background: radial-gradient(at center bottom, rgba(130, 130, 130, 1.0), rgba(0, 0, 0, 1));
+}
+
+#Copyright{
+    background: black;
+    padding-right: var(--gov-unit);
+    border-radius: var(--gov-unit);
+}
+
+#Title_Copyright, #SubTitle_Copyright{
+    padding: 0 0 0 5vw;
+    line-height: 5vh;
+    background: linear-gradient(90deg, rgba(130,130,130,1) 0, rgba(0,0,0,1) 100%);
+    text-shadow: 0 0 .25vw black;
+}
+
+#LowerThird{
+    overflow: visible;
+    padding: unset;
+    background: none;
+    width: 100vw;
+    padding-bottom: 5vh;
+}
+#LowerThird.ON * { animation: unset !important; opacity: 1; }
+
+#LowerThird.OFF * { animation: unset !important; opacity: 0; }
+
+#LowerThird::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: radial-gradient(at center bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 50%);
+    transition: all 1s ease-in-out;
+    bottom: 0;
+    z-index: -1;
+}
+
+#LowerThird.ON::after{ height: 200%; }
+
+#LowerThird.OFF::after{ height: 0%; }
+
+#Name, #Function, #Translation{
+    background: none;
+    width: 100%;
+    padding: unset;
+    color: white;
+    text-shadow: 0 0 .25vw black;
+    transition: all 1s ease-in-out;
+}
+
+#Name::after, #Function::after, #Translation::after{ all: unset; }
+
+#Name{ padding-top: 1vh; }
+
+.Right{ color: black; background-color: gray; }
+
+.Left{ color: black; background-color: darkgray; }

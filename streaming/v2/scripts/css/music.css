@@ -1,0 +1,14 @@
+/* CSS Document */
+
+#Artist{
+	color: white;
+	display: block;
+	position: absolute;
+	font-family: 'Marianne';
+    bottom: 1vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+	transition: opacity 1s ease-in-out;
+	font-size: calc(.3 * var(--gov-unit));
+	z-index: 8;
+}

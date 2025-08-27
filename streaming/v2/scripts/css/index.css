@@ -1,0 +1,218 @@
+/* CSS Document */
+@charset "UTF-8";
+@import "interface.css";
+
+html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+}
+
+body{
+	text-align: left;
+	overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#PilotageApp{
+    background: var(--button-background);
+    border-style: none;
+    color: var(--text-color);
+    line-height: var(--element-height) !important;
+    padding: 0 calc(2 * var(--element-height));
+    margin: 1px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+	font:normal var(--text-size) -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0%);
+    border-radius: 0 0 var(--element-height) var(--element-height);
+    text-decoration: none;
+}
+
+#ControlFrame{ 
+	box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+	height: calc(100vh - 10px);
+	border-style: none;
+	box-sizing: border-box;
+	position: absolute;
+	border-radius: 10px;
+    top: 5px;
+}
+
+#GraphicsFrame, #MessageFrame{ 
+	box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+	border-style: none;
+	box-sizing: border-box;
+	position: absolute;
+	border-radius: 10px;
+
+}
+
+.FullWidth{
+	width: calc(100vw - 10px);
+	left: 5px;
+}
+
+.OneThird{
+	width: calc((100vw / 3) - 10px );
+	left: 5px;
+}
+
+.TwoThirds{
+	width: calc(100vw - 5px - (100vw / 3));
+	left: calc((100vw / 3));}
+
+
+#MessageFrame{
+	bottom: 5px;
+	height: calc(25vh - 10px);
+    min-height: 240px;
+}
+
+#GraphicsFrame{
+	top: 5px;
+	height: calc(75vh - 5px);
+    max-height: calc(100vh - 255px);
+}
+
+#WrapPreview{
+	position: absolute;
+    transition: top 1s ease, transform 1s ease, left 1s ease;
+    transform: translate(-50%, -50%) scale(0);
+	top: 50%;
+	left: 50%;
+	width: 1920px;
+	height: 1080px;
+}
+
+.centered{
+    left: 50% !important;
+}
+
+#transparent{
+    pointer-events: none;
+    user-select: none;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	background-image: linear-gradient(45deg, lightgray 25%, transparent 25%, transparent 75%, lightgray 75%), linear-gradient(45deg, lightgray 25%, transparent 25%, transparent 75%, lightgray 75%);
+	background-size: 20px 20px;
+	background-position: 0 0, 10px 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    object-fit: cover;
+}
+
+.screen{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-style: none;
+	overflow: hidden;
+}
+
+#WrapControl{
+	display: block;
+	position: absolute;
+	width: 465px;
+	height: 100%;
+	top: 0px;
+	left: -450px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	border-radius: 0 15px 15px 0;
+	padding: 0px 15px 0px 0;
+	transition: all 1s ease-in-out;
+	background-color: var(--input-background);
+	user-select: none;
+	cursor: grab;
+	box-sizing: border-box;
+}
+
+#WrapControl:hover, #WrapControl.LOCKED{ left: 0;}
+#WrapControl.LOCKED{cursor: grabbing; border-radius: 0; }
+
+:is(#WrapControl:hover, #WrapControl.LOCKED) ~ #WrapPreview {
+    left: calc(50vw + 470px / 2);
+}
+
+#WrapMessage{
+    display: block;
+    position: absolute;
+    width: calc(100% - (2*20px));
+    height: calc(25vh - 10px);
+    transform: translate(0, calc(100% - 15px));
+    min-height: 255px;
+    bottom: 0;
+    left: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 15px 15px 0 0;
+    padding: 15px 0 0 0;
+    transition: all 1s ease-in-out;
+    background-color: var(--input-background);
+    user-select: none;
+    cursor: grab;
+    box-sizing: border-box;
+}
+
+#WrapMessage:hover, #WrapMessage.LOCKED{ transform: translate(0, 0); }
+#WrapMessage.LOCKED{cursor: grabbing; border-radius: 0; }
+
+:is(#WrapEditor:hover, #WrapEditor.LOCKED) ~ #WrapMessage{
+    width: calc(100% - 490px);
+}
+
+:is(#WrapControl:hover, #WrapControl.LOCKED) ~ #WrapMessage{
+    width: calc(100% - 490px);
+    left: 470px;
+}
+
+:is(#WrapMessage:hover, #WrapMessage.LOCKED) ~ #WrapPreview {
+    top: calc((100vh - 25vh + 10px) / 2);
+}
+
+.minimum{
+    width: calc(100% - (2 * 470px)) !important;
+    left: 470px !important;
+}
+
+#WrapEditor{
+	display: block;
+	position: absolute;
+	width: 465px;
+	height: 100%;
+	top: 0px;
+	right: -450px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+	border-radius: 15px 0 0 15px;
+	padding: 0px 0 0px 15px;
+	transition: all 1s ease-in-out;
+	background-color: var(--input-background);
+	user-select: none;
+	cursor: grab;
+	box-sizing: border-box;
+}
+
+#WrapEditor:hover, #WrapEditor.LOCKED{ right: 0;}
+#WrapEditor.LOCKED{cursor: grabbing; border-radius: 0; }
+
+:is(#WrapEditor:hover, #WrapEditor.LOCKED) ~ #WrapPreview {
+    left: calc(50vw - 470px / 2);
+}
+
+#messages, #controls, #editor{
+	width: 100%;
+	height: 100%;
+	border-style: none;
+}

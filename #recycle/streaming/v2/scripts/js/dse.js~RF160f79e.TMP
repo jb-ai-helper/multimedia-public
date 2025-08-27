@@ -1,0 +1,241 @@
+// JavaScript Document
+
+//Open Broadcast Channel for CSS Selector
+var cec = new BroadcastChannel('css-editor-channel');
+var csc = new BroadcastChannel('css-selector-channel');
+csc.onmessage = function (ev){  if(APP.endsWith('dse.php')) RecieveCSS(ev.data); }
+
+// Add Selectability
+if(!APP.endsWith("dse.php")){
+    document.addEventListener("click",
+    function(event){
+        let id = '#' + event.target.id;
+        let classes = [...event.target.classList].map(cls => '.' + cls).join(' ');
+        
+        const DATA = { id:id, class:classes};
+        csc.postMessage(DATA);
+    });
+}
+
+function RecieveCSS(CSS){
+    const id = CSS['id'];
+    const classlist = CSS['class'];    
+    const selector_input = document.getElementById('css-selector');
+    
+    var selector = id;
+    if (/^\d+$/.test(id)){ selector = classlist; }
+
+    selector_input.value = selector;
+    ActivateParameters(selector);
+}
+
+function UpdateCSS(){
+    const CSS = document.getElementById('css');
+    const CODE = document.getElementById('css-code');
+	const DATA = { code:CODE.value, css:CSS.value };
+	cec.postMessage(DATA);
+}
+
+function ActivateParameters(selector){
+    const color = document.getElementById('css-color');
+    const display = document.getElementById('css-display');
+    const background_color = document.getElementById('css-background-color');
+    
+    if(selector == "#Marianne"){
+        display.classList.remove('OFF');
+    } else {
+        if(!color.classList.contains('OFF')) display.classList.add('OFF');
+        if(!display.classList.contains('OFF')) display.classList.add('OFF');
+    }
+}
+
+function AddSelector(){
+    const CSS = document.getElementById('css');
+    const selector = document.getElementById('css-selector');
+    var parameters = document.querySelectorAll('#css-parameters > :not(.OFF)');
+    var parameter = {};
+
+    //Collect rules' values
+    parameters.forEach(param => {
+        let value = null;
+        let id = param.id;
+        if (!id) return; // on ignore les éléments sans ID
+        
+        
+        if (param.classList.contains('parameter')) {
+            value = param.getElementsByTagName('input')[0].checked;
+        } else {
+            value = param.value;
+        }
+        parameter[id] = value;
+    });
+    
+    // Générer les règles CSS dynamiquement
+    let rules = '';
+
+    for (let key in parameter) {
+        let value = parameter[key];
+        if (!value) continue; // ignore les valeurs nulles / false / vides
+
+        //Règles pour tous les types d'éléments
+        if (key === 'css-display') {
+            rules += '\tdisplay: none;\n';
+        } else if (key === 'css-color') {
+            rules += '\tcolor: ' + value + ';\n';
+        }
+    }
+
+    // Générer le sélecteur (id ou classes)
+    const new_CSS = `${selector.value} {\n${rules}}`;
+    CSS.value = CSS.value + '\n' + new_CSS;
+    UpdateCSS()
+}
+
+function ToggleSelector(){
+    //const WrapEditor = window.parent.document.getElementById('WrapEditor');
+    const WrapPreview = window.parent.document.getElementById('WrapPreview');
+    const EditorStatus = document.getElementById('editor').getElementsByTagName('input')[0].checked;
+
+    if(EditorStatus){
+		let PreviewIframe = window.document.getElementsByTagName("iframe")[0];
+		let PreviewCode;
+		try { PreviewCode = PreviewIframe.contentDocument || PreviewIframe.contentWindow.document; }
+		
+		var AddedStyleSheet = PreviewCode.head.getElement
+        
+		/*
+		// Activate Editor CSS
+        const today = new Date();
+        const date = today.toISOString().split('T')[0];
+
+        title_to_send = "Titre";
+        subtitle_to_send = "Sous-titre";
+        date_to_send = "Date";
+        style_to_send = "css-editor";
+
+        const DATA = {type:"si", title:title_to_send, subtitle:subtitle_to_send, date:date_to_send, style:style_to_send};
+        Update(DATA);
+        
+        // Lock Editor
+        if(!WrapEditor.classList.contains('LOCKED')){
+            WrapEditor.classList.add('LOCKED')
+		*/
+        }
+    } else {
+        // Revert to default
+        title_to_send = "Titre du stream";
+        subtitle_to_send = "Bienvenue";
+        date_to_send = "00 mois 0000";
+        style_to_send = "";
+
+        const DATA = {type:"si", title:title_to_send, subtitle:subtitle_to_send, date:date_to_send, style:style_to_send};
+        Update(DATA);
+        
+        // Unlock Editor
+        if(WrapEditor.classList.contains('LOCKED')){
+            WrapEditor.classList.remove('LOCKED')
+        }
+    }
+}
+
+function EncodeName(){
+    const name = document.getElementById('css-name');
+    const code = document.getElementById('css-code');
+    const css = document.getElementById('css');
+    
+    var title = name.value.trim();
+    var firstline = `/* ${title} */`;
+    
+    const lines = css.value.split("\n");
+    if (lines[0].startsWith("/*") && lines[0].endsWith("*/")) {
+        // Modifier la première ligne
+        lines[0] = firstline;
+    } else {
+        // Ajouter en première ligne
+        lines.unshift(firstline);
+    }
+    
+    css.value = lines.join("\n");
+    code.value = name.value;
+    CheckCode();
+}
+
+function ReturnCode(NAME) {
+  return NAME
+    .normalize("NFD")                  // décompose les lettres accentuées
+    .replace(/[\u0300-\u036f]/g, "")   // supprime les accents
+    .toLowerCase()                     // met en minuscule
+    .replace(/[^a-z0-9]+/g, "-")       // remplace tout sauf lettres/chiffres par des tirets
+    .replace(/^-+|-+$/g, "");          // supprime les tirets en début/fin
+}
+
+function CheckCode() {
+    const code = document.getElementById('css-code');
+    const file = document.getElementById('css-file');
+        
+    code.value = ReturnCode(code.value).substring(0,9);
+    file.innerHTML = code.value + ".css";
+    const url = "/streaming/v2/styles/" + code.value + ".css";
+
+    // Vérifie si le fichier existe
+    fetch(url)
+        .then(response => {
+            if (response.ok) {
+                // Fichier existe
+                if (confirm("Une feuille de style existe déjà à ce nom.\nVoulez-vous l'ouvrir ?")) {
+                    return response.text();
+                } else {
+                    throw new Error("Annulé par l'utilisateur");
+                }
+            } else {
+                throw new Error("Fichier non trouvé");
+            }
+        })
+        .then(LoadStyle)
+        .catch(err => {
+            console.log("Aucun fichier à ce nom ou annulation : ", err.message);
+        });
+}
+
+function LoadStyle(text){
+    const name = document.getElementById('css-name');
+    const code = document.getElementById('css-code');
+    const css = document.getElementById('css');
+    const AciveSelector = document.getElementById('selector').getElementsByTagName('input')[0].checked;
+
+    // Vérifie la première ligne
+    const lines = text.split('\n');
+    const firstLine = lines[0].trim();
+
+    const titleMatch = firstLine.match(/^\/\*\s*(.+?)\s*\*\/$/);
+    if (titleMatch) {
+        name.value = titleMatch[1];
+        name.disabled = true;
+    }
+
+    css.value = text;
+    code.disabled = true;
+
+    if(!AciveSelector){
+        document.getElementById('selector').getElementsByTagName('input')[0].checked = true;
+        ToggleSelector();
+        setTimeout(UpdateCSS, 3000);
+    } else UpdateCSS();
+
+    //Check if personalized vidéos exist and check true corresponding input
+    var background_url = "/streaming/v2/styles/vid/bkg-"+code.value+".webm";
+    var intro_url = "/streaming/v2/styles/vid/in-"+code.value+".webm";
+    var outro_url = "/streaming/v2/styles/vid/out-"+code.value+".webm";
+    
+    FileExists(background_url).then(exists => {
+        document.querySelector('#vid-background input').checked = true;
+    });
+    
+    FileExists(intro_url).then(exists => {
+        document.querySelector('#vid-intro input').checked = true;
+    });
+    
+    FileExists(outro_url).then(exists => {
+        document.querySelector('#vid-outro input').checked = true;
+    });
+}

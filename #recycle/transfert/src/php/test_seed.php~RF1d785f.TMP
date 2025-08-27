@@ -1,0 +1,6 @@
+<?php
+require_once __DIR__ . '/../../private/settings.php'; // chemin hors web
+
+echo defined('TRANSFERT_SECRET_SEED')
+     ? "CONST OK<br>Date key: " . getDailyKey()
+     : "CONST ABSENTE";

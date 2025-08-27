@@ -1,0 +1,174 @@
+/* JVR 2024 */
+
+#Partenaire {
+    background: url("img/jvr24-logo-flat.svg");
+    height: calc(1.5 * var(--gov-unit));
+    aspect-ratio: calc(85/60);
+    background-repeat: no-repeat;
+    bottom: var(--gov-unit);
+    right: calc(1.5 * var(--gov-unit));
+}
+
+#Title_Introduction {
+    text-align: left;
+    transform: translate(0, -100%);
+    left: 20%;
+    color: #172f4e;
+    text-shadow: none;
+    top: 50%;
+}
+
+#SubTitle_Introduction {
+    transform: translate(0,0);
+    left: 20%;
+    text-shadow: none;
+    color: #4988c7;
+    text-transform: none;
+    font-size: calc(.75 * var(--gov-unit));
+    font-weight: unset;
+    text-align: left;
+    top: 52.5%;
+}
+
+#Date {
+    color: #83c7cb;
+    transform: translate(0,100%);
+    left: 20%;
+    top: 57.5%;
+}
+
+#Copyright {
+    padding: 0 var(--gov-unit) 0 calc(1.5 * var(--gov-unit));
+}
+/*
+#Copyright::before{
+    content: "";
+    position: absolute;
+    width: calc(2 * var(--gov-unit) * 244 / 488);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(2 * var(--gov-unit));
+    background-image: url('../styles/img/jvr24-smartphone.png');
+    left: calc(0.75 * var(--gov-unit));
+    top: calc(var(--gov-unit) * -0.5);
+}
+*/
+#Title_Copyright {
+    background: none;
+    color: #172f4e;
+    line-height: 100%;
+    font-weight: bold;
+    padding: unset;
+}
+
+#SubTitle_Copyright {
+    display: unset;
+    font-style: italic;
+    background: none;
+    color: #1f3c5f;
+    line-height: 100%;
+    padding: unset;
+ }
+
+#Title_Copyright, #SubTitle_Copyright{ color: white; }
+
+#LowerThird{
+    padding: unset;
+    padding-bottom: calc(3 * var(--gov-unit));
+    overflow: visible;
+    width: 100%;
+}
+
+#LowerThird * { animation: unset !important; }
+
+#Name::after, #Function::after, #Translation::after{ all: unset; }
+
+#LowerThird.OFF * { opacity: 0; }
+
+#LowerThird.OFF{ opacity: 1; }
+
+#LowerThird::before{
+    content: "";
+    position: absolute;
+    background-image: url(../styles/img/jvr24-smartphone.png);
+    width: calc(10 * var(--gov-unit));
+    aspect-ratio: calc(1920 / 955);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: all 1s ease-in-out;
+    animation: anime-float 2s ease-in-out infinite alternate;
+}
+
+#LowerThird.ON::before{
+    bottom: calc(0.5 * var(--gov-unit));
+}
+
+#LowerThird.OFF::before{
+    bottom: calc(-10 * var(--gov-unit) * (955 / 1920));
+}
+
+@keyframes anime-float{
+  0%   { transform: translate(-50%, 0%) rotate(-1deg); }
+  100% { transform: translate(-50%, 0%) rotate(1deg); }
+}
+
+#Name, #Function, #Translation{
+    text-shadow: 
+        0 0 calc(1 * var(--gov-unit)) #f7f6e9,
+        0 0 calc(0.5 * var(--gov-unit)) #f7f6e9,
+        0 0 calc(0.25 * var(--gov-unit)) #f7f6e9,
+        0 0 calc(0.125 * var(--gov-unit)) #f7f6e9;
+}
+
+#Name, #Function, #Translation {
+    padding: unset;
+    background: none;
+}
+
+#Name { color: #172f4e; }
+
+#Function, #Translation {
+    color: #1f3c5f;
+    font-weight: bold;
+    font-size: calc(.4 * var(--gov-unit));
+    width: calc(8.5 * var(--gov-unit));
+}
+
+#Chapter::after {
+}
+
+#Title_Chapter {
+    width: 40vw;
+    left: 20%;
+    transform: translate(0, -50%);
+    color: #83c7cb;
+    text-shadow: unset;
+    text-transform: none;
+    font-size: calc(.75 * var(--gov-unit));
+}
+
+h1, h2, h3 {
+    color: #4988c7;
+    text-transform: none;
+    font-size: calc(.75 * var(--gov-unit));
+}
+
+h1{ color: #4988c7; }
+
+h2{ color: #ffc900; }
+
+h3{ color: #fe7fa8; }
+
+#ScrollingBanner {
+    color: #f7f6e9;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, #83c7cb 25%, #83c7cb 75%, rgba(0,0,0,0) 100%);
+}
+
+#Messages{ bottom: calc(2 * var(--gov-unit)); }
+
+.Right{ background-color: #4988c7; }
+
+.Left{ background-color: #83c7cb; }
