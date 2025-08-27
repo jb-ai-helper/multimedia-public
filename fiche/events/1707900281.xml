@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Restitution des stages européens FSD 30</title>
+    <visibility>unlisted</visibility>
+    <date>2024-03-13</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Restitution des stages européens FSD 30</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>40</onsite>
+    <remote>7</remote>
+    <release>Asynchrone</release>
+    <date>2024-03-13</date>
+    <start>09:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>3906</id>
+      <name>Lila BENARAB</name>
+      <function>Directrice du pôle gouvernance - ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>8102</id>
+      <name>Sylvie LE BLAVEC</name>
+      <function>Chargée de mission</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>1353</id>
+      <name>Cyril BEAUFILS DE SAINT VINCENT</name>
+      <function>Chef de la section des affaires européennes et internationales - DPJJ K1</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>7910</id>
+      <name>Cécile LALUMIERE</name>
+      <function>Directrice du service de la formation - ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>7637</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking>7910,1353,8102,3906</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>8271</id>
+      <type>transition</type>
+      <html><![CDATA[<h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/langfr-225px-Flag_of_Portugal.svg.png"  width="5%" height="5%"> Portugal <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/langfr-225px-Flag_of_Portugal.svg.png"  width="5%" height="5%"></h3><br>Laurine BUFFIERE<br>Perrine CHAILLOUX]]></html>
+    </SQ2>
+    <SQ3>
+      <id>3145</id>
+      <type>speech</type>
+      <duration>40</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion Drapeau Portugal</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Intervenant supplémentaire à distance</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>7747</id>
+      <type>transition</type>
+      <html><![CDATA[<h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/langfr-225px-Flag_of_Spain.svg.png"  width="5%" height="5%"> Espagne <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/langfr-225px-Flag_of_Spain.svg.png"  width="5%" height="5%"></h3><br><h1>Cléo BROUQUISSE<br>Mélanie AUGUSTO</h1>]]></html>
+    </SQ4>
+    <SQ5>
+      <id>1131</id>
+      <type>speech</type>
+      <duration>45</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion Drapeau Espagne</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+    <SQ6>
+      <id>7584</id>
+      <type>pause</type>
+      <duration>10</duration>
+    </SQ6>
+    <SQ7>
+      <id>6261</id>
+      <type>transition</type>
+      <html><![CDATA[<h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/langfr-225px-Flag_of_Denmark.svg.png"  width="5%" height="5%">Danemark<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Denmark.svg/langfr-225px-Flag_of_Denmark.svg.png"  width="5%" height="5%"></h3><br><h1>Agathe ESNOUX<br>Suzanne MOLIN</h1>]]></html>
+    </SQ7>
+    <SQ8>
+      <id>1737</id>
+      <type>speech</type>
+      <duration>40</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion Drapeau Danemark</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ8>
+    <SQ9>
+      <id>4903</id>
+      <type>pause</type>
+      <duration>65</duration>
+    </SQ9>
+    <SQ10>
+      <id>8038</id>
+      <type>transition</type>
+      <html><![CDATA[<h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/langfr-225px-Flag_of_Norway.svg.png"  width="5%" height="5%">Norvège<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/langfr-225px-Flag_of_Norway.svg.png"  width="5%" height="5%"></h3><br><h1>Mathilde ROUSSILLE<br>Sarah LEAL<br>Ombeline ROUAZ</h1>]]></html>
+    </SQ10>
+    <SQ11>
+      <id>4944</id>
+      <type>speech</type>
+      <duration>50</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion Drapeau Norvège</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ11>
+    <SQ12>
+      <id>0160</id>
+      <type>transition</type>
+      <html><![CDATA[<h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/langfr-225px-Flag_of_Sweden.svg.png"  width="5%" height="5%">Suède<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Sweden.svg/langfr-225px-Flag_of_Sweden.svg.png"  width="5%" height="5%"></h3><br><h1>Laura FANTINO<br>Juliette LEROY<br>Justine LANNOYE</h1>]]></html>
+    </SQ12>
+    <SQ13>
+      <id>1182</id>
+      <type>speech</type>
+      <duration>50</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion Drapeau Suède</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Intervenants supplémentaires à distance</specifications>
+        </requests>
+      </extra>
+    </SQ13>
+    <SQ14>
+      <id>3248</id>
+      <type>pause</type>
+      <duration>10</duration>
+    </SQ14>
+    <SQ15>
+      <id>3952</id>
+      <type>transition</type>
+      <html><![CDATA[<h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_Malta_%28variant%29.svg/langfr-225px-Flag_of_Malta_%28variant%29.svg.png"  width="5%" height="5%">Malte<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_Malta_%28variant%29.svg/langfr-225px-Flag_of_Malta_%28variant%29.svg.png"  width="5%" height="5%"></h3><br><h1>Delphine BONNAUD<br>Orianne MORDELET</h1>]]></html>
+    </SQ15>
+    <SQ16>
+      <id>8486</id>
+      <type>speech</type>
+      <duration>55</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion Drapeau Malte</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Intervenants supplémentaires à distance</specifications>
+        </requests>
+      </extra>
+    </SQ16>
+    <SQ17>
+      <id>0756</id>
+      <type>transition</type>
+      <html><![CDATA[<h3><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/langfr-225px-Flag_of_Croatia.svg.png"  width="5%" height="5%">Croatie<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/langfr-225px-Flag_of_Croatia.svg.png"  width="5%" height="5%"></h3><br><h1>Rachel GOUVERNET<br>Rachida NOURINE-ELAID<br>Mylène MENGUIN</h1>]]></html>
+    </SQ17>
+    <SQ18>
+      <id>0472</id>
+      <type>speech</type>
+      <duration>55</duration>
+      <needs>bureau,fauteuil,hf,pc</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion Drapeau Croatie</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ18>
+  </sequence>
+</fiche>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[Enregistrement pour l'EPDSAE]]></title>
+    <visibility>unlisted</visibility>
+    <date>2024-01-30</date>
+    <description>Établissement public départemental pour soutenir, accompagner, éduquer (EPDSAE)</description>
+  </video>
+  <event>
+    <title><![CDATA[Promotion de la prévention<br>dans le champs du soutien à la parentalité]]></title>
+    <subtitle>Bienvenue</subtitle>
+    <style>ext</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>180</onsite>
+    <remote>0</remote>
+    <release>Asynchrone</release>
+    <date>2024-01-30</date>
+    <start>09:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>3926</id>
+      <name>Professeur Laurent STORME</name>
+      <function>Chef de service de néonatalogie du C﻿HU de Lille et Responsable du programme 1000 premiers jours</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>6330</id>
+      <name>Élodie Faure</name>
+      <function>Chargée de mission 1000 premiers jours Département du Nord</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>9491</id>
+      <name>Nadine DELBERGHE</name>
+      <function><![CDATA[Directrice du Pôle Prévention Parentalité - Directrice Stratégie et des Politiques d'Accompagnement à l'EPDSAE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>9235</id>
+      <name>Marie SANDRA</name>
+      <function><![CDATA[Présidente du Conseil d'Administration de l'EPDSAE - Conseillère départementale]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>2189</id>
+      <name>Nathalie COULON</name>
+      <function><![CDATA[Professeure en psychologie à l'Université de Lille]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>7444</id>
+      <name>Alice GIOBERTI</name>
+      <function>Infirmière puéricultrice et formatrice pour l’Institut de la Parentalité</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>1873</id>
+      <name>Samuel TOURBEZ</name>
+      <function><![CDATA[Animateur - Responsable d'EPICEA - Service de Promotion de la Santé du Département du Nord]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>3122</id>
+      <name>Benamar TOUATI</name>
+      <function>Animateur - Formateur à EPICEA - Service de Promotion de la Santé du Département du Nord</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+    <SP9>
+      <id>9460</id>
+      <name>Les Maisons des Parents</name>
+      <function><![CDATA[Quatre dispositifs de soutien à la parentalité et d'appui aux professionnels des territoires - EPDSAE/Département du Nord]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP9>
+    <SP10>
+      <id>3017</id>
+      <name>Les SSEEPAD</name>
+      <function>Trois services de Soutien Éducatif Enfant Parents A Domicile - EPDSAE</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP10>
+    <SP11>
+      <id>2147</id>
+      <name>Frédéric PHAURE</name>
+      <function>Directeur général ENPJJ Roubaix</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP11>
+    <SP12>
+      <id>1898</id>
+      <name>Les parents</name>
+      <function><![CDATA[Témoignages et retours d'expérience]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP12>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>4330</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pupitre,hf</needs>
+      <speaking>2147,9235,9491</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Monsieur Phaure ne sera peut être pas présent pour introduire la journée, il est possible qu'un enregistrement soit à diffuser, voir avec sa secrétaire</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>2335</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>fauteuil</needs>
+      <speaking>3122,1873</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>5062</id>
+      <type>speech</type>
+      <duration>50</duration>
+      <needs>bureau,fauteuil,pc</needs>
+      <speaking>6330,3926</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>6630</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>bureau,fauteuil</needs>
+      <speaking>3122,1873</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+    <SQ5>
+      <id>6975</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs>bureau,fauteuil,pc</needs>
+      <speaking>7444</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+    <SQ6>
+      <id>0406</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>hf</needs>
+      <speaking>public,1873,3122</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ6>
+    <SQ7>
+      <id>8605</id>
+      <type>pause</type>
+      <duration>90</duration>
+    </SQ7>
+    <SQ8>
+      <id>1205</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau,fauteuil,pc</needs>
+      <speaking>3122,9460,1873</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ8>
+    <SQ9>
+      <id>7937</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau,fauteuil,pc</needs>
+      <speaking>3122,3017,1873</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ9>
+    <SQ10>
+      <id>9158</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,fauteuil,pc</needs>
+      <speaking>2189</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ10>
+    <SQ11>
+      <id>2152</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>hf</needs>
+      <speaking>3122,1873,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ11>
+    <SQ12>
+      <id>0187</id>
+      <type>speech</type>
+      <duration>80</duration>
+      <needs/>
+      <speaking>2189,1873,1898,3017,9460</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ12>
+    <SQ13>
+      <id>8901</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>hf</needs>
+      <speaking>public,3122,1873</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ13>
+  </sequence>
+</fiche>

@@ -1,0 +1,79 @@
+/* /trombinoscope/src/css/photomaton.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+#videoContainer {
+  width: 100%;
+  max-width: 640px;
+  margin: 20px auto;
+  background: #000;
+  position: relative;
+}
+
+video, canvas, #overlay {
+  width: 100%;
+  height: auto;
+}
+
+#overlay {
+  opacity: 0.7;
+}
+
+#photoHelpMessage {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#photoButtons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#photoButtons button {
+  margin: 5px;
+  padding: 10px 15px;
+}
+
+#recadre-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#recadre-controls button {
+  margin: 5px;
+  padding: 8px 12px;
+}
+
+#autoFillMessage {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}

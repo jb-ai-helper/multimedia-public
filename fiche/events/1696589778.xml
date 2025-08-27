@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Session Inter-École IRA Lile G1</title>
+    <visibility>unlisted</visibility>
+    <date>2023-10-13</date>
+    <description><![CDATA[Enregistrement de la restitution du groupe 1 de la session inter-école de l'IRA de Lille.]]></description>
+  </video>
+  <event>
+    <title>Restitution de la session inter-école 2023</title>
+    <subtitle>IRA de Lille</subtitle>
+    <style>resp-ira</style>
+    <location>Amphi Michelet</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2023-10-13</date>
+    <start>10:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>4053</id>
+      <name>Antoine EVEILLARD</name>
+      <function>École nationale des Finances publiques (ENFiP) </function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>3360</id>
+      <name>Emilie MOULAERT</name>
+      <function>École nationale des Finances publiques (ENFiP) </function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>4870</id>
+      <name>Florence GALLIGO</name>
+      <function>École nationale des greffes (ENG)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>2310</id>
+      <name>Marine HOURRIEZ</name>
+      <function>École nationale des greffes (ENG)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>0581</id>
+      <name>Messaline MERLE</name>
+      <function>École nationale des greffes (ENG)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>7679</id>
+      <name>Claire WICQUART TARTARE</name>
+      <function>École nationale des greffes (ENG)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>5649</id>
+      <name>Catherine BASTIAT GUIBON</name>
+      <function><![CDATA[Institut des hautes études de l'éducation et de la formation (IH2EF)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>8814</id>
+      <name>Fabrice BLAIN</name>
+      <function><![CDATA[Institut des hautes études de l'éducation et de la formation (IH2EF)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+    <SP9>
+      <id>6578</id>
+      <name>Carine CONSTANT</name>
+      <function><![CDATA[Institut des hautes études de l'éducation et de la formation (IH2EF)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP9>
+    <SP10>
+      <id>5887</id>
+      <name>Hamidou DIONG</name>
+      <function><![CDATA[Institut régional d'administration (IRA) de Lille]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP10>
+    <SP11>
+      <id>8246</id>
+      <name>François LE BERRE</name>
+      <function><![CDATA[Institut régional d'administration (IRA) de Lille]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP11>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>3977</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs/>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+      </extra>
+    </SQ1>
+  </sequence>
+</fiche>

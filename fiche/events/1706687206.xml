@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>2 - Témoignage de Ginette KOLINKA</title>
+    <visibility>unlisted</visibility>
+    <date>2024-02-07</date>
+    <description>Témoignage de Ginette KOLINKA dans le cadre des Cordées de la réussite.</description>
+  </video>
+  <event>
+    <title>Témoignage de Ginette KOLINKA</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-02-07</date>
+    <start>09:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>1514</id>
+      <name>Ginette KOLINKA</name>
+      <function>Historienne et écrivaine</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>1830</id>
+      <name>Laurent BOCQUET</name>
+      <function>Enseignant</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>2574</id>
+      <type>speech</type>
+      <duration>180</duration>
+      <needs>fauteuil</needs>
+      <speaking>1830,1514</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Diffuser les couvertures de livres de Ginette KOLINKA</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+  </sequence>
+</fiche>

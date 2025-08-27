@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Moi, poète ? | Soirée Littéraire</title>
+    <visibility>unlisted</visibility>
+    <date>2024-11-21</date>
+    <description><![CDATA[Rencontre avec Khaled MILOUDI et Baptiste PIZZINAT le 20 novembre 2024 à l'ENPJJ.]]></description>
+  </video>
+  <event>
+    <title>Soirée culturelle : Moi, poète ?</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>70</onsite>
+    <remote>0</remote>
+    <release>Asynchrone</release>
+    <date>2024-11-20</date>
+    <start>18:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>4144</id>
+      <name>Jamel FEDDA</name>
+      <function><![CDATA[Chargé de mission Philosophie &amp; Éthique à l'ENPJJ,<br>Animateur de la soirée]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>6994</id>
+      <name>Khaled MILOUDI</name>
+      <function><![CDATA[Écrivain poète,<br>Auteur de "Les Couleurs de l'Ombre"]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>2458</id>
+      <name>Baptiste PIZZINAT</name>
+      <function><![CDATA[Écrivain poète,<br>Auteur de "L'irrésistible odeurs des flingues" et de "Canif"]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>2479</id>
+      <name>Stagiaires FSE de la controverse</name>
+      <function/>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>6004</id>
+      <type>speech</type>
+      <duration>45</duration>
+      <needs>fauteuil</needs>
+      <speaking>2458,6994,4144</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Ecran relevé et retour allumé avec PGM</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>8349</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Échange avec le public</h1>]]></html>
+    </SQ2>
+    <SQ3>
+      <id>5924</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>fauteuil,hf</needs>
+      <speaking>2458,6994,4144,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications><![CDATA[Montrer les couverture des livres :<br>CANIF<br>https://m.media-amazon.com/images/I/51lEHGzYQ+L._AC_UF1000,1000_QL80_.jpg<br><br>irrésistible odeur des flingues<br>https://images.epagine.fr/531/9782875054531_1_75.jpg<br><br>Paris est un livre<br>https://static.fnac-static.com/multimedia/PE/Images/FR/NR/d9/1c/15/18160857/1507-1/tsp20241030093343/Paris-est-un-livre.jpg<br><br>Vive la Liberté<br>https://cdn.shopify.com/s/files/1/0832/6568/3739/files/Couv_Vive_la_liberte_300dpi.jpg?v=1698412660]]></specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>0457</id>
+      <type>transition</type>
+      <html><![CDATA[Lectures :<h1>Extraits des poèmes<br>de Khaled MILOUDI et Baptiste PIZZINAT</h1>]]></html>
+    </SQ4>
+    <SQ5>
+      <id>6465</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>pupitre</needs>
+      <speaking>6994,4144,2479</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Ne pas afficher le nom de Khaled à son passage</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+  </sequence>
+</fiche>

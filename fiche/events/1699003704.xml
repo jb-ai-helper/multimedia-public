@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[5/5 - L'écologie, un enjeu éducatif ? | Rencontres Professionnelles]]></title>
+    <visibility>unlisted</visibility>
+    <date>2023-11-22</date>
+    <description><![CDATA[Mardi 22/11/2023, conclusion des rencontres professionnelles sur l'écologie, sur le thème des bonnes pratiques en éco-management.]]></description>
+  </video>
+  <event>
+    <title><![CDATA[L'écologie, un enjeu éducatif ?]]></title>
+    <subtitle>Bienvenue</subtitle>
+    <style>rpro</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>200</onsite>
+    <remote>0</remote>
+    <release>Asynchrone</release>
+    <date>2023-11-22</date>
+    <start>14:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>4379</id>
+      <name>Fabien BEYRIA</name>
+      <function>Secrétaire général, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>7803</id>
+      <name>Frédéric PHAURE</name>
+      <function>Directeur général, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>5605</id>
+      <name>Moussa BACHIRI</name>
+      <function>Directeur du pôle Justice, Association ABCD </function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>8039</id>
+      <name>Roxane DASTE</name>
+      <function>Directrice des Services, STEMO Dordogne - Lot et Garonne</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj </link>
+    </SP4>
+    <SP5>
+      <id>7974</id>
+      <name>Sylvie VELLA</name>
+      <function>Directrice Interrégionale Sud PJJ</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj </link>
+    </SP5>
+    <SP6>
+      <id>2299</id>
+      <name>Nicolas GUION</name>
+      <function>Responsable de la Section immobilier et patrimoine, DIRPJJ Sud </function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj </link>
+    </SP6>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>1866</id>
+      <type>transition</type>
+      <html><![CDATA[Table ronde : <h1>les bonnes pratiques en éco management. </h1>]]></html>
+    </SQ1>
+    <SQ2>
+      <id>0113</id>
+      <type>speech</type>
+      <duration>45</duration>
+      <needs>fauteuil</needs>
+      <speaking>2299,7974,8039,5605,7803,4379</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffuser l'interventionpré-enregistrée de Frédéric PHAURE.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+  </sequence>
+</fiche>

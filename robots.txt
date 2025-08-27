@@ -1,0 +1,10 @@
+Access-Control-Allow-Origin: storage.googleapis.com
+User-Agent: *
+Disallow: /
+Disallow: /streaming/
+Disallow: /fiche/
+Disallow: /prompteur/
+Disallow: /catalogue/
+Disallow: /htaccess/
+Disallow: /src/
+Disallow: /vr/

@@ -1,0 +1,44 @@
+*:hover:not(:has(*:hover)) {
+    outline: 1px solid red !important;
+    cursor: pointer !important;
+    transition: outline 0s !important;
+}
+
+#SubTitle_Copyright {
+    display: unset;
+}
+
+#Partenaire{
+    display: unset;
+    background-image: url("../../styles/img/empty.svg");
+}
+
+.empty {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background: white;
+  border: 3px solid white;
+}
+
+.empty::before,
+.empty::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.empty::before {
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(45deg);
+}
+
+.empty::after {
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(-45deg);
+}

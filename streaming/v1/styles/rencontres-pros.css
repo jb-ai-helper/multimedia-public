@@ -1,0 +1,53 @@
+/* Rencontres Professionnelles */
+
+#SubTitle{
+    color: transparent;
+    background-image: url("src/img/rencontres-pro-mono.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: drop-shadow(.27vh .27vh .54vh rgba(0,0,0,.27));
+    text-shadow: none;
+    top: 27vh;
+    height: 27vh;
+}
+
+#Date{ top: 54vh; }
+
+#Title.welcome{
+    top: 60vh;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#name{ background: linear-gradient(90deg, rgba(21,96,189,0) 0%, rgba(21,96,189,1) 15vh,rgba(21,96,189,1) calc(100% - 15vh), rgba(21,96,189,0) 100%); }
+#function{ background: linear-gradient(90deg, rgba(170,0,17,0) 0%, rgba(170,0,17,1) 15vh,rgba(170,0,17,1) calc(100% - 15vh), rgba(170,0,17,0) 100%); }
+
+.Right{ background-color: #1560BD; }
+.Left{ background-color: #AA0011; }
+
+#TopBanner{
+    background: linear-gradient(90deg, rgba(255,255,255,1) calc(100% - 15vh), rgba(255,255,255,0) 100%);
+    padding: 0 15vh 0 40.5vh;
+    color: black;
+}
+
+#Title.banner{ color: #1560BD; font-weight: bold; font-style: italic; text-transform: uppercase; }
+#Title.banner::before{ content: "|"; font-style: normal; color: #AA0011; margin-right: 2.7vh; }
+
+#Partenaire{
+    position: absolute;
+    top: 3.75vh;
+    left: 7.5vh;
+    height: 7.5vh;
+    width: calc(100% - 7.5vh);
+    background-image: url("src/img/rencontres-pro-full.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 2000;
+}
+
+#Partenaire.welcome{
+    display: none;
+}

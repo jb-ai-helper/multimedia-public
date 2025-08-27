@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[L’eau, les eaux et la justice ? | Colloque de l'AFMJE 3/3]]></title>
+    <visibility>unlisted</visibility>
+    <date>2024-12-07</date>
+    <description><![CDATA[L’eau désigne un fluide très commun, qui ne posait jusqu’alors que peu de questions, du moins aux habitants des pays tempérés.<br><br>La diminution de la ressource en eau, associée aux changements climatiques, à la sécheresse, aux incendies de forêt, à la raréfaction de l’eau potable, interroge désormais fortement la société civile, les opérateurs économiques, mais aussi les juristes, dont les juges et les procureurs.<br><br>Pour ces derniers, le sujet de l’eau devient … celui des eaux, en ce qu’il convoque des statuts juridiques différents : les eaux de mer, les eaux douces, les eaux de source, les eaux souterraines, les eaux usées, les eaux polluées, les eaux potables, les eaux toxiques, notamment.<br><br>A la lumière de perspectives économiques, sociologiques, philosophiques, complémentaires au droit, ce colloque permettra des échanges entre professionnels de différents horizons, magistrats, avocats, responsables associatifs, opérateurs économiques, élus et fonctionnaires.<br><br>Il mettra en lumière l’articulation entre les besoins en eau, variés, les évolutions possibles de son statut, notamment sous l’angle du droit de propriété, qui interroge la notion « d’eau bien commun », des liens entre l’eau et la santé, de la prévention des risques, de l’action de la justice civile et pénale, dont la réparation des préjudices.<br><br>C’est aussi, il faut en avoir conscience, un sujet qui interroge la situation sécuritaire de la planète, l’eau étant indispensable à la survie des espèces et des végétaux.<br><br>Accueilli cette année en province, à Roubaix, dans l’une des écoles du Ministère de la Justice, l’École Nationale de Protection Judiciaire de la Jeunesse, dont nous remercions très vivement l’équipe pour son accueil enthousiaste, notre colloque a aussi vocation à offrir une perspective aux générations futures.]]></description>
+  </video>
+  <event>
+    <title><![CDATA[Colloque annuel de l'AFMJE]]></title>
+    <subtitle>L’eau, les eaux et la justice ?</subtitle>
+    <style>afmje</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>110</onsite>
+    <remote>120</remote>
+    <release>Synchrone</release>
+    <date>2024-12-07</date>
+    <start>08:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>6286</id>
+      <name>Manuel CARIUS</name>
+      <function><![CDATA[Docteur en droit<br>Vice-président placé à la cour d’appel de Montpellier<br>Cofondateur et vice-président délégué à la justice civile de l’AFMJE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>7835</id>
+      <name>Benoît GRIMONPREZ</name>
+      <function>Professeur de droit privé - Université de Poitiers</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>8945</id>
+      <name><![CDATA[Alexandre ZABALZA<br>]]></name>
+      <function>Professeur de droit privé - Université de Bordeaux</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>9236</id>
+      <name><![CDATA[Agnès PIC<br>]]></name>
+      <function>Conseillère à la 3ème chambre civile de la Cour de cassation</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>2622</id>
+      <name>Etienne MANTEAUX</name>
+      <function><![CDATA[Procureur de la République près le tribunal judiciaire de Besançon<br>Pôle régional pour l’environnement]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>5153</id>
+      <name>Sébastien MABILE</name>
+      <function><![CDATA[Docteur en droit<br>Avocat associé - SEATTLE Avocats - Barreau de Paris<br>Vice-président du comité français de l’UICN]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>4221</id>
+      <name>Bénédicte VASSALLO</name>
+      <function>Première Avocate générale à la Cour de cassation</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>9790</id>
+      <name>Judith LOUYOT</name>
+      <function><![CDATA[Docteure en médecine<br>Association Alerte des Médecins sur Les Pesticides – AMLP]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+    <SP9>
+      <id>4099</id>
+      <name>David TURLA</name>
+      <function><![CDATA[Adjoint au chef de service départemental du Nord<br>Office Français de la Biodiversité du Nord - OFB]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP9>
+    <SP10>
+      <id>2098</id>
+      <name>Nathalie LEMAIRE</name>
+      <function/>
+      <translation><![CDATA[Conseillère municipale de la ville de LE PORTEL (Pas-de-Calais)<br>Conseillère communautaire à la Communauté d’Agglomération du Boulonnais]]></translation>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP10>
+    <SP11>
+      <id>5144</id>
+      <name>Florence BOUVIER</name>
+      <function><![CDATA[Présidente du tribunal judiciaire de Bayonne<br>Membre de l’AFMJE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP11>
+    <SP12>
+      <id>5953</id>
+      <name>David DEHARBE</name>
+      <function>Avocat au Barreau de Lille - Cabinet Green Law avocats</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP12>
+    <SP13>
+      <id>1340</id>
+      <name>Catherine ROCHE</name>
+      <function>Professeure d’aménagement - Université Littoral Côte d’Opale (ULCO)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP13>
+    <SP14>
+      <id>6886</id>
+      <name>Alice BOIFFIN</name>
+      <function><![CDATA[Administrateur de 1ère classe des affaires maritimes<br>Cheffe du Centre d’appui au contrôle de l’environnement marin]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP14>
+    <SP15>
+      <id>4334</id>
+      <name>Joëlle CASANOVA</name>
+      <function><![CDATA[Magistrate détachée à l’École Nationale de la Magistrature - Coordonnatrice de formation continue<br>Cofondatrice et administratrice de l’AFMJE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP15>
+    <SP16>
+      <id>4477</id>
+      <name>Franck LAGIER</name>
+      <function><![CDATA[Avocat général près la cour d’appel d’AIX EN PROVENCE<br>Membre de l’AFMJE<br>Coordonnateur du groupe de travail « mer, océan, et fonds marins »]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP16>
+    <SP17>
+      <id>1973</id>
+      <name>Théo TOSTIVINT</name>
+      <function>Chargé de mobilisation responsable du programme Coastal Defenders - Association Surfrider Foundation Europe</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP17>
+    <SP18>
+      <id>2984</id>
+      <name>Christophe DELATTRE</name>
+      <function><![CDATA[Docteur en droit<br>Substitut général près la cour d’appel de DOUAI<br>Magistrat Inspecteur Régional<br>Membre de l'AFMJE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP18>
+    <SP19>
+      <id>3998</id>
+      <name>Iratxe CALVO-MENDIETA</name>
+      <function>Maîtresse de conférences en économie - Université du Littoral Côté d’Opale (ULCO)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP19>
+    <SP20>
+      <id>5124</id>
+      <name>Olivier MANDIL</name>
+      <function>Directeur juridique et contractuel - VEOLIA EAU FRANCE</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP20>
+    <SP21>
+      <id>0639</id>
+      <name>Luc SERVANT</name>
+      <function><![CDATA[Président de la chambre d'agriculture de Nouvelle Aquitaine]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP21>
+    <SP22>
+      <id>0182</id>
+      <name>Florence DENIER-PASQUIER</name>
+      <function><![CDATA[Juriste<br>Vice-présidente de France Nature Environnement - FNE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP22>
+    <SP23>
+      <id>8633</id>
+      <name>Lieutenant-Colonel Yasmina TADLAOUI</name>
+      <function><![CDATA[Chef de la division prévention, partenariats, compétences<br>CESAN - Commandement pour l'Environnement et la Santé de la Gendarmerie Nationale]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP23>
+    <SP24>
+      <id>6680</id>
+      <name>François PERAIN</name>
+      <function>Procureur général près la cour d’appel de Metz</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP24>
+    <SP25>
+      <id>6620</id>
+      <name>Pierre BOYER</name>
+      <function><![CDATA[Juriste<br>Office Français de la Biodiversité – OFB]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP25>
+    <SP26>
+      <id>1459</id>
+      <name>Marie-Pierre CAMPROUX</name>
+      <function>Professeure de droit privé - Université de Strasbourg</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP26>
+    <SP27>
+      <id>8200</id>
+      <name>François-Xavier TEMPLE</name>
+      <function><![CDATA[Inspecteur Général de Santé Publique Vétérinaire<br>Assistant spécialisé au Pôle Santé Publique Environnement (PSPE)<br>Tribunal Judiciaire de Mar]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP27>
+    <SP28>
+      <id>5451</id>
+      <name>Michel SASTRE</name>
+      <function><![CDATA[1er vice procureur près le tribunal judiciaire de Marseille<br>Pôle régional pour l’environnement<br>Membre de l’AFMJE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP28>
+    <SP29>
+      <id>2698</id>
+      <name>Evelyne MONTEIRO</name>
+      <function><![CDATA[Maître de conférences en droit privé et sciences criminelles HDR<br>Université du Littoral Côté d’Opale (ULCO)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP29>
+    <SP30>
+      <id>4004</id>
+      <name>Jean-Yves MARECHAL</name>
+      <function><![CDATA[Professeur de droit privé et sciences criminelles<br>Université de Lille<br>Co-directeur de l’institut de criminologie]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP30>
+    <SP31>
+      <id>7668</id>
+      <name>Christian HUGLO</name>
+      <function><![CDATA[Docteur en droit <br>Avocat associé - Huglo Lepage Avocats – Barreau de Paris]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP31>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>2022</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Entre droit public et droit privé,<br>des eaux douces et des eaux marines,<br>quelle justice ?</h1>]]></html>
+    </SQ1>
+    <SQ2>
+      <id>7839</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>pupitre,fauteuil</needs>
+      <speaking>7835,6286</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Powerpoint à diffuser toute la journée avec nom/prénom et fonction des intervenants.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Est-il possible de retirer le GRAND meuble beige pour la journée ?</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>7601</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>l’eau est-elle un bien commun ?</h1>]]></html>
+    </SQ3>
+    <SQ4>
+      <id>5535</id>
+      <type>speech</type>
+      <duration>55</duration>
+      <needs>pupitre,bureau,hf</needs>
+      <speaking>public,5153,2622,9236,8945</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+    <SQ5>
+      <id>1821</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>La prévention des pollutions,<br>entre techniques, normes et compétences,<br>quelles perspectives ?<br><br>Les enjeux d’environnement et de santé</h1>]]></html>
+    </SQ5>
+    <SQ6>
+      <id>7493</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>pupitre,bureau</needs>
+      <speaking>4221</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ6>
+    <SQ7>
+      <id>5879</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Politiques publiques<br>et prévention</h1>]]></html>
+    </SQ7>
+    <SQ8>
+      <id>4971</id>
+      <type>speech</type>
+      <duration>75</duration>
+      <needs>pupitre,bureau,hf</needs>
+      <speaking>public,5953,5144,2098,4099,9790</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ8>
+    <SQ9>
+      <id>2909</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Eaux et milieux marins,<br>de la métropole aux espaces ultra-marins<br>et transnationaux,<br>les défis pour la justice</h1>]]></html>
+    </SQ9>
+    <SQ10>
+      <id>4077</id>
+      <type>speech</type>
+      <duration>75</duration>
+      <needs>pupitre,bureau,hf</needs>
+      <speaking>public,1973,4477,4334,6886,1340</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ10>
+    <SQ11>
+      <id>4813</id>
+      <type>pause</type>
+      <duration>60</duration>
+    </SQ11>
+    <SQ12>
+      <id>9087</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Les usages de l’eau<br>à l’ère du dérèglement climatique,<br>quelle (s) régulation(s) ?<br>Principes et règles,<br>conflits ou conciliation ?<br>Quelles priorités ?</h1>]]></html>
+    </SQ12>
+    <SQ13>
+      <id>1752</id>
+      <type>speech</type>
+      <duration>70</duration>
+      <needs>pupitre,bureau,hf</needs>
+      <speaking>public,8633,0182,0639,5124,3998,2984</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ13>
+    <SQ14>
+      <id>7916</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Du procès-verbal au prétoire,<br>quelles solutions,  <br>quel rôle pour la justice ?</h1>]]></html>
+    </SQ14>
+    <SQ15>
+      <id>4027</id>
+      <type>speech</type>
+      <duration>80</duration>
+      <needs>pupitre,bureau,hf</needs>
+      <speaking>public,4004,2698,8200,1459,6620,6680</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ15>
+    <SQ16>
+      <id>1967</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Conclusion et synthèse</h1>]]></html>
+    </SQ16>
+    <SQ17>
+      <id>1698</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pupitre,bureau</needs>
+      <speaking>7668</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ17>
+  </sequence>
+</fiche>

@@ -1,0 +1,1156 @@
+// JavaScript Document
+
+//Global Variables ---------->
+
+//Define Root Folders
+var styles = "/streaming/v3/styles/";
+var font = "/src/fnt/";
+
+//Global Arrays
+var ctx = new Array();
+var media = new Array();
+var cvs = new Array();
+var ctx = new Array();
+
+//Define Screen Default Resolution & FPS
+var screen = {
+    width: 1920,
+    height: 1080,
+    fps: 25,
+}
+
+var interval = 1000 / screen.fps;
+var lastFrameTime = 0;
+
+//Define GOV
+var gov = screen.height / 20;
+
+//Layers Array
+var layers = ['Pause', 'Messages', 'ScrollingBanner', 'LowerThird', 'TitleBanner', 'Background', 'StartScreen', 'Chapter', 'Logos', 'Credits'];
+
+
+//Setup Functions ---------->
+
+function initDSK(TARGET,MODE){
+
+    if(MODE === undefined){ MODE = "stream"; console.log('Mode: '+MODE); }
+    console.log('Mode: '+MODE);
+    
+    const LoadingPromises = new Array();
+    
+    //Load Videos
+    for(let video in videos){
+        let asset = document.createElement('video');
+            asset.setAttribute('id',video);
+            asset.setAttribute('src',videos[video].url);
+        const promise = new Promise((resolve, reject) => {
+            asset.onloadedmetadata = function(){
+                videos[video].duration = asset.duration;
+                resolve();
+            };
+            asset.onerror = reject;
+        });
+        LoadingPromises.push(promise);
+        media[video] = asset;
+    }
+    //Load Sounds
+    for(let sound in sounds){
+        let asset = document.createElement('audio');
+            asset.setAttribute('id',sound);
+            asset.setAttribute('src',sounds[sound].url);
+        const promise = new Promise((resolve, reject) => {
+            asset.onloadedmetadata = resolve;
+            asset.onerror = reject;
+        });
+        LoadingPromises.push(promise);
+        media[sound] = asset;
+    }
+    //Load Images
+    for(let image in images){
+        let asset = document.createElement('img');
+            asset.setAttribute('id',image);
+            asset.setAttribute('src',images[image].url);
+        const promise = new Promise((resolve, reject) => {
+            asset.onload = function(){
+                images[image].ratio = asset.naturalWidth/asset.naturalHeight;
+                ResizeImage(images[image], images[image].ratio);
+                AlignImage(images[image]);
+                resolve();
+            };
+            asset.onerror = reject;
+        });
+        LoadingPromises.push(promise);
+        media[image] = asset;
+    }
+    //Load Fonts
+    for(let font in fonts){
+        for(let face in fonts[font]){
+            let asset = new FontFace(
+                fonts[font][face].family, 
+                'url(' + fonts[font][face].url + ')',
+                {
+                    weight: fonts[font][face].weight,
+                    style: fonts[font][face].style,
+                });
+            document.fonts.add(asset);
+            LoadingPromises.push(asset.load());
+        }
+    } 
+    //Generate Layers
+    for(let layer of layers){
+        let canvas = document.createElement('canvas');
+            canvas.setAttribute('id',layer);
+            canvas.setAttribute('width', screen.width);
+            canvas.setAttribute('height', screen.height);
+        cvs[layer] = canvas;
+        ctx[layer] = canvas.getContext('2d');
+    }
+    return Promise.all(LoadingPromises)
+        .then(() => {
+            //Start Drawing DSK
+            var RenderDSK = DrawDSK(TARGET,MODE);
+            requestAnimationFrame(RenderDSK); })
+        .catch(error => { console.error('Error loading resources:', error);});
+}
+
+//Draw DSK
+ function DrawDSK(TARGET,MODE){
+    //Get DSK
+    const dsk = document.getElementById(TARGET);
+    ctx['dsk'] = dsk.getContext('2d');
+    //Draw Function
+    return function draw(currentTime){
+        var elapsed = currentTime - lastFrameTime;
+        //Only draw if 1 fps has passed
+        if (elapsed > interval){
+            //Clear Visible Context
+            ctx['dsk'].clearRect(0, 0, screen.width, screen.height);
+            
+            //Setup Miniature Mode
+            if(MODE == "miniature"){
+                DrawLogos();
+                DrawBackgound();
+                DrawStartScreen();
+            }
+            //Setup Transition Demo
+            if(MODE == "demo"){
+                DrawLogos();
+                DrawTitleBanner();
+                DrawLowerThird();
+            }
+            //Setup Transition Mode
+            if(MODE == "transition"){
+                DrawLogos();
+                DrawBackgound('stopped');
+                DrawChapter();
+            }
+
+            //Merge & Draw All Layers
+            layers.forEach((layer) => { ctx['dsk'].drawImage(cvs[layer], 0, 0); });
+            lastFrameTime = currentTime - (elapsed % interval);
+        }
+        requestAnimationFrame(draw);
+    };
+}
+
+function DrawText(TEXT, CONTEXT){
+  
+    //Hard Set Optional Values
+    if(TEXT.line === undefined){ TEXT.line = 1; }// It can be a number, percentage, or relative length unit (e.g., "1.5" or "150%").
+    if(TEXT.size === undefined){ TEXT.size = gov; }//It can be a size in pixels (e.g., "12px"), em units, or percentage of the parent element's font size.
+    if(TEXT.font === undefined){ TEXT.font = 'Marianne'; }//It is a prioritized list of font family names and/or generic family names.
+    if(TEXT.style === undefined){ TEXT.style = ''; }// It can be "normal", "italic", or "oblique". Default is "normal"
+    if(TEXT.variant === undefined){ TEXT.variant = ''; }// It can be "normal" or "small-caps". Default is "normal".
+    if(TEXT.weight === undefined){ TEXT.weight = ''; }//It can be a value from 100 to 900, or "normal" or "bold". Default is "normal".
+    if(TEXT.color === undefined){ TEXT.color = 'black'; }//It can be a CSS color value, a gradient object (linear or radial), or a pattern object.
+    if(TEXT.anchor === undefined){ TEXT.anchor = 'top left'; }//It can be [top, middle, bottom] vertically and [left, center, right] horizontally.
+    
+    //Align Text
+    CONTEXT.textAlign = "left";//Default Horizontal Align
+    CONTEXT.textBaseline = "top";//Default Vertical Align
+    
+    //to be deleted after handled <b> and <i>
+    if(TEXT.anchor.includes('right')){ CONTEXT.textAlign = "right"; }
+    if(TEXT.anchor.includes('center')){ CONTEXT.textAlign = "center"; }
+    if(TEXT.anchor.includes('left')){ CONTEXT.textAlign = "left"; }
+    
+    //Clear Previous Shadow FX
+    CONTEXT.shadowColor = 'transparent';
+    CONTEXT.shadowBlur = 0;
+    CONTEXT.shadowOffsetX = 0;
+    CONTEXT.shadowOffsetY = 0;
+
+    //Add Shadows
+    if(TEXT.shadow !== undefined){
+        let ShadowFX = TEXT.shadow;
+        CONTEXT.shadowOffsetY = ShadowFX.hoffset;
+        CONTEXT.shadowOffsetX = ShadowFX.voffset;
+        CONTEXT.shadowBlur = ShadowFX.blur;
+        CONTEXT.shadowColor = ShadowFX.color;
+    }
+    
+    //Define X & Y + Account for external offsets
+    var X; var Y;
+    if(TEXT.offsetX === undefined){ X = TEXT.x; }
+    else{ X = TEXT.x + TEXT.offsetX; }
+    if(TEXT.offsetY === undefined){ Y = TEXT.y; }
+    else{ Y = TEXT.y + TEXT.offsetY; }
+    
+    //Get default Variable
+    var VerticalPosition = Y;
+    var Style = TEXT.style;
+    var Variant = TEXT.variant;
+    var Weight = TEXT.weight;
+    var Size = TEXT.size;
+    var Line = TEXT.line;
+    var Font = TEXT.font;
+    var MinLineHeight = Size * Line;
+    var CurrentOffset = (MinLineHeight - Size)/2;
+    var LineTransform = TEXT.transform;
+
+    //Set Global Alpha, Color and Style (font)
+    CONTEXT.globalAlpha = TEXT.opacity;
+    CONTEXT.fillStyle = TEXT.color;
+    CONTEXT.font = Style+' '+Variant+' '+Weight+' '+Size+'px/'+Line+' '+Font;
+    
+    //Set Default Font and Color settings
+    var DefaultColor = CONTEXT.fillStyle;
+    var DefaultFont = CONTEXT.font;
+    
+    //Setup multiple lines
+    var PreviousLineHeight = 0;
+    var TotalTextHeight = 0;
+    var TotalTextWidth = 0;
+    
+    //Devide TEXT by "block" tags (keep tags)
+    var blocks = TEXT.txt.split(/(<h[1-3]>.*?<\/h[1-3]>)/g).filter(value => value !== '');
+    
+    //Subdevide by <br> (do not keep tag)
+    var lines = blocks.flatMap(line => line.split(/<br\s?\/?>/g));
+
+    //Calculate Total Text Height
+    var LineHeight = MinLineHeight;
+    lines.forEach(function(line){
+        if(line.match(/<\/?h[1-3]>/)){//Opening or closing tag
+            var htag = line.match(/<\/?(h[1-3])>/)[1];
+            if(tags[htag].size !== undefined){ Size = tags[htag].size; }
+            if(tags[htag].line !== undefined){ Line = tags[htag].line; }
+            LineHeight = Size * Line;
+        }
+        TotalTextHeight += LineHeight;
+        //Reset if closing tag
+        if(line.match(/<\/h[1-3]>/)){ LineHeight = MinLineHeight; }
+    });
+    TEXT.height = TotalTextHeight;
+
+    //Calculate Total Text Width
+    var LineWidth = 0;
+    lines.forEach(function(line){
+        TotalTextWidth += CONTEXT.measureText(line).width;
+        //console.log(TotalTextWidth);
+    });
+    TEXT.width = TotalTextWidth;
+    
+    //Draw Frame Effect
+    if(TEXT.frame !== undefined){
+        let FrameFX = TEXT.frame;
+        //Draw Before
+        if(FrameFX['before'] !== undefined){
+            let x0 = Math.ceil(X - FrameFX['before'].width);        
+            let y0 = Y;
+            if(FrameFX['before'].width === undefined){ FrameFX['before'].width = TEXT.width; }
+            if(FrameFX['before'].height === undefined){ FrameFX['before'].height = TEXT.height; }
+            FrameFX['before'].origin = [ Math.round(x0), Math.round(y0) ];
+            CONTEXT.fillStyle = GenerateFramFill(FrameFX['before'], CONTEXT);
+            CONTEXT.fillRect(x0, y0, FrameFX['before'].width, FrameFX['before'].height);
+        }
+        //Draw Around
+        if(FrameFX['around'] !== undefined){
+            let x0 = X;
+            let y0 = Y;
+            if(FrameFX['around'].width === undefined){ FrameFX['around'].width = TEXT.width; }
+            if(FrameFX['around'].height === undefined){ FrameFX['around'].height = TEXT.height; }
+            FrameFX['around'].origin = [ Math.round(x0), Math.round(y0) ];
+            CONTEXT.fillStyle = GenerateFramFill(FrameFX['around'], CONTEXT);
+            CONTEXT.fillRect(x0, y0, FrameFX['around'].width, FrameFX['around'].height);
+        }
+        //Draw After
+        if(FrameFX['after'] !== undefined){
+            let x0 = Math.floor(X + TEXT.width);
+            let y0 = Y;
+            if(FrameFX['after'].width === undefined){ FrameFX['after'].width = TEXT.width; }
+            if(FrameFX['after'].height === undefined){ FrameFX['after'].height = TEXT.height; }
+            FrameFX['after'].origin = [ Math.round(x0), Math.round(y0) ];
+            CONTEXT.fillStyle = GenerateFramFill(FrameFX['after'], CONTEXT);
+            CONTEXT.fillRect(x0, y0, FrameFX['after'].width, FrameFX['after'].height);
+        }
+        //Draw After
+        CONTEXT.fillStyle = DefaultColor;
+    }
+    
+    //Draw each line with tag formatting
+    var LineHeight = MinLineHeight;
+    lines.forEach(function(line){
+        
+        //Handle <h1>, <h2>, <h3>
+        var htags = /<\/?h[1-3]>/g;
+        if (line.match(htags)){
+            var htag = line.match(/<\/?(h[1-3])>/)[1];//return h[1-3]
+            line = line.replace(htags, '');
+            if(tags[htag].transform !== undefined){ LineTransform = tags[htag].transform; }
+            if(tags[htag].style !== undefined){ Style = tags[htag].style; }
+            if(tags[htag].variant !== undefined){ Variant = tags[htag].variant; }
+            if(tags[htag].weight !== undefined){ Weight = tags[htag].weight; }
+            if(tags[htag].size !== undefined){ Size = tags[htag].size; }
+            if(tags[htag].line !== undefined){ Line = tags[htag].line; }
+            if(tags[htag].font !== undefined){ Font = tags[htag].font; }
+            if(tags[htag].color !== undefined){ CONTEXT.fillStyle = tags[htag].color; }
+
+            CONTEXT.font = Style+' '+Variant+' '+Weight+' '+Size+'px/'+Line+' '+Font;
+            LineHeight = Size * Line;
+            CurrentOffset = (LineHeight - Size)/2;
+        }
+        
+        //Set Transform
+        if(LineTransform != ''){
+            if(LineTransform == 'uppercase'){ line = line.toUpperCase(); }
+            else if(LineTransform == 'capitalize'){ line = line.capitalize(); }
+            else if(LineTransform == 'lowercase'){ line = line.toLowerCase(); }
+        }
+        
+        //Setup Vertical position
+        VerticalPosition = Y + PreviousLineHeight + CurrentOffset;//Default Anchor TOP
+        if(TEXT.anchor.includes('middle')){ VerticalPosition = Y - (TEXT.height / 2) + PreviousLineHeight + CurrentOffset; }
+        if(TEXT.anchor.includes('bottom')){ VerticalPosition = Y - TEXT.height + PreviousLineHeight + CurrentOffset; }
+        PreviousLineHeight+= LineHeight;
+        
+        CONTEXT.fillText(line, X, VerticalPosition);
+
+        //Reset if closing tag
+        if(line.match(/<\/h[1-3]>/g)){
+            Style = TEXT.style;
+            Variant = TEXT.variant;
+            Weight = TEXT.weight;
+            Size = TEXT.size;
+            Line = TEXT.line;
+            Font = TEXT.font;
+            LineTransform = TEXT.transform;
+            CurrentOffset = (MinLineHeight - Size)/2;
+            CONTEXT.fillStyle = DefaultColor;
+            CONTEXT.font = DefaultFont;
+            LineHeight = MinLineHeight;
+        }
+    });
+}
+
+function GenerateFramFill(FRAME, CONTEXT){
+    var FramFill;
+    if(typeof FRAME.fill === 'string'){ FramFill = FRAME.fill; }
+    else if(typeof FRAME.fill === 'object'){
+        if(FRAME.fill.type == 'linear'){
+            //Calculate Coordinates
+            let angle = (FRAME.fill.angle + 90) * (Math.PI / 180);
+            let width = FRAME.width;
+            let height = FRAME.height;
+            
+            let x0 = Math.round(width / 2 + (width / 2) * Math.cos(angle));
+            let y0 = Math.round(height / 2 + (height / 2) * Math.sin(angle));
+            let x1 = Math.round(width / 2 + (width / 2) * Math.cos(angle + Math.PI));
+            let y1 = Math.round(height / 2 + (height / 2) * Math.sin(angle + Math.PI));
+            
+            //Offset by Orgin
+            x0 = x0 + FRAME.origin[0];
+            x1 = x1 + FRAME.origin[0];
+            y0 = y0 + FRAME.origin[1];
+            y1 = y1 + FRAME.origin[1];
+
+            //Build gradient
+            const linear_gradient = CONTEXT.createLinearGradient(x0, y0, x1, y1);
+            let colors = FRAME.fill.color;
+            Object.keys(colors).forEach(color => { linear_gradient.addColorStop(color, colors[color]); });
+            FramFill = linear_gradient;
+        }
+    }
+    return FramFill;
+}
+
+function AlignImage(IMAGE){
+    if(IMAGE.anchor.includes('right')){ IMAGE.x = IMAGE.x-IMAGE.width; }
+    if(IMAGE.anchor.includes('center')){ IMAGE.x = IMAGE.x-(IMAGE.width/2); }
+    if(IMAGE.anchor.includes('bottom')){ IMAGE.y = IMAGE.y-IMAGE.height; }
+    if(IMAGE.anchor.includes('middle')){ IMAGE.y = IMAGE.y-(IMAGE.height/2); }
+}
+
+function ResizeImage(IMAGE, RATIO){
+    if(IMAGE.width == 'auto' &&  IMAGE.height != 'auto'){ IMAGE.width = IMAGE.height*RATIO; }
+    else if(IMAGE.height == 'auto' && IMAGE.width != 'auto'){ IMAGE.height = IMAGE.width/RATIO; }
+    else{ IMAGE.width = IMAGE.naturalWidth; IMAGE.height = IMAGE.naturalHeight; }
+}
+
+//Layer Animation Durations ---------->
+
+var Logos_animation = 1;
+var StartScreen_animation = 0;
+var TitleBanner_animation = 1;
+var LowerThird_animation = 1;
+
+//Layer Functions ---------->
+
+function DrawLogos(){
+    if(Logos_animation > 0){
+        //Start Clean
+        ctx['Logos'].clearRect(0, 0, screen.width, screen.height);
+        //Draw Marianne
+        ctx['Logos'].globalAlpha = images['Marianne'].opacity;
+        ctx['Logos'].drawImage(media['Marianne'], images['Marianne'].x, images['Marianne'].y,images['Marianne'].width,images['Marianne'].height);
+        //Draw ENPJJ
+        ctx['Logos'].globalAlpha = images['ENPJJ'].opacity;
+        ctx['Logos'].drawImage(media['ENPJJ'], images['ENPJJ'].x, images['ENPJJ'].y,screen.width,screen.height);
+        //Draw Partner
+        if(images['Partner'] !== undefined){
+            ctx['Logos'].globalAlpha = images['Partner'].opacity;
+            ctx['Logos'].drawImage(media['Partner'], images['Partner'].x, images['Partner'].y,screen.width,screen.height);
+        }
+        Logos_animation--;
+    }
+}
+
+function DrawBackgound(PLUS){
+    ctx['Background'].clearRect(0, 0, screen.width, screen.height);
+    
+    media['Background'].muted = true;
+    media['Background'].loop = true;
+    
+    if(PLUS){
+        if(PLUS == 'stopped'){ media['Background'].currentTime = 0; }
+    }
+    else { media['Background'].play(); }
+    
+    ctx['Background'].globalAlpha = videos['Background'].opacity;
+    ctx['Background'].drawImage(media['Background'], 0, 0,screen.width,screen.height);
+}
+
+function DrawStartScreen(){
+    if(StartScreen_animation > 0){
+        ctx['StartScreen'].clearRect(0, 0, screen.width, screen.height);
+        //Title
+        DrawText(texts['StartScreen']['Title'], ctx['StartScreen']);   
+        //SubTitle
+        DrawText(texts['StartScreen']['SubTitle'], ctx['StartScreen']);   
+        //Date
+        DrawText(texts['StartScreen']['Date'], ctx['StartScreen']);
+        StartScreen_animation--;
+    }
+}
+
+function DrawChapter(){
+    if(ChapterScreen_animation > 0){
+        ctx['Chapter'].clearRect(0, 0, screen.width, screen.height);
+        //Chapter
+        DrawText(texts['Chapter'], ctx['Chapter']);
+        Chapter_animation--;
+    }
+}
+
+function DrawTitleBanner(){
+    if(TitleBanner_animation > 0){
+        ctx['TitleBanner'].clearRect(0, 0, screen.width, screen.height);
+        //Title
+        DrawText(texts['TitleBanner']['Title'], ctx['TitleBanner']);
+        //SubTitle
+        DrawText(texts['TitleBanner']['SubTitle'], ctx['TitleBanner']);
+        TitleBanner_animation--;
+    }
+}
+
+function DrawLowerThird(){
+    if(LowerThird_animation > 0){
+        ctx['LowerThird'].clearRect(0, 0, screen.width, screen.height);
+        //Name
+        DrawText(texts['LowerThird']['Name'], ctx['LowerThird']);
+        TitleBanner_animation--;
+    }
+}
+
+
+
+/*
+// JavaScript Document
+
+//Get Stream Key
+var URL = new URL(window.location.href);
+var STR = URL.searchParams.get("str");
+var EID = URL.searchParams.get("eid");//Element ID
+
+//Get Mode
+if(URL.searchParams.get("mode") != ""){ var APP_Mode = URL.searchParams.get("mode"); }
+else{ var APP_Mode = ""; }
+
+//Ask for Stream Key if opened seperately & keep mode
+if(STR == 'preview' && window == window.top){
+	var new_stream = prompt("Préciser le lieu du stream :", STR);
+    	
+	if(APP_Mode != null){ APP_Mode = "mode="+APP_Mode+"&"; }//Account for subsequent variables chaine
+	if(new_stream != 'preview'){ window.location.href = "dsk.php?"+APP_Mode+"str="+new_stream; }
+}
+
+//Select Communication methode (Broadcast Channel or SSE)
+if(APP_Mode == "demo" || APP_Mode == "miniature" || APP_Mode == "transition"){
+    //Open Broadcast Channels (for preview)
+    var psi = new BroadcastChannel(STR+'-stream-info-channel');
+    var plt = new BroadcastChannel(STR+'-lower-third-channel');
+    var psb = new BroadcastChannel(STR+'-scrolling-banner-channel');
+    var pct = new BroadcastChannel(STR+'-chapter-transition-channel');
+
+    //Listen to Broadcast Channels (for preview)
+    psi.onmessage = plt.onmessage = psb.onmessage = pct.onmessage = function(event) { var DATA = JSON.parse(event.data); DataHandler(DATA); };
+}
+else{
+    //Connect & Listen to SSE Connection
+    var source = new EventSource('../scripts/php/updates.php?str='+STR);
+    source.onmessage = function(event) { var DATA = JSON.parse(event.data); DataHandler(DATA); };
+}
+
+//Open Broadcast Channels (for dependent apps)
+var lsc = new BroadcastChannel(STR+'-local-style-channel');
+var lmc = new BroadcastChannel(STR+'-local-messages-channel');
+
+//Recieved Data Handler Function
+function DataHandler(DATA){
+    
+    if(typeof last_DATA === 'undefined'){ window.last_DATA = ""; }
+	if(JSON.stringify(DATA) != JSON.stringify(last_DATA))
+	{
+		//Log Recieved Message
+		console.log("Command received: " + event.data);
+		//Update Last_DATA
+		last_DATA = DATA;
+		//Global Parameters
+		if(DATA['type'] == "gp"){ GlobalParameters(DATA); }
+		//Show Runner
+		if(DATA['type'] == "sr"){ ShowRunner(DATA['cmd']); }
+		//Stream Info
+		if(DATA['type'] == "si"){ StreamInfo(DATA); }
+		//Stream Info
+		if(DATA['type'] == "lt"){ LowerThrid(DATA); }
+		//Chapter Transition
+		if(DATA['type'] == "ct"){ ChapterTransition(DATA); }
+		//Scrolling Banner
+		if(DATA['type'] == "sb"){ ScrollingBanner(DATA); }
+		//Count Down
+		if(DATA['type'] == "cd"){ CountDown(DATA['delai']); }
+		//Show Note
+		if(DATA['type'] == "ms"){ ShowMessage(DATA); }
+		//Reset Counter
+		if(DATA['type'] == "cnt"){ ResetCounter(DATA['start']); }
+	}
+}
+
+//Counter Global Variables
+var Time = 0;
+const FrameRate = 25;
+const Interval = 1000/FrameRate;
+var CountUp = null;
+
+function ResetCounter(TIME){
+    Time = TIME*FrameRate;
+}
+
+function SetCounter(TARGET, START){
+    //Parameters
+    if(START) Time = parseInt(START)
+    
+    //Show Counter
+    var Counter = document.getElementById("Counter");
+    Counter.removeAttribute("style");
+    
+    //Clear Interval
+    clearInterval(CountUp);
+
+    CountUp = setInterval(function () {
+    var Hours = Math.trunc(Time/60/60/FrameRate);
+    var Minutes = Math.trunc(Time/60/FrameRate)-(Hours*60);
+    var Seconds = Math.trunc(Time/FrameRate)-(Minutes*60)-(Hours*60*60);
+    var Frames = Time-(Seconds*FrameRate)-(Minutes*60*FrameRate)-(Hours*60*60*FrameRate);
+
+    if(Hours<10){ Hours = "0"+Hours; }
+    if(Minutes<10){ Minutes = "0"+Minutes; }
+    if(Seconds<10){ Seconds = "0"+Seconds; }
+    if(Frames<10){ Frames = "0"+Frames; }
+
+    Counter.innerHTML = Hours+":"+Minutes+":"+Seconds+":"+Frames;
+    Time ++
+    }, Interval);
+}
+
+//Global Parameters ---------->
+function GlobalParameters(DATA)
+{
+	//Sort Data
+	var ID = DATA['id'];
+	var STATUS = DATA['status'];
+	
+	//Turn Element ON/OFF
+	var ELEMENT = document.getElementById(ID);
+	if(STATUS == "OFF"){ if(!ELEMENT.classList.contains("OFF")){ ELEMENT.classList.add("OFF"); } }
+	else{ if(ELEMENT.classList.contains("OFF")){ ELEMENT.classList.remove("OFF"); } }
+    
+    //Populate Console
+	console.log (ID + ': ' + STATUS);
+}
+
+//Show Runner ---------->
+function ShowRunner(CMD)
+{
+	//Set Common Variables
+	var style = document.getElementById('style').value;
+	var Background = document.getElementById('Background');
+	var Background_source = Background.getElementsByTagName('source')[0];
+	var Introduction = document.getElementById('Introduction');
+	var Pause = document.getElementById('Pause');
+	var Credits = document.getElementById('Credits');
+	var Credits_source = Credits.getElementsByTagName('source')[0];
+	var Partenaire = document.getElementById('Partenaire');
+
+	if(CMD == "welcome")
+	{
+		//Clean up from other states
+		if(!Pause.classList.contains("OFF")){ Pause.classList.add("OFF"); }
+		if(Credits.classList.contains("CUT")){ Credits.classList.remove("CUT"); }
+		if(!Credits.classList.contains("OFF")){ Credits.classList.add("OFF"); }
+
+		//Play Waiting Music
+		if(!document.getElementById('Music')){ InitializePlayer(); }
+
+		//Set Background Video Loop
+		var bkg = "../styles/vid/bkg-"+style+".webm";
+		if(!FileExists(bkg)){ var bkg = "../styles/vid/bkg-enpjj.webm"; }
+		Background_source.setAttribute('src', bkg);
+		Background.load();
+		
+		//FadeIn Background
+		if(Background.classList.contains("OFF")){ Background.classList.remove("OFF"); }
+
+		//FadeIn Intro Texts
+		if(Introduction.classList.contains("OFF")){ Introduction.classList.remove("OFF"); }
+	}
+	else if(CMD == "intro")
+	{
+		//FadeOut Music
+		if(document.getElementById('Music')){ FadeOutPlayer(); }
+
+		//Load Intro
+		var crd = "../styles/vid/in-"+style+".webm";
+		if(!FileExists(crd)){ var crd = "../styles/vid/in-enpjj.webm"; }
+		Credits_source.setAttribute('src', crd);
+		Credits.load();
+
+		//FadeOut Intro Texts
+		if(!Introduction.classList.contains("OFF")){ Introduction.classList.add("OFF"); }
+
+
+		//CutIn Intro
+		if(!Credits.classList.contains("CUT")){ Credits.classList.add("CUT"); }
+		if(Credits.classList.contains("OFF")){ Credits.classList.remove("OFF"); }
+		
+		//Play Intro (t+1s)
+		setTimeout(function(){ Credits.play() }, 1000);
+
+		//FadeOut Background & clean up other states (t+5s)
+		setTimeout(function(){
+			//Clean other states
+			if(!Introduction.classList.contains("OFF")){ Introduction.classList.add("OFF");}
+			if(!Background.classList.contains("OFF")){ Background.classList.add("OFF"); }
+			if(!Pause.classList.contains("OFF")){ Pause.classList.add("OFF"); }
+		}, 5000);
+	}
+	else if(CMD == "stream")
+	{
+		//Clean other states
+		if(document.getElementById('Music')){ FadeOutPlayer(); }
+		if(!Introduction.classList.contains("OFF")){ Introduction.classList.add("OFF");}
+		if(!Background.classList.contains("OFF")){ Background.classList.add("OFF"); }
+		if(!Pause.classList.contains("OFF")){ Pause.classList.add("OFF"); }
+		if(Credits.classList.contains("CUT")){ Credits.classList.remove("CUT"); }
+		if(!Credits.classList.contains("OFF")){ Credits.classList.add("OFF"); }
+	}
+	else if(CMD == "pause")
+	{
+		//Clean up from other states
+		if(!document.getElementById('Music')){ InitializePlayer(); }
+		if(!Introduction.classList.contains("OFF")){ Introduction.classList.add("OFF") };
+		if(!Background.classList.contains("OFF")){ Background.classList.add("OFF") };
+		if(Credits.classList.contains("CUT")){ Credits.classList.remove("CUT"); }
+		if(!Credits.classList.contains("OFF")){ Credits.classList.add("OFF"); }
+
+		//FadeIn Pause
+		if(Pause.classList.contains("OFF")){ Pause.classList.remove("OFF"); }
+	}
+	else if(CMD == "outro")
+	{
+		//Load Outro
+		var crd = "../styles/vid/out-"+style+".webm";
+		if(!FileExists(crd)){ var crd = "../styles/vid/out-enpjj.webm"; }
+		Credits_source.setAttribute('src', crd);
+		Credits.load();
+		
+		//FadeOut Music
+		if(document.getElementById('Music')){ FadeOutPlayer(); }
+		
+		//CutIn Outro & Play
+		if(!Credits.classList.contains("CUT")){ Credits.classList.add("CUT"); }
+		if(Credits.classList.contains("OFF")){ Credits.classList.remove("OFF"); }
+		Credits.play();
+
+		//Clean up from other states (t+1s)
+		setTimeout(function(){
+			if(!Introduction.classList.contains("OFF")){ Introduction.classList.add("OFF");}
+			if(!Background.classList.contains("OFF")){ Background.classList.add("OFF") };
+			if(!Pause.classList.contains("OFF")){ Pause.classList.add("OFF"); }
+		},1000);
+	}
+}
+
+//Stream Info ---------->
+function StreamInfo(DATA)
+{
+	//Sort Data
+	var TITLE = DATA['title'];
+	var SUBTITLE = DATA['subtitle'];
+	var DATE = DATA['date'];
+    var STYLE = DATA['style'];
+
+    //Add Style CSS File
+    var Old_CSS = document.getElementById("AddedStyleSheet");
+	
+	//Store Style on page
+	document.getElementById('style').value = STYLE;
+    
+    if(STYLE != "" && STYLE != "ENPJJ"){
+        var CSS = document.createElement("link");
+            CSS.setAttribute("id","AddedStyleSheet");
+            CSS.setAttribute("rel","stylesheet");
+            CSS.setAttribute("type", "text/css");
+            CSS.setAttribute("href","/streaming/v2/styles/"+STYLE+".css");
+        //Remove previously added style sheet
+        if(Old_CSS){ document.head.removeChild(Old_CSS); }
+        //Add new style sheet
+        document.head.appendChild(CSS);
+        }
+    else{
+        //Remove previously added style sheet
+        if(Old_CSS){ document.head.removeChild(Old_CSS); }
+        }
+    
+	//Change Video Background
+	var Background = document.getElementById('Background');
+	var Background_source = Background.getElementsByTagName('source')[0];
+	var bkg = "../styles/vid/bkg-"+STYLE+".webm";
+	if(!FileExists(bkg)){ var bkg = "../styles/vid/bkg-enpjj.webm"; }
+	Background_source.setAttribute('src', bkg);
+	Background.load();
+
+	//Insert New Stream Info
+	document.getElementById("Title_Introduction").innerHTML = TITLE;
+	document.getElementById("Title_Copyright").innerHTML = TITLE.replace(/<br>/gi, " ");
+	document.getElementById("SubTitle_Introduction").innerHTML = SUBTITLE;
+	document.getElementById("SubTitle_Copyright").innerHTML = SUBTITLE.replace(/<br>/gi, " ");
+	document.getElementById("Date").innerHTML = DATE;
+    
+	//Populate data-line value to help CSS Styling
+	if(TITLE.match(/<br\s*\/?>/ig) != null){ document.getElementById("Title_Introduction").dataset.line = TITLE.match(/<br\s*\/?>/ig).length+1; }
+	else{ document.getElementById("Title_Introduction").dataset.line = 1; }
+	
+	//Send relevant info to update dependent apps
+	const CAST = {str:STR, style:STYLE};
+	lsc.postMessage(CAST);
+	
+    //Populate Console
+	console.log ("Stream Info Updated!");
+}
+
+//Lower Thrid ---------->
+
+//Store Previous LowerThird
+var previous_NAME;
+var previous_FUNCTION;
+var previous_TRANSLATION;
+
+function LowerThrid(DATA)
+{
+	//Common variables
+	var LowerThird = document.getElementById("LowerThird");
+	var Name = document.getElementById("Name");
+	var Function = document.getElementById("Function");
+	var Translation = document.getElementById("Translation");
+		
+	//Sort Data
+	var STATE = DATA['state'] || "OFF";
+	var NAME = DATA['name'] || "";
+	var FUNCTION = DATA['function'] || "";
+	var TRANSLATION = DATA['translation'] || "";
+	
+	if(NAME == "")
+	{
+		NAME = previous_NAME;
+		FUNCTION = previous_FUNCTION;
+		TRANSLATION = previous_TRANSLATION;
+	}
+	else
+	{
+		previous_NAME = NAME;
+		previous_FUNCTION = FUNCTION;
+		previous_TRANSLATION = TRANSLATION;
+	}
+	
+	//Adjust Function Width
+	if(FUNCTION.length>60 && FUNCTION.match(/<br\s*\/?>/ig) == null){
+        var hyphenation = FUNCTION.indexOf(' ',FUNCTION.length/2);	
+        FUNCTION = FUNCTION.slice(0, hyphenation) + "<br \>" + FUNCTION.slice(hyphenation+1);
+    }
+	
+	//Adjust Translation Width
+	if(TRANSLATION.length>60 && TRANSLATION.match(/<br\s*\/?>/ig) == null){
+        var hyphenation = TRANSLATION.indexOf(' ',TRANSLATION.length/2);	
+        TRANSLATION = TRANSLATION.slice(0, hyphenation) + "<br \>" + TRANSLATION.slice(hyphenation+1);
+    }
+	
+	//Insert New Text
+	Name.innerHTML = NAME;
+	Function.innerHTML = FUNCTION;
+	Translation.innerHTML = TRANSLATION;
+	//Change State
+	LowerThird.className = STATE;
+	console.log ("Lower Thrid Updated!");
+}
+
+//ChapterTransition ---------->
+function ChapterTransition(DATA)
+{
+	//Set Common Variables
+    var ID = DATA['id'] | "";
+	var STATE = DATA['state'];
+	var TITLE = DATA['title'];
+	var style = document.getElementById('style').value;
+	var Background = document.getElementById('Background');
+	var Background_source = Background.getElementsByTagName('source')[0];
+	var Chapter = document.getElementById('Chapter');
+	var Transition = document.getElementById('Transition');
+	var Title_Chapter = document.getElementById('Title_Chapter');
+	
+	//Get mode
+	var mode = document.getElementById("mode").value;
+
+	//Only if mode not defined
+	if(mode == "")
+	{
+		if(STATE == "ON")
+		{
+			//Prepare Background
+			var bkg = "../styles/vid/bkg-"+style+".webm";
+			if(!FileExists(bkg)){ var bkg = "../styles/vid/bkg-enpjj.webm"; }
+			Background_source.setAttribute('src', bkg);
+			Background.classList.add('CUT');
+			Background.load();
+			
+			//Launch Transition
+			Title_Chapter.innerHTML = TITLE;//Insert TITLE
+			Chapter.classList.remove('OFF');
+			Chapter.classList.add('ON');//Launch animation
+			Transition.play();//Play audio
+
+			//Wait 0.5s to CutIn Background
+			let PartA = setTimeout(function () { Background.classList.remove('OFF'); }, 500);
+		}
+		else if(STATE == "OFF")
+		{
+			//Turn OFF everything
+			Chapter.classList.remove('ON');
+			Chapter.classList.add('OFF');
+			Background.classList.remove('CUT');
+			Background.classList.add('OFF');
+		}
+	}
+	else if(EID == ID){//Only uptade Element ID and ID to update match
+        Title_Chapter.innerHTML = TITLE;//Just insert TITLE if mode "transition" (static) or "demo"
+    }
+
+	console.log ("Chapter Transition Updated!");
+}
+
+//Scrolling Banner ---------->
+
+//Store Previous Banner
+var previous_MESSAGE;
+//var previous_CLASS;
+
+function ScrollingBanner(DATA)
+	{
+	//Receieve Variables
+	var MESSAGE = DATA['message'] || "";
+	//var CLASS = DATA['class'];
+	var STATE = DATA['state'];
+	
+	if(MESSAGE == "")
+	{
+		MESSAGE = previous_MESSAGE;
+		//CLASS = previous_FUNCTION;
+	}
+	else
+	{
+		previous_MESSAGE = MESSAGE;
+		//previous_CLASS = CLASS;
+	}
+
+	//Change State
+	document.getElementById("ScrollingBanner").className= STATE;
+	
+		if(STATE == "ON")
+		{
+			//Add Class
+			//document.getElementById("ScrollingBanner").classList.add(CLASS);
+			//Insert New Text
+			document.getElementById("Banner").innerHTML = MESSAGE;
+			//Calculate and set animation duration (15s min)
+			DURATION = Math.round(MESSAGE.length/10+5); if(DURATION<15) DURATION = 15;
+			document.getElementById("Banner").style.animationDuration = DURATION + 's';
+			//Start Animation from beginning
+			document.getElementById("Banner").style.animationName = "ScrollRighToLeft";
+		}
+		else if(STATE == "OFF"){ setTimeout(function(){ document.getElementById("Banner").style.animationName = ""; }, 1000); }//Cancel animation after FadeOut
+	console.log ("Scrolling Banner Updated!");
+	}
+
+//Pause Count Down ---------->
+var MyCountDown;
+
+function CountDown(DELAI)
+	{
+	received_data=DELAI.split(":");
+		
+	//Receieve Variables
+	var HOURS = Number(received_data[0]);
+	var MINUTES = Number(received_data[1]);
+	if(received_data.length == 2){ var SECONDS = 0; }
+	else{ var SECONDS = Number(received_data[2]); }
+	
+	var StartTime = Date.now();
+	var DelayedTime = ((((HOURS*60)+MINUTES)*60)+SECONDS)*1000;
+	var EndTime = StartTime+DelayedTime;
+	
+	clearInterval(MyCountDown)
+	MyCountDown = setInterval(StartTimer, 1000, EndTime);
+	console.log ('Countdown (initial) : ' + received_data[0] + 'h' + received_data[1] + 'm' + received_data[2] + 's');
+	}
+
+function StartTimer(EndTime)
+	{
+	var CurrentTime = Date.now();
+	var TimeRemaining = EndTime-CurrentTime;
+	var CountDownTarget = document.getElementById("countdown");
+
+	//Set Timer Variables
+	var DELAI = new Date(); DELAI.setTime(EndTime);		
+	var TIME = new Date(); TIME.setTime(CurrentTime);
+	HoursRemaining = DELAI.getHours()-TIME.getHours();
+	MinutesRemaining = DELAI.getMinutes()-TIME.getMinutes();
+	SecondsRemaining = DELAI.getSeconds()-TIME.getSeconds();
+	if(SecondsRemaining < 0){ MinutesRemaining -=1; SecondsRemaining +=60; }
+	if(MinutesRemaining < 0){ HoursRemaining -=1; MinutesRemaining +=60; }
+	if(HoursRemaining < 0){ HoursRemaining +=24; }
+	
+	//Control for leading 0 in timer
+	if(HoursRemaining<10){ TimerHours = "0"+HoursRemaining; } else{ TimerHours = HoursRemaining; }
+	if(MinutesRemaining<10){ TimerMinutes = "0"+MinutesRemaining; } else{ TimerMinutes = MinutesRemaining; }
+	if(SecondsRemaining<10){ TimerSeconds = "0"+SecondsRemaining; } else{ TimerSeconds = SecondsRemaining; }
+	//Set Timer display for Consol
+	var ConsolTimer = TimerHours + 'h' + TimerMinutes + 'm' + TimerSeconds + 's';
+		
+	if(TimeRemaining > 600000)//More than 10 min remains
+		{
+		DelaiMinutes = DELAI.getMinutes()
+		if(DelaiMinutes<10){ DelaiMinutes = "0"+DelaiMinutes; }
+		
+		//Account for time of day
+		if(DELAI.getHours()>=TIME.getHours()) { var DAY = [" ce", " aujourd'hui", " cette", " ce"]; }
+		else { var DAY = [" demain", " demain", " demain", " demain"] }
+			
+		EndTimeText = DELAI.getHours() + "h" + DelaiMinutes;
+		if(DELAI.getHours()<12){ TimerText = DAY[0] + " matin à "; }
+		else if(DELAI.getHours()==12){ TimerText = DAY[1] + " à "; }
+		else if(DELAI.getHours()>12 && DELAI.getHours()<17){ TimerText = DAY[2] + " après-midi à "; }
+		else if(DELAI.getHours()>=17 && DELAI.getHours()<24){ TimerText = DAY[3] + " soir à "; }
+		
+		CountDownTarget.innerHTML = TimerText + EndTimeText + ".";
+		//if(CountDownTarget.classList.contains("waiting")) { CountDownTarget.classList.remove("waiting"); }
+		console.log ('Countdown (clock) : ' + ConsolTimer);
+		}
+	else if(TimeRemaining <= 600000 && TimeRemaining > 60000)//Between 10 and 1 min remains
+		{
+		// Control for plurals
+		if(MinutesRemaining>1){ MinPluri = "s"; } else{ MinPluri = ""; }
+		if(SecondsRemaining>1){ SecPluri = "s"; } else{ SecPluri = ""; }
+		
+		CountDownTarget.innerHTML = " dans " + MinutesRemaining + " minute" + MinPluri + " et " + SecondsRemaining + " seconde" + SecPluri + ".";
+		//if(CountDownTarget.classList.contains("waiting")) { CountDownTarget.classList.remove("waiting"); }
+		console.log ('Countdown (timer) : ' + ConsolTimer);
+		}
+	else
+		{
+		CountDownTarget.innerHTML = " dans quelques instants...";
+		//if(!CountDownTarget.classList.contains("waiting")) { CountDownTarget.classList.add("waiting"); }
+		console.log ('Countdown (transparent) : ' + ConsolTimer);
+		}
+	//Stop Timer
+	if(TimeRemaining<=0) { clearInterval(MyCountDown); }
+	}
+
+//Messages ---------->
+
+//Listen to PREVIEW
+lmc.onmessage = function (ev){ var DATA=ev.data; ShowMessage(DATA); }
+
+//Message Global Variables
+var LoadingNote = new Array();
+var ClearNote = new Array();
+var KillNote = new Array();
+
+//Show Messages & Previews
+function ShowMessage(DATA){    
+	//Seperate DATA
+    var ID = DATA['id'];
+    var STAMP = DATA['stamp'];
+    var CONTENT = DATA['content'];
+
+    //IF PREVIEW
+    if(ID == 'preview'){
+        //Adjust ID function of STAMP
+        ID = STAMP+'Preview';
+        //Update PREVIEW if exists
+        if(document.getElementById(ID))
+		{
+            if(CONTENT === ""){
+                if(!window.KillPreview) { DeleteMessage(ID); }
+                else{ console.log("Waiting for previous preview to end.") }
+            }
+            else{
+                document.getElementById(ID).innerHTML = CONTENT;
+                console.log (STAMP + ' Preview updated: ' + CONTENT);
+            }
+        }
+        //Create PREVIEW if doesn't exist
+        else if(CONTENT != "")
+		{
+            //Determin CLASS function of STAMP
+            if(STAMP == "Public"){ var CLASS = (window.NoteType == "Right") ? "Left" : "Right"; }
+            else{ CLASS = STAMP; }
+            //Preview Creation
+            CreateTextBubble(ID, STAMP, CLASS, CONTENT);
+            LoadingNote[LoadingNote.length] = window.setTimeout(function () { document.getElementById(ID).classList.remove("Loading"); clearTimeout(LoadingNote[LoadingNote.length]);  }, 1000);
+            console.log (STAMP +' Preview added: ' + CONTENT);
+        }
+    }
+    //IF Distant CLEAR ALL command (no ID)
+    else if(STAMP == 'Delete'){ DeleteMessage(ID); }
+    //IF Distant CLEAR ALL command (no ID)
+    else if(ID == '' && STAMP == '' && CONTENT == ''){ ClearMessages(); }
+    //IF Regular Note
+    else{
+        //Determine LIFESPAM
+        if(STAMP == 'Public') { LIFESPAN = 28800000; }//8h (toujours) 
+        else if(STAMP == 'Interne') { LIFESPAN = 28800000; }//8h (toujours)
+        //Allow for custom LIFESPAN
+        else{
+            var content_timeout = STAMP.split(":");
+            var HOURS = Number(content_timeout[0]);
+            var MINUTES = Number(content_timeout[1]);
+
+            if(content_timeout.length == 2){ SECONDS = 0; }
+            else{ var SECONDS = Number(content_timeout[2]); }
+
+            var LIFESPAN = ((((HOURS*60)+MINUTES)*60)+SECONDS)*1000;
+        }
+        //Delete Message if ID already exists
+        if(document.getElementById(ID)){
+            var MESSAGE = document.getElementById(ID);
+                MESSAGE.classList.add('Clearing');
+            window.setTimeout(function () { document.getElementById('Messages').removeChild(MESSAGE); }, 1000);
+            console.log ('Message Deleted: ' + ID);
+        }
+        //Else Create New Message
+        else{
+            //Determin CLASS
+            if(STAMP == "Public"){
+                switch(window.NoteType){
+                    case "Right": window.NoteType = "Left";break;
+                    case "Left": window.NoteType = "Right";break;
+                    case undefined: window.NoteType = "Right";
+                }
+                var CLASS = window.NoteType;
+            }
+            else{ var CLASS = STAMP; }
+            //Kill existing PREVIEW(s)
+            if(document.getElementById('PublicPreview')){ DeleteMessage('PublicPreview'); }
+            if(document.getElementById('InternePreview')){ DeleteMessage('InternePreview'); }
+            //Only Log INTERN messages if MODE = LIGHT
+            var MODE = document.getElementById('mode').value;
+            if(STAMP == 'Interne' && MODE != 'light'){ console.log ('Internal Message: ' + CONTENT); }
+            //Message Creation
+            CreateTextBubble(ID, STAMP, CLASS, CONTENT);
+            if(MODE != 'light' && STAMP == "Public") { window.setTimeout(function () { document.getElementById('Notification').play();  }, 1000); }
+            LoadingNote[LoadingNote.length] = window.setTimeout(function () { document.getElementById(ID).classList.remove("Loading"); clearTimeout(LoadingNote[LoadingNote.length]);  }, 500);
+            ClearNote[ClearNote.length] = window.setTimeout(function () { document.getElementById(ID).classList.add("reverse", "Clearing"); clearTimeout(ClearNote[ClearNote.length]);  }, LIFESPAN);
+            KillNote[KillNote.length] = window.setTimeout(function () { document.getElementById(ID).remove(); clearTimeout(KillNote[KillNote.length]);  }, LIFESPAN+1000);
+            console.log ('Message Added!');
+        }
+    }
+}
+
+function CreateTextBubble(ID, STAMP, CLASS, CONTENT){
+	var TextBuble = document.createElement('div');
+	TextBuble.setAttribute('class', "TextBuble "+CLASS+" Loading");
+	TextBuble.setAttribute('id',ID);
+	TextBuble.setAttribute('data-stamp',STAMP);
+	TextBuble.setAttribute('onclick',"SelectMessage('"+ID+"')");
+	TextBuble.innerHTML = CONTENT;
+	document.getElementById("Messages").appendChild(TextBuble);
+}
+
+function SelectMessage(ID){
+    var STAMP = document.getElementById(ID).dataset.stamp;
+    var CONTENT = document.getElementById(ID).innerHTML;
+	const DATA = {id:ID, stamp:STAMP, content:CONTENT};
+    lmc.postMessage(DATA);
+}
+
+function DeleteMessage(ID){
+	document.getElementById(ID).classList.add("Clearing");
+	window.KillPreview = window.setTimeout(function () {
+		document.getElementById(ID).remove();
+		clearTimeout(window.KillPreview);
+		delete window.KillPreview;
+		
+		//Reset Bubbles Left/Right IF none left
+		if(document.getElementsByClassName("TextBuble").length == 0)
+		{
+			delete window.NoteType;
+			delete window.last_message;
+		}
+	}, 1000);
+	
+}
+
+function ClearMessages(){
+	//Clear all Timeouts
+	for (var c=0; c<ClearNote.length; c++) { clearTimeout(ClearNote[c]); }
+	for (var k=0; k<KillNote.length; k++) { clearTimeout(KillNote[k]); }
+
+	//Fade then kill all TextBubbles
+	var TextBubles = document.getElementsByClassName("TextBuble");
+	for (var i = 0; i < TextBubles.length; i++) { TextBubles[i].classList.add('Clearing'); }
+	window.setTimeout(function () { document.getElementById("Messages").innerHTML = '';  }, 1000);
+	
+	//Reset Bubbles Left/Right
+	delete window.NoteType;
+    delete window.last_message;
+}*/

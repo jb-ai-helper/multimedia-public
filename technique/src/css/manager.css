@@ -1,0 +1,204 @@
+/* CSS Document */
+@charset "UTF-8";
+@import "/src/css/fonts.css";
+
+@import "/streaming/v2/scripts/css/interface.css";
+@import "/streaming/v2/scripts/css/normalize.css";
+
+@media only screen and (min-resolution: 70dpi){ html { font-size: 8pt; } }
+@media only screen and (min-resolution: 100dpi){ html { font-size: 10pt; } }
+@media only screen and (min-resolution: 130dpi){ html { font-size: 12pt; } }
+
+/* -------------------- Elements Styles -------------------- */
+
+html{
+	background-color: var(--button-hover-background);
+    font-size: 0.3cm;
+	padding: 2rem;
+	overflow: auto;
+	font-family: Marianne;
+}
+
+body{
+	margin: auto;
+	width: 640px;
+	min-height: 480px;
+	background-color: var(--background);
+	box-shadow: 0 0 .5rem rgb(0 0 0 / 50%);
+	border-radius: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    position: relative;
+}
+
+hr{
+	background-color: var(--button-background);
+	border-style: none;
+	height: .2rem;
+	border-radius: .2rem;
+}
+
+h1, h2, h3{
+    font-weight: normal;
+}
+
+h1{
+    margin-top: 0;
+    color: var(--button-hover-background);
+    font-style: italic;
+}
+
+h1, h2, h3{ position: relative; }
+
+.hidden{ display: none !important; }
+
+.intervention{
+    cursor: pointer;
+    user-select: none;
+}
+
+.intervention:hover{ color: white; }
+    
+.intervention::before{ content: attr(data-ref)" - "; }
+
+.intervention::after{ content: " ("attr(data-service)")"; }
+
+.status{
+    display: inline-block;
+    float: right;
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 100%;
+    color: var(--background);
+    text-align: center;
+    line-height: 2rem;
+}
+
+.accepted, .approved{ background-color: #FFE552; }
+.finished{ background-color: #34CB6A; }
+.quoted{ background-color: #AD4847; }
+
+
+.canceled::before{ content: "\2715"; color: white}
+.canceled{ background-color: var(--input-background); }
+
+.closed::before{ content: "\2713"; color: white}
+.closed{ background-color: var(--input-background); }
+
+#Total{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: var(--button-background);
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 100%;
+    font-family: monospace;
+    width: fit-content;
+}
+
+#New{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: var(--button-background);
+    padding: 0rem;
+    font-size: 1.25rem;
+    text-align: center;
+    border-radius: 100%;
+    font-family: monospace;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+#New::before{
+    content: "\002B";
+}
+
+#archives a{ color: var(--button-hover-background); text-decoration: none; }
+
+#CSV, #archives { margin-top: 1rem; }
+
+#CSV { cursor: pointer; }
+
+a:hover{ color: white !important; text-decoration: none; }
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    background: var(--button-background);
+    color: black;
+    line-height: 2rem;
+	border-left: 0.2rem solid var(--background)
+}
+
+table a {
+    color: black;
+    text-decoration: none;
+}
+
+th, td{ border-right: 0.2rem solid var(--background); padding: 5px; }
+
+th {
+    text-align: left;
+    background-color: var(--input-background);
+    color: white;
+    font-weight: normal;
+}
+
+tr:nth-child(even) { background-color: var(--button-hover-background); }
+
+/* -------------------- Phone Styles -------------------- */
+
+@media only screen and (orientation: portrait) {
+
+    html{
+        font-size: 3vw;
+        padding: 0;
+        overflow: auto;
+        font-family: Marianne;
+        width: 100%;
+        height: 100%;
+    }
+
+    body{
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+        min-height: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        color: var(--text-color);
+        font-size: 1.25rem;
+        min-width: unset;
+    }
+    
+    #CSV{ display: none; }
+    
+    .status{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 0.5rem;
+    }
+    
+    .intervention{
+        position: relative;
+        padding-left: 3rem;
+    }
+    
+    .intervention::before{
+        content: "";
+    }
+    
+    .intervention::after{
+        content: "";
+    }
+}

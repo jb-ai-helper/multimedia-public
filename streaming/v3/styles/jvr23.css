@@ -1,0 +1,89 @@
+/* JVR 2023 */
+
+#Partenaire {
+    background-image: url(img/ierdj.svg);
+    background-repeat: no-repeat;
+	background-size: contain;
+    background-position: right;
+    height: 100%;
+	width: 100%;
+}
+
+#Title_Introduction {
+    top: 37.5vh;
+	font-size: 3.75vh;
+	font-weight: normal;
+}
+
+#SubTitle_Introduction {
+    transform: translate(-50%,-50%);
+	font-size: 7.5vh;
+	background-color: #FF732C;
+    padding: 1vh;
+    text-shadow: none;
+}
+#Date {
+    top: 62.5vh;
+}
+
+#Copyright {
+    left: 7.5vh;
+}
+
+#Title_Copyright {
+	background: none;
+	background-color: #FF732C;
+	padding: 0 1.25vh;
+}
+
+#SubTitle_Copyright {
+	display: block;
+	background: none;
+	background-color: #2F4077;
+	padding: 0 1.25vh;
+}
+
+#Name {
+	background: none;
+	background-color: #FF732C;
+	line-height: 7vh;
+    padding: 0 1.75vh;
+    font-size: 3.5vh;
+}
+
+#Function, #Translation {
+	background: none;
+	background-color: #2F4077;
+	padding: 1.25vh;
+	font-size: 2.5vh;
+}
+
+#Translation { display: none; }
+
+#Chapter::after {
+    background: linear-gradient(90deg, rgba(255,115,44,0) 50%, rgba(255,115,44,1) 50%, rgba(255,115,44,1) 100%, rgba(255,115,44,0) 100%);
+	background-repeat: no-repeat;
+    background-size: 200% 100%;
+}
+
+#Title_Chapter {
+	text-align: right;
+    transform: translate(-100%, -50%);
+    left: calc(100% - 7.5vh);
+	width: calc(54% - 7.5vh);
+	color: #FF732C;
+	font-style: italic;
+}
+
+h1, h2, h3 { color: white; font-style: normal; }
+
+#ScrollingBanner {
+    border-radius: 0;
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(0,0,0,.05) 50%, rgba(0,0,0,0) 100%);
+    z-index: 0;
+    height: 25vh;
+}
+
+#Messages{ bottom: 12.5vh; }
+.Right{ background-color: #2F4077; }
+.Left{ background-color: #FF732C; }

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[2/2 - Protection de l'enfance et éducation au numérique | 24èmes JVR de l'ENPJJ]]></title>
+    <visibility>unlisted</visibility>
+    <date>2024-01-26</date>
+    <description><![CDATA[Les professionnels de la PJJ, comme tous les professionnels du champ de la protection de l’enfance, observent chaque jour les évolutions contemporaines des pratiques médiatiques des jeunes avec lesquels ils travaillent : forte présence sur les réseaux socio-numériques, temps passé devant les écrans, centralité du téléphone portable au quotidien, nouvelles manières de s’informer et de communiquer, mais aussi difficultés pour certains à utiliser les dispositifs numériques lorsqu’il s’agit de bureautique, de démarches administratives, d’école à distance, d’orientation scolaire ou d’insertion professionnelle.<br><br>Comment ces évolutions influencent-elles le quotidien des jeunes pris en charge, leur construction identitaire, leur socialisation, leur insertion ? Les professionnels de la protection de l’enfance sont-ils des acteurs à part entière de l’éducation au numérique ? Si oui, peut-on dégager des enjeux et des pratiques spécifiques à cette « éducation à » menée à partir du champ de la protection de l’enfance et de la PJJ ?<br><br>C’est dans cette perspective qu’on été pensées les JVR. Conférences et ateliers se succèderont afin de :<br><br>1. Donner des clés de compréhension aux professionnels sur les évolutions contemporaines des pratiques numériques juvéniles, nourrir leurs pratiques professionnelles dans un contexte où le « numérique » vient les interroger.<br>2. Aborder à la fois les aspects des pratiques numériques qui questionnent, voire inquiètent et des aspects qui permettent de saisir les opportunités qu’offre le numérique en matière de construction identitaire à l’adolescence, d’insertion, d’accès à l'information, etc.<br>3. Interroger les pratiques du numérique développées par les professionnels de la protection de l'enfance et de la PJJ et la manière dont ils déploient effectivement l’éducation au numérique sur les terrains.]]></description>
+  </video>
+  <event>
+    <title><![CDATA[Protection de l'enfance<br>et éducation au numérique]]></title>
+    <subtitle>Quels enjeux ? Quelles pratiques ?</subtitle>
+    <style>jvr24</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>224</onsite>
+    <remote>306</remote>
+    <release>Synchrone</release>
+    <date>2024-01-26</date>
+    <start>09:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>5313</id>
+      <name>Amandine KERVELLA</name>
+      <function><![CDATA[Responsable scientifique des JVR,<br>chercheuse en sciences de l’information<br>et de la communication à l’ENPJJ,<br>Laboratoire GERiiCO]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>8557</id>
+      <name>Léa JARDIN</name>
+      <function><![CDATA[Responsable scientifique des JVR,<br>chercheuse en droit à l’ENPJJ,<br>chercheuse associée de la Chaire Enfance<br>et Familles et du Centre Thucydide]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>0041</id>
+      <name>Séverine ERHEL</name>
+      <function><![CDATA[Maîtresse de conférences - HDR<br>en Psychologie Cognitive et Ergonomie,<br>Université Rennes 2, Laboratoire LP3C]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>1025</id>
+      <name>Anne CORDIER</name>
+      <function><![CDATA[Professeure des Universités en sciences<br>de l’information et de la communication,<br>Université de Lorraine, CREM]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>2754</id>
+      <name>Yann BRUNA</name>
+      <function><![CDATA[Maître de conférences en sociologie,<br>Université Paris-Nanterre,<br>Laboratoire Sophiapol]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>5935</id>
+      <name>François SORIN</name>
+      <function><![CDATA[Docteur en sciences de l’éducation,<br>Chargé de recherche à Askoria,<br>chercheur associé au CREAD<br>Université Rennes 2]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>7433</id>
+      <name>Rosa Maria BORTOLOTTI</name>
+      <function><![CDATA[Docteure en sciences de l’éducation,<br>CY Cergy Paris Université,<br>Laboratoire EMA]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>8113</id>
+      <name>Mael VIRAT</name>
+      <function><![CDATA[Chercheur en psychologie à l'ENPJJ,<br>chercheur associé au laboratoire PSITEC]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+    <SP9>
+      <id>3631</id>
+      <name>Guillemette BREYSSE</name>
+      <function><![CDATA[Éducatrice au service territorial éducatif<br>de milieu ouvert (STEMO) Paris, PJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP9>
+    <SP10>
+      <id>6601</id>
+      <name>Pauline DE LA LOSA</name>
+      <function><![CDATA[Responsable Handicaps<br>– Vulnérabilités des familles –<br>Prévention, la CNAPE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP10>
+    <SP11>
+      <id>3905</id>
+      <name>Romain MANSION</name>
+      <function><![CDATA[Membre du Comité<br>«&nbsp;Espoir pour la protection de l’enfance&nbsp;»<br>de la CNAPE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP11>
+    <SP12>
+      <id>2154</id>
+      <name>Delphine BRUGGEMAN</name>
+      <function><![CDATA[Responsable de l’Unité recherche<br>et études, Service de la recherche<br>et de la documentation, ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP12>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>8255</id>
+      <type>speech</type>
+      <duration>5</duration>
+      <needs>pupitre</needs>
+      <speaking>8557,5313</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>5048</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>« Panique sur les jeux vidéo ! » :</h1><h3>Dépasser les préjugés sur ses liens<br>avec la violence et la santé mentale<br>des individus</h3>]]></html>
+    </SQ2>
+    <SQ3>
+      <id>9272</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,pc</needs>
+      <speaking>0041</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>7038</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>Le pouvoir de grandir<br>connectés et informés :</h1><h3>au-delà de la formule</h3>]]></html>
+    </SQ4>
+    <SQ5>
+      <id>0740</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,hf,pc</needs>
+      <speaking>1025</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+    <SQ6>
+      <id>9350</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>hf</needs>
+      <speaking>0041,1025,public</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>[Couverture] Grandir informés : Les pratiques informationnelles des enfants, adolescents et jeunes adultes</sources>
+        </ddr>
+        <scroll>
+          <checked>true</checked>
+          <message>Retrouvez le programme à l'adresse suivante : https://www.enpjj.justice.fr/JVR24</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ6>
+    <SQ7>
+      <id>8065</id>
+      <type>pause</type>
+      <duration>15</duration>
+    </SQ7>
+    <SQ8>
+      <id>7092</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>Quand les adolescents<br>se surveillent entre eux :</h1><h3>l’exemple de la géolocalisation<br>des pairs sur Snapchat</h1>]]></html>
+    </SQ8>
+    <SQ9>
+      <id>2878</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,hf,pc</needs>
+      <speaking>2754</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ9>
+    <SQ10>
+      <id>6236</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>hf</needs>
+      <speaking>2754,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>QR Code programme</sources>
+        </ddr>
+        <scroll>
+          <checked>true</checked>
+          <message>Retrouvez le programme à l'adresse suivante : https://www.enpjj.justice.fr/JVR24</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ10>
+    <SQ11>
+      <id>7750</id>
+      <type>transition</type>
+      <html><![CDATA[Table ronde:<h1>Inégalités, accès aux droits<br>et numérique</h1>]]></html>
+    </SQ11>
+    <SQ12>
+      <id>2667</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs>fauteuil,pc</needs>
+      <speaking>6601,3905,3631,8557,5935</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ12>
+    <SQ13>
+      <id>2365</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>hf</needs>
+      <speaking>5935,8557,3631,3905,6601,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>QR code programme</sources>
+        </ddr>
+        <scroll>
+          <checked>true</checked>
+          <message>Retrouvez le programme à l'adresse suivante : https://www.enpjj.justice.fr/JVR24</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ13>
+    <SQ14>
+      <id>2774</id>
+      <type>pause</type>
+      <duration>90</duration>
+    </SQ14>
+    <SQ15>
+      <id>8727</id>
+      <type>transition</type>
+      <html><![CDATA[Regards croisés :<h1>Les professionnels du travail social face au numérique</h1>]]></html>
+    </SQ15>
+    <SQ16>
+      <id>8699</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs>fauteuil,pc</needs>
+      <speaking>8113,7433,5935</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ16>
+    <SQ17>
+      <id>3865</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>5935,7433,8113,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>QR Code programme</sources>
+        </ddr>
+        <scroll>
+          <checked>true</checked>
+          <message>Retrouvez le programme à l'adresse suivante : https://www.enpjj.justice.fr/JVR24</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ17>
+    <SQ18>
+      <id>3879</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence de clôture :<h1>L’éducation au numérique :</h1><h3>un outil d’empowerment<br>dans le champ de la protection<br>de l’enfance ?</h3>]]></html>
+    </SQ18>
+    <SQ19>
+      <id>9968</id>
+      <type>speech</type>
+      <duration>40</duration>
+      <needs>bureau,pc</needs>
+      <speaking>5313</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ19>
+    <SQ20>
+      <id>8947</id>
+      <type>speech</type>
+      <duration>5</duration>
+      <needs>pupitre,bureau</needs>
+      <speaking>2154,5313</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ20>
+  </sequence>
+</fiche>

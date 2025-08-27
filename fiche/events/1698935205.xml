@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[1/5 - L'écologie, un enjeu éducatif ? | Rencontres Professionnelles]]></title>
+    <visibility>unlisted</visibility>
+    <date>2023-11-21</date>
+    <description><![CDATA[Mardi 21 novembre 2023, lancement des Rencontres Professionnelles sur le thème "l'écologie, un enjeu éducatif?". Première partie sur "l'importance d'agir face à l'urgence écologique".]]></description>
+  </video>
+  <event>
+    <title><![CDATA[L'écologie, un enjeu éducatif ?]]></title>
+    <subtitle>Bienvenue</subtitle>
+    <style>rpro</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>200</onsite>
+    <remote>0</remote>
+    <release>Asynchrone</release>
+    <date>2023-11-21</date>
+    <start>14:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>8741</id>
+      <name>Frédéric PHAURE</name>
+      <function><![CDATA[Directeur général de l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>3978</id>
+      <name>Olga MEURISSE</name>
+      <function><![CDATA[Directrice Territoriale à l'APF France handicap, Ambassadrice Développement Durable au CERDD ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>9933</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pupitre</needs>
+      <speaking>8741</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>7323</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence introductive<h1>l'importance d'agir face à l'urgence écologique</h1>]]></html>
+    </SQ2>
+    <SQ3>
+      <id>6802</id>
+      <type>speech</type>
+      <duration>90</duration>
+      <needs>bureau</needs>
+      <speaking>3978</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffuser le power-point de l'intervenante</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>8001</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+  </sequence>
+</fiche>

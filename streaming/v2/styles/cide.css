@@ -1,0 +1,116 @@
+/* 35 ans CIDE */
+
+#Partenaire {
+    background-image: url("img/logo_C3RD.png");
+    aspect-ratio: 1467/505;
+    height: calc( 1.5 * var(--gov-unit));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    bottom: var(--gov-unit);
+    right: calc(1.5 * var(--gov-unit));
+}
+
+
+
+#Title_Copyright {
+    background: #DD4D37;
+    padding-right: unset;
+}
+
+#Title_Copyright:after {
+    content: "";
+    width: var(--gov-unit);
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-top: var(--gov-unit) solid #DD4D37;
+    border-right: var(--gov-unit) solid transparent;
+}
+
+#SubTitle_Copyright {
+    display: block;
+    background: #FFFFFF;
+    color: black;
+    font-style: italic;
+    padding-right: unset;
+}
+
+#SubTitle_Copyright:after {
+    content: "";
+    width: var(--gov-unit);
+    height: 0;
+    position: absolute;
+    top: var(--gov-unit);
+    border-top: var(--gov-unit) solid white;
+    border-right: var(--gov-unit) solid transparent;
+}
+
+#Title_Introduction {
+    text-shadow: 0 0 2vh black;
+    font-weight: normal;
+    font-style: italic;
+    top: unset;
+    bottom: calc(5* var(--gov-unit));
+}
+
+#SubTitle_Introduction {
+    text-shadow: 0 0 2vh black;
+    top: unset;
+    bottom: calc(3.5 * var(--gov-unit));
+}
+
+#Date {
+    font-weight: bold;
+    text-shadow: 0 0 2vh black;
+    bottom: calc(2* var(--gov-unit));
+    top: unset;
+}
+
+#Title_Chapter {
+    top: unset;
+    bottom: calc(3.5 * var(--gov-unit));
+    transform: translate(-50%, 0);
+    width: 100%;
+    color: white;
+    background: #DD4D37;
+    padding: calc(0.25 * var(--gov-unit)) 0;
+}
+
+h1, h2, h3 { color: white; }
+
+#Messages {
+    padding-bottom: calc(3 * var(--gov-unit));
+}
+
+.Right { background-color: #DD4D37; }
+.Left { background-color: white; color: black}
+
+#Name {
+    background: #DD4D37;
+    padding: calc(.15 * var(--gov-unit)) calc(0.5* var(--gov-unit));
+    font-weight: normal;
+}
+#Name::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(2555, 255, 255, 0) 50%, rgba(221, 77, 55, 1) 50%, rgba(221, 77, 55, 1) 100%, rgba(255, 255, 255, 0) 100%);
+    transition: all 1s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 202% 100%;
+    visibility: visible;
+}
+
+#Function, #Translation {
+    padding: calc(.1 * var(--gov-unit)) calc(0.5* var(--gov-unit));
+    background: white;
+    color: black;
+}
+
+#Artist {
+    color: #DD4D37;
+}

@@ -1,0 +1,21 @@
+/* CSS Document */
+
+:root {
+	/*OBS Variables*/
+	--text-color: #fff;
+	--text-size: 8pt;
+	--text-maring: 10px;
+	--element-height: 21px;
+	--element-maring: 4px;
+	--element-radius: 3px;
+	--obs-background: #3a393a;
+	--obs-button-background: #4c4c4c;
+	--obs-button-hover-background: #7a797a;
+	--obs-input-background: #1f1e1f;
+	/*Variable for switch*/
+	--switch-size: 2px;
+	--switch-button-color: white;
+	--switch-checked-color: var(--obs-button-hover-background);
+	--switch-transition: .4s;
+	--switch-disable-color: var(--obs-button-background);
+}

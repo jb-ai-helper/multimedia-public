@@ -1,0 +1,152 @@
+/* JVR 2025 */
+#ENPJJ {
+    /*background-image: url("img/jvr25-enpjj.svg");*/
+}
+#Partenaire {
+    background: url("img/jvr25-logo.svg");
+    height: calc(1.5 * var(--gov-unit));
+    aspect-ratio: calc(85/60);
+    background-repeat: no-repeat;
+    bottom: var(--gov-unit);
+    right: calc(1.5 * var(--gov-unit));
+}
+
+#Introduction{
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=ECD7A2&ic=brush-7);
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-position: center;
+}
+
+#Title_Introduction {
+    text-align: left;
+    transform: translate(0, -100%);
+    left: 20%;
+    color: #2F4077;
+    text-shadow: none;
+    top: 50%;
+    text-transform: uppercase;
+    font-size: calc(0.75* var(--gov-unit));
+}
+
+#SubTitle_Introduction {
+    transform: translate(0, 0);
+    left: 20%;
+    text-shadow: none;
+    color: #AD4847;
+    font-size: calc(0.75* var(--gov-unit));
+    font-weight: unset;
+    text-align: left;
+    top: 50%;
+    margin-top: calc(0.5 * var(--gov-unit));
+    line-height: 120%;
+    text-transform: none;
+    width: 50%;
+    font-style: italic;
+}
+
+#Date {
+    color: black;
+    transform: translate(0, 100%);
+    left: 70%;
+    top: 60%;
+    text-align: right;
+}
+
+#Artist{ color: black; }
+
+#Title_Copyright {
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=FFCA00&ic=brush-4);
+    color: #2F4077;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 calc(1.5* var(--gov-unit));
+}
+
+#SubTitle_Copyright {
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=2F4077&ic=brush-2);
+    color: white;
+    font-style: italic;
+    padding: 0 calc(1.5* var(--gov-unit));
+    margin-top: calc(-0.25* var(--gov-unit));
+    display: block;
+}
+
+#Name{
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=ECD7A2&ic=brush-10);
+    padding: 0 calc(0.5* var(--gov-unit));
+    text-shadow: 0 0 0 rgba(47,64,119,1);
+    z-index: 1
+}
+
+#Function, #Translation {
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=black&ic=brush-10);
+    padding: calc(0.25* var(--gov-unit)) calc(0.75* var(--gov-unit));
+    text-shadow: 0 0 0 rgba(173, 72, 71, 1);
+    font-size: calc(0.5* var(--gov-unit));
+    font-weight: bold;
+    margin-top: calc(-0.25* var(--gov-unit));
+    z-index: 0
+}
+
+#Name::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=ECD7A2&ic=brush-10);
+    transition: all 1s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#Function::after, #Translation::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=black&ic=brush-10);
+    transition: all 1s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#LowerThird.ON #Name, #LowerThird.ON #Name::after {
+    animation-delay: 0.5s;
+}
+
+#LowerThird.ON #Function, #LowerThird.ON #Function::after {
+    animation-delay: 0.25s;
+}
+
+#LowerThird.ON #Translation, #LowerThird.ON #Translation::after {
+    animation-delay: 0s;
+}
+
+#LowerThird.OFF #Name::after {display: none;}
+#LowerThird.OFF #Function::after {display: none;}
+#LowerThird.OFF #Translation::after {display: none;}
+
+@keyframes anime-in{
+    0% { left: 0; width: 0%; opacity: 1; }
+    50% { left: 0; width: 100%; opacity: 1; }
+    100% { left: 0; width: 100%; opacity: 0; }
+}
+
+#Cover { background-image: linear-gradient(90deg, rgba(2555,255,255,0) 50%, rgba(47,64,119,1) 50%, rgba(47,64,119,1) 100%, rgba(2555,255,255,0) 100%); }
+
+#Title_Chapter {
+    background-image: url(https://s2.svgbox.net/pen-brushes.svg?color=ECD7A2&ic=brush-1);
+    padding: calc(1.5* var(--gov-unit));
+    width: calc(100% - calc(12* var(--gov-unit)));
+    text-shadow: unset;
+    color: #AD4847;
+}
+
+h1, h2, h3 { color: #2F4077; text-transform: none; }
+
+#Messages{ bottom: calc(2 * var(--gov-unit)); }
+
+.Right{ background-color: #2F4077; }
+
+.Left{ background-color: #AD4847; }

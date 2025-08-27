@@ -1,0 +1,6 @@
+/* /trombinoscope/src/css/print-flat.css */
+
+@page {
+	size: A4 portrait;
+	margin: 10mm;
+}

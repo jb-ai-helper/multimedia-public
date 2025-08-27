@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Formation Encadrants Michelet</title>
+    <visibility>private</visibility>
+    <date>2024-12-18</date>
+    <description>Violences sexistes et sexuelles, harcèlement dans le sport</description>
+  </video>
+  <event>
+    <title>Formation Encadrants Michelet</title>
+    <subtitle>Violences sexistes et sexuelles, harcèlement dans le sport</subtitle>
+    <style>perso</style>
+    <location><![CDATA[CREPS Île-de-France<br>139, Avenue Roger Salengro<br>92290 Châtenay-Malabry<br>]]></location>
+    <onsite>60</onsite>
+    <remote>120</remote>
+    <release>Synchrone</release>
+    <date>2024-12-18</date>
+    <start>16:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>7688</id>
+      <name>Gabriel Milet</name>
+      <function>Coordinateur de la prévention, Colosse au pied d’argile</function>
+      <translation>Coordinateur de la prévention, Colosse au pied d’argile</translation>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>7250</id>
+      <name>Dimitri Vanoverschelde</name>
+      <function>Formateurs, ENPJJ</function>
+      <translation>Formateurs, ENPJJ</translation>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>2050</id>
+      <name>Ronan Marie</name>
+      <function>Formateurs, ENPJJ</function>
+      <translation>Formateurs, ENPJJ</translation>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>4656</id>
+      <type>transition</type>
+      <html>Violences sexistes et sexuelles, harcèlement dans le sport</html>
+    </SQ1>
+    <SQ2>
+      <id>6240</id>
+      <type>speech</type>
+      <duration>80</duration>
+      <needs/>
+      <speaking>7688</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>4504</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>hf</needs>
+      <speaking>2050,7250,7688,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+  </sequence>
+</fiche>

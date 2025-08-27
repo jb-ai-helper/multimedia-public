@@ -1,0 +1,138 @@
+/* CSS Document */
+
+@import "../../../streaming/v2/scripts/css/interface.css";
+@import "../../../streaming/v2/scripts/css/normalize.css";
+
+/* -------------------- Elements Styles -------------------- */
+
+html{
+	background-color: var(--button-hover-background);
+    font-size: 0.3cm;
+	padding: 2rem;
+	overflow: auto;
+	font-family: Marianne;
+}
+
+body{
+	margin: auto;
+	min-width: 640px;
+	max-width: calc(1280px - 4rem);
+	width: calc(100vw - 4rem);
+	min-height: 480px;
+	background-color: var(--background);
+	box-shadow: 0 0 .5rem rgb(0 0 0 / 50%);
+	border-radius: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+
+body.wait{ cursor: wait !important; }
+
+body.wait *{ pointer-events: none; user-select: none; }
+
+hr{
+	background-color: var(--button-background);
+	border-style: none;
+	height: .2rem;
+	border-radius: .2rem;
+}
+
+h1, h2, h3{
+    font-weight: normal;
+}
+
+h1{
+    margin-top: 0;
+    color: var(--button-hover-background);
+    font-style: italic;
+}
+
+label, span{ color: var(--button-hover-background); }
+
+label{ vertical-align: top; }
+
+select{
+    background-color: transparent;
+    border-style: none;
+    color: var(--text-color);
+    text-align: left !important;
+    margin-right: 1.5vw;
+}
+
+option{
+    background-color: var(--input-background);
+    color: var(--text-color);
+}
+
+input[type=email],input[type=text], textarea{
+    width: 100%;
+    margin: 0.25vw 0;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 0.5vw;
+    box-sizing: border-box;
+}
+
+textarea{
+    overflow: auto;
+    resize: vertical;
+    min-height: 5vw;
+}
+
+input[type=file]{ display: none; }
+
+sup{ text-transform: lowercase; }
+
+.button{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: var(--button-background);
+    border-radius: 0.5rem;
+	position: relative;
+	margin: .25rem;
+    margin-left: 0;
+	cursor: pointer;
+	color: white;
+	font-size: 1.25rem;
+	user-select: none;
+    min-width: 2.5rem;
+    text-align: center;
+    vertical-align: text-bottom;
+    height: 2.5rem;
+    box-sizing: border-box;
+}
+
+.button:hover{ background-color: var(--button-hover-background); }
+
+#shortlink{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark{
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+#shortlink:checked ~ .checkmark::after {
+    content: "\002713";
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    top: -0.75rem;
+    left: 0.25rem;
+}
+
+.checkmark:hover{ background-color: var(--button-hover-background); }

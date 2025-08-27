@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Enjeux mémoriels et lutte contre les discriminations racistes</title>
+    <visibility>unlisted</visibility>
+    <date>2024-07-01</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Enjeux mémoriels et lutte contre les discriminations racistes</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-07-01</date>
+    <start>09:00</start>
+  </event>
+  <speaker/>
+  <sequence>
+    <SQ1>
+      <id>6521</id>
+      <type>speech</type>
+      <duration>510</duration>
+      <needs/>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+  </sequence>
+</fiche>

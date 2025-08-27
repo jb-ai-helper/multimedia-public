@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[3/5 - L'écologie, un enjeu éducatif ? | Rencontres Professionnelles]]></title>
+    <visibility>unlisted</visibility>
+    <date>2023-11-22</date>
+    <description><![CDATA[Mercredi 22 novembre 2023, suite des Rencontres Professionnelles sur l'écologie où nous aborderons la problématique : "l'écologie, un enjeu de formation dans les métiers du social ?"]]></description>
+  </video>
+  <event>
+    <title><![CDATA[L'écologie, un enjeu éducatif ?]]></title>
+    <subtitle>Bienvenue</subtitle>
+    <style>rpro</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>200</onsite>
+    <remote>0</remote>
+    <release>Asynchrone</release>
+    <date>2023-11-22</date>
+    <start>09:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>7057</id>
+      <name>Dominique GRANDGEORGE</name>
+      <function><![CDATA[Formateur, consultant, auteur spécialisé en matière<br>d’adaptation des enjeux écologiques et climatiques dans le travail social]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>8288</id>
+      <name>Paul CARY</name>
+      <function><![CDATA[Auteur, Sociologue, maître de conférences à l'Université de Lille]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>4430</id>
+      <name>Stéphane BERTRAND</name>
+      <function>Chargé de mission, CÉMÉA</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>1437</id>
+      <name>Dominique BOS</name>
+      <function>Directeur de site, Institut régional du travail social (IRTS) Hauts-de-France</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>0918</id>
+      <name>Jean LEMPEREUR</name>
+      <function>Formateur, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>1551</id>
+      <type>transition</type>
+      <html><![CDATA[Intervention introductive à la table ronde :<h1>l'écologisation du travail social</h1>]]></html>
+    </SQ1>
+    <SQ2>
+      <id>1799</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau</needs>
+      <speaking>7057</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>diffuser le document en pdf de l'intervenant</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>8801</id>
+      <type>transition</type>
+      <html><![CDATA[Table ronde : <h1>comment l'enjeu écologique<br>peut devenir un enjeu de formation<br>dans les métiers du social ?</h1>]]></html>
+    </SQ3>
+    <SQ4>
+      <id>2659</id>
+      <type>speech</type>
+      <duration>45</duration>
+      <needs>fauteuil</needs>
+      <speaking>1437,0918,4430,8288</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Afficher la couverture de son livre</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+    <SQ5>
+      <id>8537</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+  </sequence>
+</fiche>

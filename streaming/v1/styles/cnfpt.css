@@ -1,0 +1,49 @@
+/* Conférences CNFPT */
+
+#Partenaire{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("src/img/cnfpt.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    z-index: 1000;
+}
+
+#Partenaire.welcome{
+	content: "";
+	background-image: url("src/img/cnfpt-solo.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	position: fixed;
+	top: auto;
+	left: auto;
+	bottom: 5vh;
+	right: 7.5vh;
+	width: calc(100% - 7.5vh);
+	height: 27vh;
+}
+
+#TopBanner {
+    background: linear-gradient(90deg, rgba(255,255,255,1) calc(100% - 15vh), rgba(255,255,255,0) 100%);
+    height: 7.5vh;
+    padding: 0 15vh 0 20vh;
+}
+
+#Title.banner {
+    line-height: 7.5vh;
+    color: #6D6F71;
+}
+
+#name{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15vh,rgba(255,255,255,1) calc(100% - 15vh), rgba(255,255,255,0) 100%);
+    color: #6D6F71;
+}
+
+.Right{ background-color: #27AAE2; }
+.Left{ background-color: #E63643; }
+

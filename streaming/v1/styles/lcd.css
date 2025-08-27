@@ -1,0 +1,155 @@
+/* Les Cahiers Dynamiques */
+
+:root {
+	--lcd-red: #e20030;
+	--lcd-yellow: #ffec01;
+}
+
+#Title.welcome { color: black; bottom: 45vh; }
+#SubTitle.welcome { color:  var(--lcd-yellow); }
+#Date { color: black; bottom: 35vh; }
+/*
+#SubTitle.welcome{ display: none; }
+
+#Date {
+	color: black;
+	bottom: calc(50% - 15vh);
+}
+
+#Title.welcome{
+	color: black;
+	font-size: 4vh;
+	vertical-align: middle;
+	box-shadow: 0 0 2.5vh rgb(0 0 0 / 25%);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(226,0,48,1) calc(100% - 24vh));
+	border-radius: 1.4vh;
+	overflow: hidden;
+	top: 60%;
+	bottom: auto;
+	padding-right: 2.5vh;
+	padding-left: 2.5vh;
+	text-shadow: none;
+    text-align: left;
+	border: 0.14vh solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#Title.welcome::after{
+	content: "";
+	display: inline-table;
+	background-image: url(src/img/cahiers-dynamiques.jpg);
+	background-repeat: no-repeat;
+	background-size: 95%;
+	background-position: top right;
+	transform: translate(2.5vh, 0);
+	text-shadow: none;
+	float: right;
+	height: auto;
+	width: 24vh;
+	aspect-ratio: 800 / 620;
+}
+*/
+#TopBanner #Title, #TopBanner #SubTitle {
+    background: linear-gradient(90deg, rgba(226,0,48,1) calc(100% - 15vh), rgba(226,0,48,0) 100%);
+	padding: 0 15vh 0 15vh;
+}
+
+#TopBanner::before{
+	content: "";
+	display: inline-block;
+	background-image: url(../../styles/src/img/cahiers-dynamiques.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: auto;
+	height: 100%;
+	aspect-ratio: 800 / 620;
+	position: absolute;
+    left: 7.5vh;
+}
+
+.speaker{
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0, rgba(226,0,48,1) calc(100% - 24vh));
+	border-radius: 1.4vh;
+	overflow: hidden;
+	bottom: 5vh;
+	width: 65vw;
+	padding: 0;
+	border-color: black;
+	border-style: solid;
+	transition: all 1s ease-in-out;
+}
+
+.speaker::before{
+	content: "";
+	display: inline-table;
+	background-image: url(../../styles/src/img/cahiers-dynamiques.jpg);
+	background-color: var(--lcd-red);
+	background-repeat: no-repeat;
+	background-size: 95%;
+	background-position: top right;
+	text-shadow: none;
+	height: auto;
+	aspect-ratio: 800 / 620;
+	transition: all 1s ease-in-out;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+#name, #function, #translation{
+	background: none;
+	padding: unset;
+	margin: 0;
+	color: black;
+	text-shadow: none;
+	position: absolute;
+	z-index: 0;
+	width: 45vw;
+	text-align: left;
+	left: 2.5vh;
+}
+
+#name{ top: 2.5vh; }
+#function{ top: 6.25vh; }
+#translation{ display: none; }
+
+/*ON Animations*/
+#LowerThird.ON .speaker {animation: frame-in 2s ease both;}
+#LowerThird.ON .speaker::before {animation: logo-in 1s ease both;}
+#LowerThird.ON #name {animation: none;}
+#LowerThird.ON #function {animation: none;}
+#LowerThird.ON #translation {animation: none;}
+/*Deleted Animations*/
+#LowerThird.ON #name::after {animation: none;}
+#LowerThird.ON #function::after {animation: none;}
+#LowerThird.ON #translation::after {animation: none;}
+/*OFF Animations*/
+#LowerThird.OFF .speaker {animation: frame-out 2s ease both;}
+#LowerThird.OFF .speaker::before {animation: logo-out 1s ease both; animation-delay: 1s}
+#LowerThird.OFF #name {animation: none;}
+#LowerThird.OFF #function {animation: none;}
+#LowerThird.OFF #translation {animation: none;}
+
+@keyframes logo-in{
+	0% {width: 0;}
+	100% {width: 20vh}
+}
+
+@keyframes logo-out{
+	0% {width: 20vh;}
+	100% {width: 0;}
+}
+@keyframes frame-in{
+	0% {width: 0; height: 0; border-width: 0;}
+	50% {width: 20vh; height: 15.5vh; border-width: 0.14vh;}
+	100% {width: 65vw; height: 15.5vh; border-width: 0.14vh;}
+}
+
+@keyframes frame-out{
+	0% {width: 65vw; height: 15.5vh; border-width: 0.14vh;}
+	50% {width: 20vh; height: 15.5vh; border-width: 0.14vh;}
+	100% {width: 0; height: 0; border-width: 0vh;}
+}

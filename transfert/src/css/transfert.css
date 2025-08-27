@@ -1,0 +1,123 @@
+/* RESET DE BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 2rem;
+}
+
+/* STRUCTURE PRINCIPALE */
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* TITRES */
+h1, h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ZONE DE DROP */
+.drop-zone {
+  border: 2px dashed #0077cc;
+  background-color: #e8f4ff;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: #0077cc;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  transition: background-color 0.2s ease;
+	cursor: pointer;
+}
+
+.drop-zone.dragover {
+  background-color: #cce6ff;
+}
+
+/* LISTE DES FICHIERS */
+.file-list {
+  background: white;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.file-list ul {
+  list-style: none;
+}
+
+.file-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.file-list li:last-child {
+  border-bottom: none;
+}
+
+.file-name {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: #0077cc;
+  cursor: pointer;
+}
+
+.file-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.file-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #cc0000;
+  font-size: 1rem;
+}
+
+.file-actions button.copy {
+  color: #0077cc;
+}
+
+#download-selected {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+
+  .file-list .file-actions {
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5em;
+  }
+
+  #download-selected {
+    font-size: 1.1em;
+  }
+
+  .drop-zone {
+    padding: 1.5em 1em;
+    font-size: 1.1em;
+  }
+}

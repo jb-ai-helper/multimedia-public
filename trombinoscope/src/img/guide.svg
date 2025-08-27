@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 1080">
+  <!-- Generator: Adobe Illustrator 29.0.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 192)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #e1000f;
+      }
+
+      .st1 {
+        fill: #34cb6a;
+      }
+    </style>
+  </defs>
+  <path id="global" d="M0,0v1080h1920V0H0ZM960,1040c-276.1,0-500-223.9-500-500S683.9,40,960,40s500,223.9,500,500-223.9,500-500,500Z"/>
+  <path id="eyes" class="st0" d="M720,418c0,17.1,1.2,33.8,3.6,50h472.9c2.3-16.2,3.6-32.9,3.6-50s-1.2-33.8-3.6-50h-472.9c-2.3,16.2-3.6,32.9-3.6,50Z"/>
+  <g id="head">
+    <path class="st1" d="M1196.4,368c-19.6-136.3-118-240-236.4-240s-216.8,103.7-236.4,240h472.9Z"/>
+    <path class="st1" d="M723.6,468c19.6,136.3,118,240,236.4,240s216.8-103.7,236.4-240h-472.9Z"/>
+  </g>
+</svg>

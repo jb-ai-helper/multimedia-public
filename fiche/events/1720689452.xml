@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[1. L'ENPJJ fait son cinéma | Accord(s) et âme(s)]]></title>
+    <visibility>unlisted</visibility>
+    <date>2024-07-15</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>CORPS CATHARTIQUE(S)</title>
+    <subtitle><![CDATA[L'ENPJJ fait son cinéma]]></subtitle>
+    <style>festicine</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-07-15</date>
+    <start>14:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>3538</id>
+      <name>Oumaya Hidri Neys</name>
+      <function>Professeure des universités en STAPS, Laboratoire Textes et Cultures (UR 4028), Université d’Artois</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>4058</id>
+      <name>Damien Vanier de Saint Aunay</name>
+      <function>Doctorant en sociologie, Laboratoire Centre de Recherche Individus Épreuves Société (CeRIES), Université de Lille</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>6079</id>
+      <name>Fabien BEYRIA</name>
+      <function><![CDATA[Directeur général adjoint de l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>9659</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Ouverture</h2>]]></html>
+    </SQ1>
+    <SQ2>
+      <id>7125</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>pupitre</needs>
+      <speaking>6079</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>2397</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>Le corps et ses discriminations :<br>Éléments d'analyse<br>pour de meilleures intéractions</h1>]]></html>
+    </SQ3>
+    <SQ4>
+      <id>1578</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs>hf</needs>
+      <speaking>public,3538</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Intervention depuis ZOOM ROOMS</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+    <SQ5>
+      <id>2215</id>
+      <type>transition</type>
+      <html><![CDATA[Projection<h2>Billy Elliot</h2><h1>Stephen Daldry, 2000</h1>]]></html>
+    </SQ5>
+    <SQ6>
+      <id>7332</id>
+      <type>speech</type>
+      <duration>110</duration>
+      <needs/>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Projection du film : Billy Elliot (DVD)</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ6>
+    <SQ7>
+      <id>7140</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>Adolescence et pratique artistique :<br>Comment Billy Elliot redéfinit<br>les normes de la masculinité</h1>]]></html>
+    </SQ7>
+    <SQ8>
+      <id>9559</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs>hf</needs>
+      <speaking>public,4058</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ8>
+  </sequence>
+</fiche>

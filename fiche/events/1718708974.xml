@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Les conférences familiales 2/2</title>
+    <visibility>private</visibility>
+    <date>2024-06-18</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Les conférences familiales</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-06-18</date>
+    <start>14:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>1076</id>
+      <name>Arnaud BUCHON</name>
+      <function><![CDATA[|Chargé de projet|<br>DIR. GENERALE ADJOINTE ENFANCE FAMILLE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>2577</id>
+      <name><![CDATA[Mohamed L'HOUSSNI]]></name>
+      <function><![CDATA[Directeur <br>de l'association RETIS]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>1121</id>
+      <name>Khadija EL HAOUARI</name>
+      <function><![CDATA[|Chargée de mission ODPE|<br>]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>9047</id>
+      <name>Paul NIXON</name>
+      <function><![CDATA[Consultant Social en conférences familiales<br>Nouvelle Zélande]]></function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj</link>
+    </SP4>
+    <SP5>
+      <id>8595</id>
+      <name>Harriet WARD</name>
+      <function><![CDATA[Professeur émérite<br>à Oxford]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>4945</id>
+      <name>Cathy ASHLEY</name>
+      <function><![CDATA[Directrice générale<br>de Family Rights Group]]></function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj</link>
+    </SP6>
+    <SP7>
+      <id>8369</id>
+      <name>Nathalie SULKOWSKI</name>
+      <function><![CDATA[Directrice Chargée d'accompagnement social et familial<br>SOS Petits Princes]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>4334</id>
+      <name>Laetitia GHANAI</name>
+      <function><![CDATA[Parent relais<br>SOS Petits Princes]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+    <SP9>
+      <id>4100</id>
+      <name>Fabienne LEMAIRE</name>
+      <function><![CDATA[Directrice adjointe<br>Pôle Protection de l'Enfance<br>La sauvegarde du Nord]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP9>
+    <SP10>
+      <id>5342</id>
+      <name>Zoé BORNE</name>
+      <function><![CDATA[Juge des Enfants<br>Magistrat coordinateur<br>TJ de Douai<br>]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP10>
+    <SP11>
+      <id>4448</id>
+      <name>Anne LANSIAUX</name>
+      <function><![CDATA[Responsable du service Enfance<br>Dunkerque et Hondshoote]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP11>
+    <SP12>
+      <id>6235</id>
+      <name>Grégory DUBOIS</name>
+      <function><![CDATA[Responsable de l'ODPE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP12>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>0318</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,fauteuil</needs>
+      <speaking>4448</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+  </sequence>
+</fiche>

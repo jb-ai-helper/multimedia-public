@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Session Inter-École IRA Lille</title>
+    <visibility>unlisted</visibility>
+    <date>2024-03-29</date>
+    <description><![CDATA[Enregistrement de la restitution du groupe 1 de la session inter-école de l'IRA de Lille.]]></description>
+  </video>
+  <event>
+    <title>Restitution de la session inter-école 2024</title>
+    <subtitle>IRA de Lille</subtitle>
+    <style>resp-ira</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-03-29</date>
+    <start>10:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>5233</id>
+      <name>Pierre DELERUE</name>
+      <function>ELEVE ATTACHE IRA DE LILLE</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>1003</id>
+      <name>YOANN JOURNAUX</name>
+      <function>INSPECTEUR DU TRAVAIL INTEFP</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>1188</id>
+      <name>APOLLINE ANTOINE</name>
+      <function>INSPECTRICE DU TRAVAIL INTEFP</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>5575</id>
+      <name>ADRIEN LEMAITRE</name>
+      <function><![CDATA[LIEUTENANT 1ERE CLASSE D'OFFICIER SAPEUR  POMPIER ENSOSP]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>4064</id>
+      <name>GUILYANN CHERRIER-LAGARDE</name>
+      <function>CONTROLEUR DES FINANCES PUBLIQUES ENFIP</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>4723</id>
+      <name>BENJAMIN CHABOT</name>
+      <function>ELEVE OFFICIER ENSOSP</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>3298</id>
+      <name>MARINA CHAUMOND</name>
+      <function>INSPECTRICE DE LA JEUNESSE ET DES SPORTS</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>0622</id>
+      <name>EWEN LE LEANNEC</name>
+      <function>ELEVE OFFICIER ENSOSP</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>9849</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs/>
+      <speaking>4064,5575,1188,1003,5233</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>8003</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs/>
+      <speaking>0622,3298,4723</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+  </sequence>
+</fiche>

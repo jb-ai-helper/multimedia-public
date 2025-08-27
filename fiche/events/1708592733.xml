@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Accueil de la promotion FSD 32</title>
+    <visibility>unlisted</visibility>
+    <date>2024-03-05</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Accueil de la promotion FSD 32</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>30</onsite>
+    <remote>30</remote>
+    <release>Asynchrone</release>
+    <date>2024-03-05</date>
+    <start>14:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>3323</id>
+      <name>Cécile LALUMIERE</name>
+      <function>Directrice du service de la formation - ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>3913</id>
+      <name>Lila BENARAB</name>
+      <function>Directrice du pôle gouvernance - ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>3772</id>
+      <name>Aude BOLATRE</name>
+      <function><![CDATA[Responsable de l'UAIP - ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>9661</id>
+      <name>Henri OCCRE</name>
+      <function>Directeur associé - C-CAMPUS</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>1696</id>
+      <name>Nathalie LE BARAZER</name>
+      <function>Directrice UEHC La Roche sur Yon</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>0715</id>
+      <name>Agathe ESNOUX</name>
+      <function>Directrice UEMO Amiens-Est</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>8097</id>
+      <name>Étienne DUBOIS</name>
+      <function>Formateur PG - ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>4301</id>
+      <name>Abdellatif HEDDAR</name>
+      <function>Formateur PG - ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>7580</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs/>
+      <speaking>3772,3913,3323</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>5436</id>
+      <type>speech</type>
+      <duration>90</duration>
+      <needs/>
+      <speaking>0715,1696,9661</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>7557</id>
+      <type>pause</type>
+      <duration>15</duration>
+    </SQ3>
+    <SQ4>
+      <id>8242</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs/>
+      <speaking>4301,8097,3913</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+  </sequence>
+</fiche>

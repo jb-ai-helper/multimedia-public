@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Séminaire des directeurs territoriaux et de leurs adjoints</title>
+    <visibility>unlisted</visibility>
+    <date>2024-03-27</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Séminaire des directeurs territoriaux et de leurs adjoints</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>ext</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Asynchrone</release>
+    <date>2024-03-27</date>
+    <start>09:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>7949</id>
+      <name>Albert MOUKHEIBER</name>
+      <function>Docteur en neurosciences et psychologue clinicien</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>4775</id>
+      <name>Caroline NISAND</name>
+      <function>Directrice de la protection judiciaire de la jeunesse</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>2372</id>
+      <name>Françoise DEWAMIN</name>
+      <function>Directrice territoriale Pas-de-Calais (62)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>5002</id>
+      <name>Didier COUDER</name>
+      <function>Directeur territorial adjoint Drôme (26) - Ardèche (07)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>8802</id>
+      <name>Soulmaz ALAVINA</name>
+      <function>Directrice de projets transformation managériale,</function>
+      <translation>Direction interministérielle de la transformation publique</translation>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>6460</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Conférence</h2><br><h1>Notre cerveau<br>nous joue des tours</h1>]]></html>
+    </SQ1>
+    <SQ2>
+      <id>5994</id>
+      <type>speech</type>
+      <duration>90</duration>
+      <needs>pupitre,bureau</needs>
+      <speaking>7949</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>7518</id>
+      <type>pause</type>
+      <duration>180</duration>
+    </SQ3>
+    <SQ4>
+      <id>7744</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Co-théâtre</h2><br><h1>Obligation de neutralité :<br>quelle posture adoptée<br>du DT/DTA ?</h1>]]></html>
+    </SQ4>
+    <SQ5>
+      <id>9722</id>
+      <type>speech</type>
+      <duration>90</duration>
+      <needs>pupitre,bureau</needs>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+    <SQ6>
+      <id>8127</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Table ronde</h2><br><h1>Enjeux et opportunités<br>du management de cadres<br>répartis sur différents sites</h1>]]></html>
+    </SQ6>
+    <SQ7>
+      <id>8204</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs>pupitre,bureau</needs>
+      <speaking>8802,5002,2372</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ7>
+    <SQ8>
+      <id>6251</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pupitre</needs>
+      <speaking>4775</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ8>
+  </sequence>
+</fiche>

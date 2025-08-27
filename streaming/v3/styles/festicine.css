@@ -1,0 +1,134 @@
+/* Festival de Cinéma */
+
+#Introduction:not(.OFF) + #Chapter + audio + #ENPJJ {
+    opacity: 0;
+}
+#Introduction:not(.OFF) + #Chapter + audio + #ENPJJ + #Marianne {
+    opacity: 0;
+}
+
+#Introduction::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/festival-cinema.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    filter: drop-shadow(0 0 1vh #2F4077);/* changer la couleur en fonction de l'année */
+}
+
+#Introduction{ background-image: url("img/camera-overlay.png"); background-size: contain; }
+
+@keyframes rec-introduction {
+  0% {content: "REC";}
+  100% {content: "\25CF\00a0REC";}
+}
+
+#Introduction::after {
+    content: "";
+    color: #E1000F;
+    font-size: 5vh;
+    font-weight: bold;
+    line-height: 5vh;
+    position: absolute;
+    text-align: right;
+    width: 15vh;
+    top: 10%;
+    left: calc((16/9) * 10vh);
+    border-radius: 100%;
+    animation-name: rec-introduction;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transform: translate(0%,50%);
+}
+
+#Title_Introduction {
+    color: #E1000F;
+    top: 85%;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#SubTitle_Introduction {
+    color: #2F4077;
+    font-size: calc(1 * var(--gov-unit));
+    transform: translate(-50%,50%);
+    top: 10%;
+    filter: drop-shadow(0 0 2.5vh black);
+}
+
+#Date {
+    top: 90%;
+    transform: translate(-50%,50%);
+}
+
+@keyframes rec-copyright {
+  0% {background-color: #E1000F;}
+  49% {background-color: #E1000F;}
+  50% {background-color: #000000;}
+  100% {background-color: #000000;}
+}
+
+#Copyright::before {
+    content: "";
+    display: block;
+    background-color: #E1000F;
+    height: 2.5vh;
+    width: 2.5vh;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 0;
+    left: calc(1.5 * var(--gov-unit));
+    animation-name: rec-copyright;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+#Title_Copyright {
+    padding: 0 calc(3 * var(--gov-unit)) 0 calc(2.5 * var(--gov-unit));
+}
+
+#Chapter::before {
+    content: "";
+    color: #E1000F;
+    font-size: 5vh;
+    font-weight: bold;
+    line-height: 5vh;
+    position: absolute;
+    text-align: right;
+    width: 15vh;
+    top: calc(10% * 1.8);
+    left: calc(((16/9) * 10vh) * 1.8);
+    border-radius: 100%;
+    animation-name: rec-introduction;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transform: translate(0%,50%) scale(0.80);
+}
+
+#Chapter {
+    background-image: url("img/camera-overlay.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Chapter::after {
+    background: linear-gradient(90deg, rgba(225,0,15,0) 50%, rgba(225,0,15,1) 50%, rgba(225,0,15,1) 100%, rgba(225,0,15,0) 100%);
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+}
+
+#Title_Chapter {
+    color: #E1000F;
+    text-shadow:
+        0 0 calc(3 * var(--gov-unit)) rgba(255,255,255,1),
+        0 0 calc(1.5 * var(--gov-unit)) rgba(255,255,255,1),
+        0 0 calc(.75 * var(--gov-unit)) rgba(255,255,255,1),
+        0 0 calc(.15 * var(--gov-unit)) rgba(255,255,255,1);
+}
+
+h1, h2, h3 { color: #2F4077; }

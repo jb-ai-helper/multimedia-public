@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[Soirée de l'encadrement]]></title>
+    <visibility>unlisted</visibility>
+    <date>2024-10-16</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title><![CDATA[Soirée de l'encadrement]]></title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>30</onsite>
+    <remote>60</remote>
+    <release>Synchrone</release>
+    <date>2024-10-16</date>
+    <start>17:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>9027</id>
+      <name>Frédérique BOTELLA</name>
+      <function><![CDATA[Directrice générale de l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>6530</id>
+      <name>Cécicle LALUMIERE</name>
+      <function><![CDATA[Directrice du service de la formation de l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>3623</id>
+      <name>Lila BENARAB</name>
+      <function><![CDATA[Directrice du pôle gouvernance de l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>4346</id>
+      <name>Abdellatif HEDDAR</name>
+      <function><![CDATA[Formateur au pôle gouvernance de l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>1750</id>
+      <name>Albert MOUKHEIBER</name>
+      <function>Docteur en neurosciences, psychologue clinicien, Université Paris 8</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>1937</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pupitre,bureau,fauteuil</needs>
+      <speaking>9027,6530,3623</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>2634</id>
+      <type>speech</type>
+      <duration>60</duration>
+      <needs>bureau</needs>
+      <speaking>1750</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>2465</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,hf</needs>
+      <speaking>1750</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+  </sequence>
+</fiche>

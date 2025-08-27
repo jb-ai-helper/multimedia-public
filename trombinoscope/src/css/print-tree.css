@@ -1,0 +1,40 @@
+/* /trombinoscope/src/css/print-tree.css */
+
+@page {
+  size: A3 landscape;
+  margin: 0;
+}
+@media print {
+	html, body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		background: white;
+	}
+	#header, #controls{
+		display: none;
+	}
+	
+	#title {
+		display: block;
+		position: absolute;
+		right: 5mm;
+		top: 5mm;
+		padding: 2mm;
+		border-style: none;
+		background-color: #c0c0c0;
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+		border-radius: 1mm;
+	}
+	
+	/* On force #hier-view à se réduire pour tenir dans un A3 */
+	#hier-view {
+		transform: scale(var(--hier-scale,1));
+		transform-origin: top left;
+	}
+
+	/* Si besoin, cacher la vue flat au print */
+	#flat-view { display: none; }
+}

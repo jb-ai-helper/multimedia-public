@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Séminaire des directeurs territoriaux et de leurs adjoints</title>
+    <visibility>unlisted</visibility>
+    <date>2024-03-26</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Séminaire des directeurs territoriaux et de leurs adjoints</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>ext</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Asynchrone</release>
+    <date>2024-03-26</date>
+    <start>14:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>6764</id>
+      <name>Caroline NISAND</name>
+      <function>Directrice de la protection judiciaire de la jeunesse</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>2574</id>
+      <name>Marion LE LORRAIN</name>
+      <function>Adjointe au chef de bureau de la Lutte contre la Criminalité Organisée, le Terrorisme et le Blanchiment,</function>
+      <translation>Direction des affaires criminelles et des grâces</translation>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>8999</id>
+      <name>Christian BEN LAKHDAR</name>
+      <function>Professeur des universités, université de Lille</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>1498</id>
+      <name>Pierre PIBAROT</name>
+      <function>DT Bouches du Rhône (13)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>1622</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pupitre</needs>
+      <speaking>6764</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>3068</id>
+      <type>pause</type>
+      <duration>150</duration>
+    </SQ2>
+    <SQ3>
+      <id>9247</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Table ronde</h2><br><h1>Les enjeux du narcotrafic<br> dans la prise en charge des mineurs<br> et l'accompagnement des familles</h1>]]></html>
+    </SQ3>
+    <SQ4>
+      <id>7766</id>
+      <type>speech</type>
+      <duration>90</duration>
+      <needs>bureau,fauteuil</needs>
+      <speaking>1498,8999,2574</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+  </sequence>
+</fiche>

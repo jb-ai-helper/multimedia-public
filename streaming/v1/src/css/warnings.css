@@ -1,0 +1,67 @@
+/* CSS Document */
+
+body{
+	margin:0;
+	overflow:hidden;
+	font-family: Marianne;
+	}
+
+#ScrollingWarning{
+    box-sizing: border-box;
+	height: 5vh;
+	width: 100%;
+	color: #ffffff;
+	font-style: italic;
+	font-size: 2.5vh;
+	line-height: 5vh;
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	transition: all 1s ease-in-out;
+	transition-delay: 0s;
+	overflow: hidden;
+	background: #E30613;
+}
+
+#WarningWrapper{
+	height: 100%;
+	display: block;
+	margin: 0 10%;
+	overflow: hidden;
+}
+#Warning{
+	animation-name: ScrollRighToLeft;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	text-align: center;
+	white-space: nowrap;
+	width: fit-content;
+	min-width: 100%;
+	margin: 0;
+}
+
+@keyframes ScrollRighToLeft {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+#ScrollingWarning::before, #ScrollingWarning::after{
+	content: "";
+	display: block;
+	top: 0;
+	width: 5vh;
+	height: 5vh;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat
+}
+
+#ScrollingWarning::before{ left: 5%; }
+#ScrollingWarning::after{ right: 5%; }
+
+#ScrollingWarning::before, #ScrollingWarning::after{
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='300px' width='300px' fill='%23ffffff' version='1.1' x='0px' y='0px' viewBox='0 0 48 48' enable-background='new 0 0 48 48' xml:space='preserve'%3E%3Cpath d='m23.999999,34.000003a2,2 0 1 1 2,-2a2,2 0 0 1 -2,2zm0,-2z'/%3E%3Cpath d='m23.999999,28.000003a1,1 0 0 1 -1,-1l0,-8a1,1 0 0 1 2,0l0,8a1,1 0 0 1 -1,1z'/%3E%3Cpath d='m35.779999,38.001503l-23.56,0a3.19,3.19 0 0 1 -2.77,-1.57a3.13,3.13 0 0 1 -0.06,-3.13l11.78,-21.63a3.23,3.23 0 0 1 5.66,0l11.78,21.63a3.13,3.13 0 0 1 -0.06,3.13a3.19,3.19 0 0 1 -2.77,1.57zm-11.78,-26a1.18,1.18 0 0 0 -1.07,0.63l-11.78,21.62a1.12,1.12 0 0 0 0,1.16a1.19,1.19 0 0 0 1,0.59l23.63,0a1.19,1.19 0 0 0 1,-0.59a1.12,1.12 0 0 0 0,-1.16l-11.71,-21.62a1.18,1.18 0 0 0 -1.07,-0.63z'/%3E%3C/svg%3E");
+}
+

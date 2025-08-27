@@ -1,0 +1,171 @@
+/* Anniversaire des 70 ans de l'ENPJJ */
+
+#SubTitle_Introduction{
+	-webkit-text-stroke: 0.25vh black;
+	text-shadow: -0.4vh -0.4vh 0 #ffca00, 0.4vh 0.4vh 0 white;
+	-webkit-text-fill-color: white;
+}
+
+#Title_Introduction{
+	background-color: #FFCA00;
+	color: black;
+	text-shadow: none;
+	padding: 0 5vh;
+	font-weight: normal;
+	font-size: 4vh;
+	line-height: 125%;
+}
+
+#Title_Introduction[data-line='2']{ margin-bottom: -5vh; }
+
+#Title_Introduction::before {
+	content: '';
+	top: 2.5vh;
+	right: -7.5vh;
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-width: 2.5vh 5vh 2.5vh 10vh;
+	border-color: #FECC30 transparent #FECC30 #FECC30;
+	z-index: -1;
+}
+
+#Title_Introduction::after {
+	content: '';
+	top: 2.5vh;
+	left: -7.5vh;
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-width: 2.5vh 10vh 2.5vh 5vh;
+	border-color: #FECC30 #FECC30 #FECC30 transparent;
+	z-index: -1;
+}
+
+#Title_Introduction[data-line='2']::before {
+	content: '';
+	top: 2.5vh;
+	right: -7.5vh;
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-width: 5vh 5vh 5vh 10vh;
+	border-color: #FECC30 transparent #FECC30 #FECC30;
+	z-index: -1;
+}
+
+#Title_Introduction[data-line='2']::after {
+	content: '';
+	top: 2.5vh;
+	left: -7.5vh;
+	display: block;
+	position: absolute;
+	border-style: solid;
+	border-width: 5vh 10vh 5vh 5vh;
+	border-color: #FECC30 #FECC30 #FECC30 transparent;
+	z-index: -1;
+}
+
+#Title_Introduction span::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    top: 100%;
+    left: 0;
+    border-width: 2.5vh 0 0 7.5vh;
+    border-color: #C3992A transparent transparent transparent;
+}
+
+#Title_Introduction span::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    top: 100%;
+    right: 0;
+    border-width: 2.5vh 7.5vh 0 0;
+    border-color: #C3992A transparent transparent transparent;
+}
+
+#Date{
+	color: white;
+	text-shadow: none;
+	-webkit-text-stroke: 0.125vh black;
+	font-weight: bold;
+}
+
+/*#name{ background: linear-gradient(90deg, rgba(255,202,0,0) 0%, rgba(255,202,0,1) 15vh,rgba(255,202,0,1) calc(100% - 15vh), rgba(255,202,0,0) 100%); }*/
+#Name{
+	background-color: black;
+	padding: 0 2.5vh;
+	border-style: solid;
+	border-width: 0 0.5vh;
+	border-color: transparent #FFCA00 transparent #ffca00;
+	/*ont-weight: normal;*/
+}
+
+#Name::after { padding: 0 0.5vh; margin-left: -0.5vh; }
+
+/*#function{ background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15vh,rgba(0,0,0,1) calc(100% - 15vh), rgba(0,0,0,0) 100%); }*/
+#function, #translation{ 
+	background-color: black;
+	padding: 0 2.5vh;
+	border-style: solid;
+	border-width: 0 0.5vh;
+	border-color: transparent #FFCA00 transparent #ffca00;
+ }
+
+#Function::after, #Translation::after { padding: 0 0.5vh; margin-left: -0.5vh; }
+
+.Right{ background-color: #FFCA00; }
+.Left{ background-color: #C3992A; }
+
+#Copyright::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: calc(100% + 7vh);;
+	border-width: 0.25vh 0.5vh;
+	border-style: solid;
+	border-color: Black transparent;
+	height: calc(1/1.4 * 100%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+#Title_Copyright{
+	background: #FFCA00;
+	padding: 0 5vh 0 7.5vh;
+	color: black;
+}
+
+#Title_Copyright::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: -5vh;
+	top: 0;
+	border-style: solid;
+	border-width: 2.5vh 5vh 0 0;
+	border-color: #FFCA00 transparent transparent transparent;
+}
+
+#Title_Copyright::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: -5vh;
+	bottom: 0;
+	border-style: solid;
+	border-width: 2.5vh 0 0 5vh;
+	border-color: transparent transparent transparent #FFCA00;
+}
+
+#ENPJJ{ background-image: url("img/enpjj-anniv70.svg"); }
+
+#ScrollingBanner{ background: linear-gradient(90deg, rgba(216,198,52,0) 0%, rgba(216,198,52,1) 25%, rgba(216,198,52,1) 75%, rgba(216,198,52,0) 100%); }

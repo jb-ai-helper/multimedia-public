@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Rencontres professionnelles promotion de la santé</title>
+    <visibility>unlisted</visibility>
+    <date>2024-10-14</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Rencontres professionnelles promotion de la santé</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>rpro</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-10-14</date>
+    <start>09:00</start>
+  </event>
+  <speaker/>
+  <sequence/>
+</fiche>

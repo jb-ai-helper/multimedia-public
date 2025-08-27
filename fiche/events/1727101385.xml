@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[Journée d'Étude : 35 ans de la CIDE]]></title>
+    <visibility>public</visibility>
+    <date>2024-11-20</date>
+    <description><![CDATA[35ème anniversaire de la Convention internationale relative aux droits de l’enfant (CIDE), centenaire de la Déclaration de Genève, 65ème anniversaire de la Déclaration universelle des droits de l’enfant... L’année 2024 célèbre les droits de l’enfant !<br>]]></description>
+  </video>
+  <event>
+    <title><![CDATA[35 ans de la Convention Internationale des Droits de l'Enfant (CIDE)]]></title>
+    <subtitle>Quels défis pour demain ?</subtitle>
+    <style>cide</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-11-20</date>
+    <start>09:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>2928</id>
+      <name>Léa JARDIN</name>
+      <function><![CDATA[Chercheuse en droit à l'ENPJJ, Chercheuse associée de la Chaire Enfance<br>et Familles (UCL) et du Centre Thucydide (Université Panthéon-Assas)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>0468</id>
+      <name>Blandine MALLEVAEY</name>
+      <function><![CDATA[Professeur à la Faculté de Droit de l’Université catholique<br>de Lille, Titulaire de la Chaire Enfance et familles du C3RD]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>6095</id>
+      <name>Delphine BRUGGEMAN</name>
+      <function><![CDATA[Responsable de l’unité recherche et études de l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>9236</id>
+      <name>Jessica FILIPPI</name>
+      <function><![CDATA[Chercheure en criminologie à l’ENPJJ, Chercheure associée<br>au Centre de recherches Pénalité, Sécurité et Déviances (ULB)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>7062</id>
+      <name>Karima ESSEKI</name>
+      <function><![CDATA[Rédactrice, Bureau des méthodes et de l’action éducative (K2),<br>Sous-Direction des missions de protection judiciaire et d'éducation (SDMPJE)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>5668</id>
+      <name>Ahmed EL BORJ</name>
+      <function><![CDATA[Chargé de mission, DTPJJ 78,<br>Animateur de justice restaurative]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>8263</id>
+      <name>Frédéric ALMENDROS</name>
+      <function>Procureur adjoint, Tribunal judiciaire de Cayenne</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/j/8646562834?pwd=K2JnOTRQWDZPQk9yeDc4S3RkcXBOZz09</link>
+    </SP7>
+    <SP8>
+      <id>8276</id>
+      <name>Mael VIRAT</name>
+      <function><![CDATA[Chercheur en psychologie à l’ENPJJ, Chercheur associé<br>au laboratoire PSITEC (EA 4072) (Université de Lille)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+    <SP9>
+      <id>6149</id>
+      <name>Jessica POTHET</name>
+      <function><![CDATA[Maîtresse de conférence en sociologie,<br>Centre Max Weber (Lyon) et Université Lyon 1]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP9>
+    <SP10>
+      <id>0475</id>
+      <name>Florian WATIER</name>
+      <function><![CDATA[Doctorant en droit privé et sciences criminelles, membre de la Chaire Enfance<br>et Familles (Faculté de droit, Université catholique de Lille)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP10>
+    <SP11>
+      <id>8630</id>
+      <name>Diodio METRO</name>
+      <function>Présidente de l’ADEPAPE 95 – REPAIRS 95</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP11>
+    <SP12>
+      <id>0168</id>
+      <name>Claire ROQUAIN</name>
+      <function><![CDATA[Ancienne jeune de l'ASE]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP12>
+    <SP13>
+      <id>2787</id>
+      <name>Anne-Claire GRANDJEAN</name>
+      <function><![CDATA[Cheffe du pôle régional Hauts-de-France <br>du Défenseur des droits]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP13>
+    <SP14>
+      <id>3502</id>
+      <name>Frédéric BARTHÉLÉMY</name>
+      <function>Directeur du CEF de Saverne, Groupe SOS jeunesse</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP14>
+    <SP15>
+      <id>4571</id>
+      <name>Agnès GINDT-DUCROS</name>
+      <function>Directrice du service de la recherche et de la documentation - ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP15>
+    <SP16>
+      <id>8321</id>
+      <name>Adeline HAZAN</name>
+      <function><![CDATA[Présidente d'UNICEF France]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP16>
+    <SP17>
+      <id>7958</id>
+      <name>Benoit VAN KEIRSBILCK</name>
+      <function><![CDATA[Membre expert du Comité des droits de l'enfant,<br>Président du Child Friendly Justice European Network]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP17>
+    <SP18>
+      <id>1525</id>
+      <name>Éric DELEMAR</name>
+      <function>Défenseur des enfants, adjoint de la Défenseure des droits</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP18>
+    <SP19>
+      <id>7811</id>
+      <name>Caroline NISAND</name>
+      <function>Directrice de la PJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP19>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>2353</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Ouverture de la journée</h2>]]></html>
+    </SQ1>
+    <SQ2>
+      <id>4508</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>pupitre</needs>
+      <speaking>7811,0468,4571</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion de la vidéo de Caroline NISAND</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>0333</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Introduction de la journée</h2>]]></html>
+    </SQ3>
+    <SQ4>
+      <id>7936</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>pupitre</needs>
+      <speaking>2928</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+    <SQ5>
+      <id>9271</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs/>
+      <speaking>8321</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion de l'interview d'Adeline HAZAN (Transition incluse dans la vidéo)</sources>
+        </ddr>
+        <scroll>
+          <checked>true</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+    <SQ6>
+      <id>9857</id>
+      <type>transition</type>
+      <html><![CDATA[Table ronde :<h1>La justice restaurative <br> un droit  pour les jeunes ?</h1>]]></html>
+    </SQ6>
+    <SQ7>
+      <id>9273</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>fauteuil</needs>
+      <speaking>5668,7062,9236</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ7>
+    <SQ8>
+      <id>2286</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Échanges avec le public</h1>]]></html>
+    </SQ8>
+    <SQ9>
+      <id>3235</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>9236,7062,5668,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Projeter QR WOOCLAP https://app.wooclap.com/35CIDE?from=event-page</specifications>
+        </requests>
+      </extra>
+    </SQ9>
+    <SQ10>
+      <id>1902</id>
+      <type>pause</type>
+      <duration>15</duration>
+    </SQ10>
+    <SQ11>
+      <id>1147</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence : <h1>Les chiens d’assistance judiciaire</h1>]]></html>
+    </SQ11>
+    <SQ12>
+      <id>7089</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,hf</needs>
+      <speaking>8263,9236</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ12>
+    <SQ13>
+      <id>2848</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Échanges avec le public</h1>]]></html>
+    </SQ13>
+    <SQ14>
+      <id>9805</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>hf</needs>
+      <speaking>8263,9236,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Projeter QR WOOCLAP https://app.wooclap.com/35CIDE?from=event-page</specifications>
+        </requests>
+      </extra>
+    </SQ14>
+    <SQ15>
+      <id>9282</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>Le rapport à la justice chez les adolescents</h1>]]></html>
+    </SQ15>
+    <SQ16>
+      <id>5496</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,pc</needs>
+      <speaking>9236,8276</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ16>
+    <SQ17>
+      <id>2985</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Échanges avec le public</h1>]]></html>
+    </SQ17>
+    <SQ18>
+      <id>6592</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>bureau,hf</needs>
+      <speaking>9236,8276,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Projeter QR WOOCLAP https://app.wooclap.com/35CIDE?from=event-page</specifications>
+        </requests>
+      </extra>
+    </SQ18>
+    <SQ19>
+      <id>3689</id>
+      <type>pause</type>
+      <duration>105</duration>
+    </SQ19>
+    <SQ20>
+      <id>4042</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs/>
+      <speaking>6095,7958</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion de l'interview de Benoit VAN KEIRSBILCK (Transition incluse dans la vidéo)</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ20>
+    <SQ21>
+      <id>7105</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>Parentalités contemporaines<br>et enjeux du soutien<br>à la fonction parentale</h1>]]></html>
+    </SQ21>
+    <SQ22>
+      <id>7760</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau</needs>
+      <speaking>6095,6149</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ22>
+    <SQ23>
+      <id>6222</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>De l’autorité parentale<br>à la responsabilité parentale ?</h1>]]></html>
+    </SQ23>
+    <SQ24>
+      <id>6550</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau</needs>
+      <speaking>6095,0468</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ24>
+    <SQ25>
+      <id>7912</id>
+      <type>transition</type>
+      <html><![CDATA[Conférence :<h1>Quelle(s) responsabilité(s) <br> des parents du fait de leur enfant ?</h1>]]></html>
+    </SQ25>
+    <SQ26>
+      <id>3500</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau</needs>
+      <speaking>6095,0475</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ26>
+    <SQ27>
+      <id>7903</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Échanges avec le public</h1>]]></html>
+    </SQ27>
+    <SQ28>
+      <id>8618</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>fauteuil,hf</needs>
+      <speaking>6149,0468,0475,6095,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Projeter QR WOOCLAP https://app.wooclap.com/35CIDE?from=event-page</specifications>
+        </requests>
+      </extra>
+    </SQ28>
+    <SQ29>
+      <id>9055</id>
+      <type>pause</type>
+      <duration>15</duration>
+    </SQ29>
+    <SQ30>
+      <id>8729</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs/>
+      <speaking>0468,1525</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Diffusion de l'interview d'Éric DELEMAR (Transition incluse dans la vidéo)</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ30>
+    <SQ31>
+      <id>6946</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Le point de vue international et européen : <br> la mobilisation des enfants devant les institutions</h1>]]></html>
+    </SQ31>
+    <SQ32>
+      <id>0798</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau</needs>
+      <speaking>0468,2928</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ32>
+    <SQ33>
+      <id>8996</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>La pratique du Défenseur des droits en matière <br> de participation des enfants</h1>]]></html>
+    </SQ33>
+    <SQ34>
+      <id>0082</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau</needs>
+      <speaking>2787,0468</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ34>
+    <SQ35>
+      <id>3708</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Le point de vue des anciens enfants placés : comment rendre visibles les « premiers concernés » ? </h1>]]></html>
+    </SQ35>
+    <SQ36>
+      <id>0697</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau</needs>
+      <speaking>0168,8630,0468</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ36>
+    <SQ37>
+      <id>8764</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Le Conseil participatif en CEF</h1>]]></html>
+    </SQ37>
+    <SQ38>
+      <id>1931</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau</needs>
+      <speaking>3502,0468</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ38>
+    <SQ39>
+      <id>2903</id>
+      <type>transition</type>
+      <html><![CDATA[<h1>Échanges avec le public</h1>]]></html>
+    </SQ39>
+    <SQ40>
+      <id>9076</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>fauteuil,hf</needs>
+      <speaking>2928,2787,8630,0168,0468,3502,public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Projeter QR WOOCLAP https://app.wooclap.com/35CIDE?from=event-page</specifications>
+        </requests>
+      </extra>
+    </SQ40>
+    <SQ41>
+      <id>2044</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Clôture de la journée</h2>]]></html>
+    </SQ41>
+    <SQ42>
+      <id>3749</id>
+      <type>speech</type>
+      <duration>5</duration>
+      <needs>pupitre</needs>
+      <speaking>2928</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ42>
+  </sequence>
+</fiche>

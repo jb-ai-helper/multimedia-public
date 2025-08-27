@@ -1,0 +1,356 @@
+/* JVR 2023 */
+
+//Videos Object
+var videos = {
+    Intro: {
+        url: styles+'videos/in-enpjj.webm',
+        opacity: 1,
+    },
+    Background: {
+        url: styles+'videos/bkg-enpjj.webm',
+        opacity: 1,
+},
+    Outro: {
+        url: styles+'videos/out-enpjj.webm',
+        opacity: 1,
+    },
+};
+//Sounds Object
+var sounds = {
+    Notification: {
+        url: styles+'sounds/notification.mp3'
+    },
+    Transition: {
+        url: styles+'sounds/transition.mp3'
+    },
+};
+//Images Object
+var images = {
+    Marianne: {
+        url: styles+'images/marianne.svg',
+        anchor: 'top right',
+        opacity: 1,
+        height: gov,
+        width: 'auto',
+        x: screen.width-(1.5*gov),
+        y: gov
+    },
+    ENPJJ: {
+        url: styles+'images/enpjj.svg',
+        anchor: 'top left',
+        opacity: 1,
+        height: screen.height,
+        width: screen.width,
+        x: 0,
+        y: 0
+    },
+};
+//Fonts
+var fonts = {
+    Marianne: {
+        0:{
+            family: 'Marianne',
+            weight: 800,
+            style: 'italic',
+            url: font+'Marianne/Marianne-ExtraBold_Italic.woff',
+        },
+        1:{
+            family: 'Marianne',
+            weight: 800,
+            style: 'normal',
+            url: font+'Marianne/Marianne-ExtraBold.woff',
+        },
+        2:{
+            family: 'Marianne',
+            weight: 700,
+            style: 'italic',
+            url: font+'Marianne/Marianne-Bold_Italic.woff',
+        },
+        3:{
+            family: 'Marianne',
+            weight: 700,
+            style: 'normal',
+            url: font+'Marianne/Marianne-Bold.woff',
+        },
+        4:{
+            family: 'Marianne',
+            weight: 400,
+            style: 'italic',
+            url: font+'Marianne/Marianne-Regular_Italic.woff',
+        },
+        5:{
+            family: 'Marianne',
+            weight: 400,
+            style: 'normal',
+            url: font+'Marianne/Marianne-Regular.woff',
+        },
+    },
+};
+//FX
+var effetcs = {
+    shadow_01: {
+        hoffset: 0.05*gov,
+        voffset: 0.05*gov,
+        blur: 0.1*gov,
+        color: 'rgba(0,0,0,.25)',
+    },
+    frame_01: {
+        before: {
+            width: 1.5*gov,
+            fill: 'rgba(0,0,0,1)',
+        },
+        around: {
+            fill: 'rgba(0,0,0,1)',
+        },
+        after: {
+            width: 3*gov,
+            fill: {
+                type: 'linear',
+                angle: 90,
+                color:{
+                    0: 'rgba(0,0,0,1)',
+                    1: 'rgba(0,0,0,0)'
+                }
+            },
+        },
+    },
+    frame_02: {
+        before: {
+            width: 3*gov,
+            fill: {
+                type: 'linear',
+                angle: 90,
+                color:{
+                    0: 'rgba(0,0,0,0)',
+                    1: 'rgba(0,0,0,1)',
+                }
+            },
+        },
+        around: {
+            fill: 'rgba(0,0,0,1)',
+        },
+        after: {
+            width: 3*gov,
+            fill: {
+                type: 'linear',
+                angle: 90,
+                color:{
+                    0: 'rgba(0,0,0,1)',
+                    1: 'rgba(0,0,0,0)'
+                }
+            },
+        },
+    },
+}
+//Allowed Tags
+var tags = {
+    h1: {
+        size: gov,
+        weight: 'bold',
+        line: 1.25,
+        transform: 'uppercase',
+    },
+    h2: {
+        size: 1.5*gov,
+        weight: 'bold',
+        line: 1.25,
+        transform: 'uppercase',
+    },
+    h3: {
+        size: 2*gov,
+        weight: 'bold',
+        line: 1.25,
+        transform: 'uppercase',
+    },
+}
+var variables = {
+    StreamInfo: {
+        title: 'Titre du Stream',
+        subtitle : 'Bienvenue',
+        date: 'JJ mois AAAA',
+    },
+    LowerThird: {
+        name: 'Prénom NOM',
+        function: 'Fonction complète',
+        translation: 'Fonction traduite',
+    },
+    ScrollingBanner: 'L\'ENPJJ vous informe que cet événement est enregistré et que cet enregistrement est susceptible d\'être mis à disposition en replay.',
+    Chapter: 'Exemple :<h3>Titre Grand</h3><h2>Titre Moyen</h2><h1>Titre Petit</h1>',
+    CountDown: 'dans quelques instants...',
+    Counter: '00:00:00:00',
+}
+
+//Default Texts Object
+    /*
+    Mandatory: txt, opacity, x, y;
+    Optional: color, anchor(top/middle/bottom & left/center/right), font, size, weight, line, transform, variant(normal/small-caps), shadow
+    */
+
+var texts = {
+    //A for Start Screen
+    StartScreen:{
+        Title: {
+            txt: variables['StreamInfo'].title,
+            anchor: 'bottom center',
+            font: 'Marianne',
+            size: gov,
+            weight: 'bold',
+            color: 'white',
+            line: 1.25,
+            opacity: 1,
+            x: 0.5*screen.width,
+            y: 0.40*screen.height,
+            shadow: effetcs.shadow_01,
+        },
+        SubTitle: {
+            txt: variables['StreamInfo'].subtitle,
+            anchor: 'middle center',
+            font: 'Marianne',
+            size: 2*gov,
+            weight: 'bold',
+            transform: 'uppercase',
+            color: 'white',
+            opacity: 1,
+            x: 0.5*screen.width,
+            y: 0.5*screen.height,
+            shadow: effetcs.shadow_01,
+        },
+        //Date for Start Scren
+        Date: {
+            txt: variables['StreamInfo'].date,
+            anchor: 'top center',
+            font: 'Marianne',
+            size: gov/2,
+            weight: '',
+            style: 'italic',
+            color: 'white',
+            opacity: 1,
+            x: 0.5*screen.width,
+            y: 0.6*screen.height,
+            shadow: effetcs.shadow_01,
+        },
+    },
+    TitleBanner:{
+        Title: {
+            txt: variables['StreamInfo'].title,
+            anchor: 'top left',
+            font: 'Marianne',
+            size: 1/2*gov,
+            line: 2,
+            color: 'white',
+            opacity: 1,
+            x: 1.5*gov,
+            y: gov,
+            frame: effetcs.frame_01,
+        },
+        SubTitle: {
+            txt: variables['StreamInfo'].subtitle,
+            anchor: 'top left',
+            font: 'Marianne',
+            size: 1/2*gov,
+            line: 2,
+            color: 'white',
+            opacity: 0,
+            x: 1.5*gov,
+            y: 2*gov,
+            frame: effetcs.frame_01,
+        },
+    },
+    Pause: {
+        txt: 'La diffusion en direct va reprendre',
+        anchor: 'top left',
+        font: 'Marianne',
+        size: '',
+        weight: '',
+        style: '',
+        color: '',
+        opacity: 1,
+        x: 0,
+        y: 0
+    },
+    CountDown: {
+        txt: variables['CountDown'],
+        anchor: 'top left',
+        font: 'Marianne',
+        size: '',
+        weight: '',
+        style: '',
+        color: '',
+        opacity: 1,
+        x: 0,
+        y: 0
+    },
+    Counter: {
+        txt: variables['Counter'],
+        anchor: 'top left',
+        font: 'Marianne',
+        size: '',
+        weight: '',
+        style: '',
+        color: '',
+        opacity: 1,
+        x: 0,
+        y: 0
+    },
+    Chapter: {
+        txt: variables['Chapter'],
+        anchor: 'middle center',
+        font: 'Marianne',
+        size: 0.8*gov,
+        color: 'white',
+        opacity: 1,
+        x: 0.5*screen.width,
+        y: 0.5*screen.height,
+        shadow: effetcs.shadow_01,
+    },
+    LowerThird:{
+        Name: {
+            txt: variables['LowerThird'].name,
+            anchor: 'bottom center',
+            font: 'Marianne',
+            size: 0.6*gov,
+            weight: 'bold',
+            color: 'white',
+            opacity: 1,
+            x: screen.width/2,
+            y: screen.height,
+            frame: effetcs.frame_02,
+        },
+        Function: {
+            txt: variables['LowerThird'].function,
+            anchor: 'bottom center',
+            font: 'Marianne',
+            size: 0.4*gov,
+            style: 'italic',
+            color: 'white',
+            opacity: 1,
+            x: screen.width/2,
+            y: screen.height,
+            frame: effetcs.frame_02,
+        },
+        Translation: {
+            txt: variables['LowerThird'].translation,
+            anchor: 'bottom center',
+            font: 'Marianne',
+            size: 0.4*gov,
+            style: 'italic',
+            color: 'white',
+            opacity: 1,
+            x: screen.width/2,
+            y: screen.height,
+            frame: effetcs.frame_02,
+        },
+    },
+    ScrollingBanner: {
+        txt: variables['ScrollingBanner'],
+        anchor: 'top left',
+        font: 'Marianne',
+        size: '',
+        weight: '',
+        style: '',
+        color: '',
+        opacity: 1,
+        x: 0,
+        y: 0
+    },
+};

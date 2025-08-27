@@ -1,0 +1,70 @@
+/* CSS Document */
+@import "/src/css/fonts.css";
+
+* { font-family: Marianne; }
+
+html, body{
+    overflow: hidden;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#Calendar{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Logo{
+    background-image: url("../img/enpjj.svg");
+    background-repeat: no-repeat;
+    width: 20vw;
+    transform: translate(-50%, -100%);
+    aspect-ratio: 263/150;
+    position: absolute;
+}
+
+#Date{
+    text-transform: uppercase;
+    color: #8A614B;
+    letter-spacing:-0.1em;
+    font-size: 3vw;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    line-height: 1;
+    text-align: center;
+    margin-top: 1vw
+}
+
+#Date sup{ text-transform: lowercase; }
+
+.lundi { background-image: url('../img/lundi.png'); background-position: 65% 50%; }
+.lundi #Logo { top: 65%; left: 50%; }
+.lundi #Date { top: 65%; left: 50%; }
+
+.mardi { background-image: url('../img/mardi.png'); background-position: 70% 25%; }
+.mardi #Logo { top: 70%; left: 25%; }
+.mardi #Date { top: 70%; left: 25%;  }
+
+.mercredi { background-image: url('../img/mercredi.png'); background-position: 55% 70%; }
+.mercredi #Logo { top: 55%; left: 70%; }
+.mercredi #Date { top: 55%; left: 70%; }
+
+.jeudi { background-image: url('../img/jeudi.png'); background-position: 60% 47%; }
+.jeudi #Logo { top: 60%; left: 47%; }
+.jeudi #Date { top: 60%; left: 47%; }
+
+.vendredi { background-image: url('../img/vendredi.png'); background-position: 40% 50%; }
+.vendredi #Logo { top: 40%; left: 50%; }
+.vendredi #Date { top: 40%; left: 50%; }
+
+.samedi, .dimanche { background-image: url('../img/weekend.png'); background-position: 55% 65%; }
+.samedi #Logo, .dimanche #Logo { top: 55%; left: 65%; background-image: url("../img/enpjj-blanc.svg") }
+.samedi #Date, .dimanche #Date { top: 55%; left: 65%; }
+
+
+
+

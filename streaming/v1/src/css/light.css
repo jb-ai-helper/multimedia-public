@@ -1,0 +1,83 @@
+/* CSS Document */
+
+#ScrollingBanner, #ChapterTransition, #LowerThird{ display: none; }
+
+#SideMessages{
+	background-color: rgba(255,255,255,1);
+}
+
+#Messages{
+	width: 100%;
+}
+
+#SideMessages.ON, #SideMessages.OFF{ width: 100%; }
+
+.Interne{
+	display: block;
+	background-color: #AD4847;
+	width: -webkit-fill-available;
+    text-align: center;
+	border-radius: 5vh;
+	float: right;
+}
+
+.TextBuble{
+	font-size: 4vh;
+	line-height: 6vh;
+	padding: 3vh;
+	margin: 0 0 2vh 0;
+
+}
+.TextBuble img{
+    max-height: 100vh;
+	border-radius: 2.5vh;
+}
+
+.qrcode{ max-height: 50vh !important; }
+
+.link{
+    font-size: 2.5vh !important;
+    line-height: 2.5vh !important;
+}
+
+#counter{
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    top: 5vh;
+    left: 7.5vh;
+    font-size: 10vh;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0 2.5vh;
+    border-radius: 10vh;
+}
+
+.TextBuble:hover::after{
+    position: absolute;
+    cursor: pointer;
+    content: attr(id);
+    font-size: 2.5vh;
+    text-align: center;
+    background-color: white;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.Right{ border-radius: 5vh 5vh 0.5vh 5vh; }
+
+.Left{ border-radius: 5vh 5vh 5vh 0.5vh; }
+
+#SideMessages {
+    overflow: hidden auto;
+    transform: rotateX(180deg);
+    background-color: black;
+}
+
+#Messages {
+    transform:rotateX(180deg);
+    top: 0;
+}

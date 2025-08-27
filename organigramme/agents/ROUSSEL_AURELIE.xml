@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agent>
+  <prenom>Aurélie</prenom>
+  <nom>Roussel</nom>
+  <rattachement>DG</rattachement>
+  <poste>CHEF_CABINET</poste>
+  <dateArrivee>2024-11-01</dateArrivee>
+  <fichePoste>1</fichePoste>
+</agent>

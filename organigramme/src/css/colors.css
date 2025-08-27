@@ -1,0 +1,17 @@
+/* CSS Document */
+
+.group:has(> .name[data-short="SF"]) {
+    background-color: rgba(255,149,117,0.5); /* Tuile */
+}
+
+.group:has(> .name[data-short="SRD"]) {
+    background-color: rgba(52,203,106,0.5); /* Émeraude */
+}
+
+.group:has(> .name[data-short="DG"]) {
+    background-color: rgba(134,158,206,0.5); /* Écume */
+}
+
+.group:has(> .name[data-short="SG"]) {
+    background-color: rgba(206,112,204,0.5); /* Glycine */
+}

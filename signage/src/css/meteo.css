@@ -1,0 +1,106 @@
+/* CSS Document */
+
+html, body{
+    overflow: hidden;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#Justice{
+    background-image: url("../img/justice.svg");
+    background-repeat: no-repeat;
+    width: calc(10vw * 197 / 150);
+    height: 10vw;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    z-index: 1;
+}
+
+#ww_8ca2a1cb82486{
+    background: none !important;
+    max-width: unset !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    font-size: 1.5vw !important;
+    min-width: unset !important;
+}
+
+.ww-box{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 1vw;
+}
+
+.ww_current {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: nowrap !important;
+}
+
+.ww_temp {
+    font-size: 5vw !important;
+}
+
+.ww_icon svg {
+    height: 4vw !important;
+    width: 8vw !important;
+}
+
+.ww_cond{
+    font-size: 5vw !important;
+    text-wrap: nowrap;
+}
+
+.ww_source{ display: none !important; }
+
+/*
+.ww_icon_add{
+    height: 1.5vw !important;
+    width: 1.5vw !important;
+    margin-right: 0.5vw !important;
+}
+
+.ww_wind, .ww_humidity, .ww_pressure { margin: 1vw 2% 0 2% !important; }
+
+.ww_txt_add { top: -0.2vw !important; }
+
+.ww_hours{
+    bottom: 0;
+    left: 50%;
+    position: absolute !important;
+    transform: translate(-50%, 0%);
+}
+
+.ww_hour {
+    margin-right: 0.8vw !important;
+    width: 5vw !important;
+}
+
+.ww_hour_date { margin-bottom: 0.5vw !important; }
+
+.ww_hour_icon {
+    height: 3.5vw !important;
+    width: 3.5vw !important;
+}
+
+.ww_additional{
+    position: absolute !important;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
+
+.ww_pressure, .ww_arr, .ww_delimiter, .resize-sensor{ display: none !important; }
+
+.ww_line{ margin: 0 !important; }
+
+.ww_hour:nth-child(n+13){ display: none !important; }
+*/

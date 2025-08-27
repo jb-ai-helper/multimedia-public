@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[Amphis &amp; Événements (PTF Grand Nord) | Formations Multimédia]]></title>
+    <visibility>unlisted</visibility>
+    <date>2024-06-17</date>
+    <description><![CDATA[Replay de la formation Multimédia : "Amphi &amp; Événements" du PTF Grand-Nord le 17/06/2024.]]></description>
+  </video>
+  <event>
+    <title><![CDATA[Formation PTF GN : Amphis &amp; Événements]]></title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>12</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2024-06-17</date>
+    <start>09:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>4333</id>
+      <name>Jean-Baptiste WATTIAUX</name>
+      <function><![CDATA[Chargé de l'audiovisuel à l'ENPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>4754</id>
+      <name>Benjamin DESMALINES</name>
+      <function><![CDATA[Chargé de l'audiovisuel à l'ENPJJ]]></function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>9327</id>
+      <type>speech</type>
+      <duration>5</duration>
+      <needs>hf</needs>
+      <speaking>4333</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>8044</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Présentation des équipements</h2>]]></html>
+    </SQ2>
+    <SQ3>
+      <id>0669</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>pupitre,bureau,fauteuil,hf,pc</needs>
+      <speaking>4754,4333</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>4510</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Présentation<br>de l'Habillage Dynamique</h2>]]></html>
+    </SQ4>
+    <SQ5>
+      <id>5257</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>hf</needs>
+      <speaking>4754,4333</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>true</checked>
+          <specifications>Démo technique depuis la régie</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+    <SQ6>
+      <id>4334</id>
+      <type>pause</type>
+      <duration>5</duration>
+    </SQ6>
+    <SQ7>
+      <id>4861</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Présentation<br>du formulaire de demande<br>de prestations Multimédia</h2>]]></html>
+    </SQ7>
+    <SQ8>
+      <id>1456</id>
+      <type>speech</type>
+      <duration>20</duration>
+      <needs>bureau,hf,pc</needs>
+      <speaking>4333</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ8>
+    <SQ9>
+      <id>4441</id>
+      <type>speech</type>
+      <duration>5</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ9>
+  </sequence>
+</fiche>

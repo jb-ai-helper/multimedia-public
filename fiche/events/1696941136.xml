@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Semaine de la Justice Restaurative</title>
+    <visibility>unlisted</visibility>
+    <date>2023-11-20</date>
+    <description><![CDATA[00:00:00 Introduction<br>00:03:41 Intervention de Jessica FILIPPI<br>00:49:04 Questions du public<br>00:57:40 Intervention de Serge Charbonneau<br>01:23:04 Questions du public<br>01:30:16 Intervention de Sandrine Lefranc<br>01:58:30 Questions du public<br>02:01:38 Table ronde<br>02:36:03 Questions du public]]></description>
+  </video>
+  <event>
+    <title>La Justice Restaurative</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>100</onsite>
+    <remote>20</remote>
+    <release>Asynchrone</release>
+    <date>2023-11-20</date>
+    <start>14:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>5879</id>
+      <name>Jessica Filippi</name>
+      <function>Chercheure en Criminologie, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>9389</id>
+      <name>Serge Charbonneau</name>
+      <function>Conseiller Equijustice, Montréal, Québec</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj</link>
+    </SP2>
+    <SP3>
+      <id>7435</id>
+      <name>Sandrine Lefranc</name>
+      <function>Directrice CNRS, Chercheuse enseignante Sciences Po Paris</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj</link>
+    </SP3>
+    <SP4>
+      <id>3589</id>
+      <name>Vicky Berton</name>
+      <function><![CDATA[éducatrice; UEMO Montargis<br>]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>1151</id>
+      <name>Guillaume Grasland</name>
+      <function>Formateur au PIE</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>8356</id>
+      <name>Ahmed EL BORJ</name>
+      <function>Educateur, DT PJJ Yvelines</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>8326</id>
+      <name>Stephanie DAVID</name>
+      <function><![CDATA[Conseillère Technique en Promotion de la Santé (CTPS)<br>Direction Territoriale de la Protection Judiciaire de la Jeunesse du Var]]></function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj</link>
+    </SP7>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>3027</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>bureau</needs>
+      <speaking>1151</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>0991</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>bureau,pc</needs>
+      <speaking>5879</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ2>
+    <SQ3>
+      <id>8071</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>2971</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pc</needs>
+      <speaking>9389</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ4>
+    <SQ5>
+      <id>6735</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ5>
+    <SQ6>
+      <id>0190</id>
+      <type>pause</type>
+      <duration>15</duration>
+    </SQ6>
+    <SQ7>
+      <id>1156</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>pc</needs>
+      <speaking>7435</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ7>
+    <SQ8>
+      <id>2040</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ8>
+    <SQ9>
+      <id>4742</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>fauteuil,pc</needs>
+      <speaking>8326,5879,8356,3589</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ9>
+    <SQ10>
+      <id>5228</id>
+      <type>speech</type>
+      <duration>15</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</specifications>
+        </requests>
+      </extra>
+    </SQ10>
+  </sequence>
+</fiche>

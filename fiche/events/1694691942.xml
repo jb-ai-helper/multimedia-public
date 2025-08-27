@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title><![CDATA[Éthique et sens du contrôle interne (27/09/23) | Soirée de l'encadrement]]></title>
+    <visibility>unlisted</visibility>
+    <date>2023-09-27</date>
+    <description><![CDATA[Le mercredi 27 septembre 2023, le site central (Roubaix - Hauts-de-France) de l'École nationale de protection judiciaire de la jeunesse (ENPJJ) accueille une soirée de l'encadrement, intitulée "Éthique et sens du contrôle interne". <br>En savoir plus : https://www.enpjj.justice.fr/encadrement2309]]></description>
+  </video>
+  <event>
+    <title><![CDATA[Soirée de l'encadrement : <br>Éthique et sens du contrôle interne]]></title>
+    <subtitle>Bienvenue</subtitle>
+    <style>ENPJJ</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>25</onsite>
+    <remote>25</remote>
+    <release>Synchrone</release>
+    <date>2023-09-27</date>
+    <start>17:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>1411</id>
+      <name>Nicolas BAUCHARD</name>
+      <function>Chargé de mission contrôle interne, PE/DEPM/SEM/SG</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>7129</id>
+      <name>Béatrice MICHEL</name>
+      <function>Professeure associée Université Paris Dauphine, Associée Cabinet AFGES</function>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>https://zoom.us/my/enpjj</link>
+    </SP2>
+    <SP3>
+      <id>6655</id>
+      <name>Lila BENARAB</name>
+      <function>Directrice du Pôle Gouvernance, SF, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>6628</id>
+      <name>Delphine LEMAIRE</name>
+      <function>Directrice générale adjointe, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>9633</id>
+      <name>Frédéric PHAURE</name>
+      <function>Directeur Général, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>1564</id>
+      <name>Sylvie DURAND-MOUYSSET</name>
+      <function><![CDATA[Resp. adj. de la cellule transversale d'appui au pilotage, DPJJ]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>8460</id>
+      <name>Flora DUMONT</name>
+      <function>Chargée de mission maîtrise des risques, CTAP, DPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>2386</id>
+      <name>Sabrina DIVERCHY</name>
+      <function>Formatrice au Pôle Gouvernance, ENPJJ</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>4805</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>bureau,fauteuil,pc</needs>
+      <speaking>8460,1564,6628,6655,9633</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Vidéo d'allocution du DG de l'ENPJJ</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Les questions peuvent être adressées par mail à l'adresse direct.enpjj-roubaix@justice.fr</message>
+        </scroll>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>2835</id>
+      <type>transition</type>
+      <html><![CDATA[<h2>Éthique et sens <br>du contrôle interne</h2>]]></html>
+    </SQ2>
+    <SQ3>
+      <id>6996</id>
+      <type>speech</type>
+      <duration>80</duration>
+      <needs>bureau,fauteuil,hf</needs>
+      <speaking>8460,1564,6655,7129,1411</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>true</checked>
+          <message>Les questions peuvent être adressées par mail à l'adresse direct.enpjj-roubaix@justice.fr </message>
+        </scroll>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>9651</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>hf</needs>
+      <speaking>public</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+      </extra>
+    </SQ4>
+  </sequence>
+</fiche>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Le Service Multimédia | Les jeudis de Roubaix - 17 Juin 2024</title>
+    <visibility>public</visibility>
+    <date>2024-06-24</date>
+    <description>Description de la vidéo...</description>
+  </video>
+  <event>
+    <title>Présentation du Service Multimédia</title>
+    <subtitle>Bienvenue</subtitle>
+    <style>enpjj</style>
+    <location>Amphi Condorcet Bas</location>
+    <onsite>20</onsite>
+    <remote>250</remote>
+    <release>Synchrone</release>
+    <date>2024-06-24</date>
+    <start>09:00</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>8903</id>
+      <name>JB WATTIAUX</name>
+      <function><![CDATA[Chargé de<br>l'audiovisuel]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>3173</id>
+      <name>Benjamin DESMALINES</name>
+      <function/>
+      <translation/>
+      <attendance>remote</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>7966</id>
+      <name>Benjamin MERESSE</name>
+      <function>Stagiaire</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>1178</id>
+      <type>speech</type>
+      <duration>5</duration>
+      <needs>pupitre,pc</needs>
+      <speaking>8903</speaking>
+      <extra>
+        <ddr>
+          <checked>true</checked>
+          <sources>Afficher ce lien : www.starwars.com</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ1>
+    <SQ2>
+      <id>2729</id>
+      <type>transition</type>
+      <html><![CDATA[Table ronde :<br><h1>Services du service</h1>]]></html>
+    </SQ2>
+    <SQ3>
+      <id>9434</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs>hf</needs>
+      <speaking>3173,7966</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ3>
+    <SQ4>
+      <id>5199</id>
+      <type>pause</type>
+      <duration>5</duration>
+    </SQ4>
+    <SQ5>
+      <id>9803</id>
+      <type>transition</type>
+      <html><![CDATA[<h3>Questions du public</h3>]]></html>
+    </SQ5>
+    <SQ6>
+      <id>6166</id>
+      <type>speech</type>
+      <duration>10</duration>
+      <needs>hf</needs>
+      <speaking>public,8903,7966</speaking>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>true</checked>
+          <message>Posez vos question au 555-435-766</message>
+        </scroll>
+        <requests>
+          <checked>false</checked>
+          <specifications>Préciser ici vos besoins techniques spécifiques.</specifications>
+        </requests>
+      </extra>
+    </SQ6>
+  </sequence>
+</fiche>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fiche>
+  <video>
+    <title>Session Inter-École IRA Lile G2</title>
+    <visibility>unlisted</visibility>
+    <date>2023-10-13</date>
+    <description><![CDATA[Enregistrement de la restitution du groupe 2 de la session inter-école de l'IRA de Lille.]]></description>
+  </video>
+  <event>
+    <title>Restitution de la session inter-école 2023</title>
+    <subtitle>IRA de Lille</subtitle>
+    <style>resp-ira</style>
+    <location>Amphi Michelet</location>
+    <onsite>0</onsite>
+    <remote>0</remote>
+    <release>Synchrone</release>
+    <date>2023-10-13</date>
+    <start>10:30</start>
+  </event>
+  <speaker>
+    <SP1>
+      <id>0342</id>
+      <name>Angèle BAL</name>
+      <function>École nationale des Finances publiques (ENFiP) </function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP1>
+    <SP2>
+      <id>2377</id>
+      <name>Marion LE CALVE</name>
+      <function>École nationale des Finances publiques (ENFiP) </function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP2>
+    <SP3>
+      <id>1918</id>
+      <name>Arthur BERL</name>
+      <function>École nationale des greffes (ENG)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP3>
+    <SP4>
+      <id>2056</id>
+      <name>Vittoria CAPRIO</name>
+      <function>École nationale des greffes (ENG)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP4>
+    <SP5>
+      <id>3441</id>
+      <name>Pauline VOISIN</name>
+      <function>École nationale des greffes (ENG)</function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP5>
+    <SP6>
+      <id>0178</id>
+      <name>Aicha BARAKA</name>
+      <function><![CDATA[Institut des hautes études de l'éducation et de la formation (IH2EF)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP6>
+    <SP7>
+      <id>7865</id>
+      <name>Julio CARBALLO</name>
+      <function><![CDATA[Institut des hautes études de l'éducation et de la formation (IH2EF)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP7>
+    <SP8>
+      <id>7449</id>
+      <name>Sophie GAUTHIER</name>
+      <function><![CDATA[Institut des hautes études de l'éducation et de la formation (IH2EF)]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP8>
+    <SP9>
+      <id>8830</id>
+      <name>Yann AUBRY</name>
+      <function><![CDATA[Institut régional d'administration (IRA) de Lille]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP9>
+    <SP10>
+      <id>9185</id>
+      <name>Mina JOLLIVET</name>
+      <function><![CDATA[Institut régional d'administration (IRA) de Lille]]></function>
+      <translation/>
+      <attendance>onsite</attendance>
+      <link>Copier/coller le lien ici...</link>
+    </SP10>
+  </speaker>
+  <sequence>
+    <SQ1>
+      <id>3977</id>
+      <type>speech</type>
+      <duration>30</duration>
+      <needs/>
+      <speaking/>
+      <extra>
+        <ddr>
+          <checked>false</checked>
+          <sources>Indiquer ici le détail des médias à diffuser.</sources>
+        </ddr>
+        <scroll>
+          <checked>false</checked>
+          <message>Indiquer ici le message à faire défiler (numéro de téléphone, consigne de sécurité, appel à l’action, etc.).</message>
+        </scroll>
+      </extra>
+    </SQ1>
+  </sequence>
+</fiche>
